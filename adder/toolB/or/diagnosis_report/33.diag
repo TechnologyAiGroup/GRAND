@@ -1,0 +1,71 @@
+run_diagnosis ./tmax_fail/33.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/33.fail
+ #failing_pat=2, #failures=2, #defects=1, #faults=15, CPU_time=0.08
+ Simulated : #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=15, #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N567/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N2425/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N765/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1679/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1679/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1679/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1880/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1880/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1695/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1695/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1695/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1338/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1338/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N2865/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=2.27%, #explained patterns: <failing=2, passing=2>
+ sa0   DS   g_N1824/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/330.diag

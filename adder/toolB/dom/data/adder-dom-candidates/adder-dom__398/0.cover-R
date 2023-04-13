@@ -1,0 +1,182 @@
+==
+Candidate 0
+site . N1757
+polarity . 1
+neighbor . N3688 N2985
+failing-states . 
+01 . 5
+11 . 1
+passing-states . 
+01 . 240
+10 . 2
+11 . 1
+==
+Candidate 1
+site . N1415
+polarity . 1
+neighbor . N1781 N1757
+failing-states . 
+10 . 3
+01 . 1
+00 . 2
+passing-states . 
+00 . 242
+11 . 1
+==
+Candidate 2
+site . N1757->N1415
+polarity . 1
+neighbor . N3688 N2985
+failing-states . 
+01 . 5
+11 . 1
+passing-states . 
+01 . 240
+10 . 2
+11 . 1
+==
+Candidate 3
+site . N3688
+polarity . 1
+neighbor . N2838 N2985
+failing-states . 
+11 . 5
+01 . 1
+passing-states . 
+11 . 240
+00 . 2
+01 . 1
+==
+Candidate 4
+site . N2838->N3688
+polarity . 1
+neighbor . N3768
+failing-states . 
+1 . 5
+0 . 1
+passing-states . 
+1 . 240
+0 . 3
+==
+Candidate 5
+site . N3688->N1757
+polarity . 1
+neighbor . N2838 N2985
+failing-states . 
+11 . 5
+01 . 1
+passing-states . 
+11 . 240
+00 . 2
+01 . 1
+==
+Candidate 6
+site . N2578
+polarity . 1
+neighbor . N2358 N3761
+failing-states . 
+10 . 4
+11 . 2
+passing-states . 
+10 . 242
+00 . 1
+==
+Candidate 7
+site . N2181
+polarity . 1
+neighbor . N2578
+failing-states . 
+0 . 4
+1 . 2
+passing-states . 
+0 . 243
+==
+Candidate 8
+site . N2578->N2181
+polarity . 1
+neighbor . N2358 N3761
+failing-states . 
+10 . 4
+11 . 2
+passing-states . 
+10 . 242
+00 . 1
+==
+Candidate 9
+site . N2181->N346
+polarity . 1
+neighbor . N2578
+failing-states . 
+0 . 4
+1 . 2
+passing-states . 
+0 . 243
+==
+Candidate 10
+site . N1652
+polarity . 1
+neighbor . N926 N3549
+failing-states . 
+10 . 3
+01 . 1
+11 . 2
+passing-states . 
+11 . 242
+00 . 1
+==
+Candidate 11
+site . N3805
+polarity . 1
+neighbor . N1652
+failing-states . 
+0 . 4
+1 . 2
+passing-states . 
+1 . 242
+0 . 1
+==
+Candidate 12
+site . N1652->N3805
+polarity . 1
+neighbor . N926 N3549
+failing-states . 
+10 . 3
+01 . 1
+11 . 2
+passing-states . 
+11 . 242
+00 . 1
+==
+Candidate 13
+site . N3761
+polarity . 1
+neighbor . N2358 N3805
+failing-states . 
+10 . 4
+11 . 2
+passing-states . 
+11 . 242
+00 . 1
+==
+Candidate 14
+site . N3805->N3761
+polarity . 1
+neighbor . N1652
+failing-states . 
+0 . 4
+1 . 2
+passing-states . 
+1 . 242
+0 . 1
+==
+Candidate 15
+site . N3761->N2578
+polarity . 1
+neighbor . N2358 N3805
+failing-states . 
+10 . 4
+11 . 2
+passing-states . 
+11 . 242
+00 . 1
+==

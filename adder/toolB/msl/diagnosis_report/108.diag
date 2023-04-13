@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/108.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 496 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/108.fail
+ #failing_pat=249, #failures=496, #defects=2, #faults=6, CPU_time=0.13
+ Simulated : #failing_pat=249, #passing_pat=0, #failures=496
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=247, #passing_pat=2, #failures=247
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=247, passing=2>
+ sa1   DS   g_N1748/Y   (BUFX2)
+ sa1   --   g_N1748/A   (BUFX2)
+ sa1   --   g_N1580/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=5, #failing_pat=245, #passing_pat=4, #failures=245
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=245, passing=4>
+ sa1   DS   g_N1284/Y   (INVX1)
+ sa0   --   g_N1284/A   (INVX1)
+ sa1   --   g_N1412/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.59%, #explained patterns: <failing=245, passing=3>
+ sa1   DS   g_N2368/Y   (BUFX2)
+ sa1   --   g_N2368/A   (BUFX2)
+ sa1   --   g_N1412/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=245, passing=4>
+ sa0   DS   g_N1944/Y   (BUFX2)
+ sa0   --   g_N1944/A   (BUFX2)
+ sa0   --   g_N2448/Y   (AND2X1)
+ sa0   --   g_N2448/A   (AND2X1)
+ sa0   --   g_N2448/B   (AND2X1)
+ sa0   --   g_N386/Y   (INVX1)
+ sa1   --   g_N386/A   (INVX1)
+ sa0   --   g_N2507/Y   (INVX1)
+ sa1   --   g_N2507/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=245, passing=3>
+ sa1   DS   N215   (_PI)
+ ------------------------------------------------------------------------------
+ match=98.00%, #explained patterns: <failing=245, passing=2>
+ sa1   DS   N149   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/109.diag

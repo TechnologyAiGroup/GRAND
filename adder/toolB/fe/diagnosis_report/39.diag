@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/39.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 5 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/39.fail
+ #failing_pat=5, #failures=5, #defects=1, #faults=1, CPU_time=0.04
+ Simulated : #failing_pat=5, #passing_pat=96, #failures=5
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=5, #passing_pat=96, #failures=5
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=5, passing=96>
+ sa0   DS   N379   (_PO)
+ sa0   --   g_N379/Y   (BUFX2)
+ sa0   --   g_N379/A   (BUFX2)
+ sa0   --   g_N1832/Y   (BUFX2)
+ sa0   --   g_N1832/A   (BUFX2)
+ sa0   --   g_N3091/Y   (AND2X1)
+ sa0   --   g_N3091/A   (AND2X1)
+ sa0   --   g_N3091/B   (AND2X1)
+ sa0   --   g_N3731/Y   (INVX1)
+ sa1   --   g_N3731/A   (INVX1)
+ sa0   --   g_N2066/Y   (INVX1)
+ sa1   --   g_N2066/A   (INVX1)
+ sa1   --   g_N520/Y   (BUFX2)
+ sa1   --   g_N520/A   (BUFX2)
+ sa1   --   g_N2785/Y   (BUFX2)
+ sa1   --   g_N2785/A   (BUFX2)
+ sa1   --   g_N1705/Y   (AND2X1)
+ sa1   --   g_N3412/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/390.diag

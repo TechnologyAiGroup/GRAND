@@ -1,0 +1,96 @@
+==
+Candidate 0
+site . N2105
+polarity . 0
+neighbor . N2220 N861
+failing-states . 
+10 . 1
+00 . 1
+passing-states . 
+00 . 245
+10 . 2
+==
+Candidate 1
+site . N861->N2105
+polarity . 0
+neighbor . N852 N2222
+failing-states . 
+01 . 2
+passing-states . 
+00 . 243
+01 . 2
+10 . 2
+==
+Candidate 2
+site . N861
+polarity . 0
+neighbor . N852 N2222
+failing-states . 
+01 . 2
+passing-states . 
+00 . 243
+01 . 2
+10 . 2
+==
+Candidate 3
+site . N852->N861
+polarity . 0
+neighbor . N2222 N3793
+failing-states . 
+10 . 2
+passing-states . 
+00 . 245
+11 . 2
+==
+Candidate 4
+site . N2222->N861
+polarity . 0
+neighbor . N852 N699
+failing-states . 
+00 . 2
+passing-states . 
+01 . 243
+00 . 2
+11 . 2
+==
+Candidate 5
+site . N852
+polarity . 0
+neighbor . N2222 N3793
+failing-states . 
+10 . 2
+passing-states . 
+00 . 245
+11 . 2
+==
+Candidate 6
+site . N3793->N852
+polarity . 1
+neighbor . N867
+failing-states . 
+0 . 2
+passing-states . 
+0 . 245
+1 . 2
+==
+Candidate 7
+site . N2222
+polarity . 0
+neighbor . N852 N699
+failing-states . 
+00 . 2
+passing-states . 
+01 . 243
+00 . 2
+11 . 2
+==
+Candidate 8
+site . N699->N2222
+polarity . 1
+neighbor . N2841
+failing-states . 
+0 . 2
+passing-states . 
+1 . 245
+0 . 2
+==

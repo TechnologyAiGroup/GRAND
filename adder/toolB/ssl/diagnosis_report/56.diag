@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/56.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 245 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/56.fail
+ #failing_pat=245, #failures=245, #defects=1, #faults=5, CPU_time=0.12
+ Simulated : #failing_pat=245, #passing_pat=4, #failures=245
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=245, #passing_pat=4, #failures=245
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=245, passing=4>
+ sa1   DS   g_N3810/Y   (INVX1)
+ sa0   --   g_N3810/A   (INVX1)
+ sa1   --   g_N3073/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.59%, #explained patterns: <failing=244, passing=4>
+ sa0   DS   g_N1647/Y   (BUFX2)
+ sa0   --   g_N1647/A   (BUFX2)
+ sa0   --   g_N2480/Y   (AND2X1)
+ sa0   --   g_N2480/A   (AND2X1)
+ sa0   --   g_N2480/B   (AND2X1)
+ sa0   --   g_N3880/Y   (INVX1)
+ sa1   --   g_N3880/A   (INVX1)
+ sa0   --   g_N2670/Y   (INVX1)
+ sa1   --   g_N2670/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=244, passing=3>
+ sa1   DS   N73   (_PI)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=245, passing=2>
+ sa1   DS   g_N3470/Y   (BUFX2)
+ sa1   --   g_N3470/A   (BUFX2)
+ sa1   --   g_N3073/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=98.79%, #explained patterns: <failing=244, passing=3>
+ sa1   DS   N248   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/57.diag

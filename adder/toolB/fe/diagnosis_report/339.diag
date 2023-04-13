@@ -1,0 +1,49 @@
+run_diagnosis ./tmax_fail/339.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/339.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=5, CPU_time=0.05
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   N130   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N498/Y   (INVX1)
+ sa0   --   g_N498/A   (INVX1)
+ sa1   --   g_N2539/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N1351/Y   (INVX1)
+ sa0   --   g_N1351/A   (INVX1)
+ sa1   --   g_N1249/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N1420/Y   (INVX1)
+ sa0   --   g_N1420/A   (INVX1)
+ sa1   --   g_N2476/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   N283   (_PO)
+ sa0   --   g_N283/Y   (BUFX2)
+ sa0   --   g_N283/A   (BUFX2)
+ sa0   --   g_N2675/Y   (BUFX2)
+ sa0   --   g_N2675/A   (BUFX2)
+ sa0   --   g_N3077/Y   (AND2X1)
+ sa0   --   g_N3077/B   (AND2X1)
+ sa0   --   g_N3077/A   (AND2X1)
+ sa0   --   g_N2175/Y   (INVX1)
+ sa1   --   g_N2175/A   (INVX1)
+ sa0   --   g_N2715/Y   (INVX1)
+ sa1   --   g_N2715/A   (INVX1)
+ sa1   --   g_N1312/Y   (BUFX2)
+ sa1   --   g_N1312/A   (BUFX2)
+ sa1   --   g_N3449/Y   (BUFX2)
+ sa1   --   g_N3449/A   (BUFX2)
+ sa1   --   g_N1249/Y   (AND2X1)
+ sa1   --   g_N2476/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/34.diag

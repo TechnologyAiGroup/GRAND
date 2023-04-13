@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/35.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/35.fail
+ #failing_pat=1, #failures=2, #defects=1, #faults=5, CPU_time=0.09
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=1, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   N85   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N942/Y   (INVX1)
+ sa0   --   g_N942/A   (INVX1)
+ sa0   --   g_N3712/Y   (BUFX2)
+ sa0   --   g_N3712/A   (BUFX2)
+ sa0   --   g_N2866/Y   (AND2X1)
+ sa0   --   g_N2866/A   (AND2X1)
+ sa0   --   g_N2866/B   (AND2X1)
+ sa0   --   g_N993/Y   (INVX1)
+ sa1   --   g_N993/A   (INVX1)
+ sa0   --   g_N3582/Y   (INVX1)
+ sa1   --   g_N3582/A   (INVX1)
+ sa1   --   g_N2790/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N1629/Y   (INVX1)
+ sa0   --   g_N1629/A   (INVX1)
+ sa1   --   g_N3307/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N1329/Y   (BUFX2)
+ sa1   --   g_N1329/A   (BUFX2)
+ sa1   --   g_N3307/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N3196/Y   (BUFX2)
+ sa1   --   g_N3196/A   (BUFX2)
+ sa1   --   g_N2790/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/350.diag

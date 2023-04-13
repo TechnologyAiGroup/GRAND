@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/477.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 246 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/477.fail
+ #failing_pat=244, #failures=246, #defects=1, #faults=5, CPU_time=0.06
+ Simulated : #failing_pat=244, #passing_pat=5, #failures=246
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=244, #passing_pat=5, #failures=246
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=244, passing=3>
+ sa0   DS   g_N3337/Y   (BUFX2)
+ sa0   --   g_N3337/A   (BUFX2)
+ sa0   --   g_N2197/Y   (AND2X1)
+ sa0   --   g_N2197/A   (AND2X1)
+ sa0   --   g_N2197/B   (AND2X1)
+ sa0   --   g_N3262/Y   (INVX1)
+ sa1   --   g_N3262/A   (INVX1)
+ sa0   --   g_N702/Y   (INVX1)
+ sa1   --   g_N702/A   (INVX1)
+ sa1   --   g_N3361/Y   (BUFX2)
+ sa1   --   g_N3361/A   (BUFX2)
+ sa1   --   g_N1462/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=244, passing=3>
+ sa0   DS   g_N2197/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=244, passing=3>
+ sa0   DS   g_N2197/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=244, passing=3>
+ sa0   DS   g_N2197/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.01%, #explained patterns: <failing=243, passing=1>
+ sa1   DS   g_N3143/Y   (BUFX2)
+ sa1   --   g_N3143/A   (BUFX2)
+ sa1   --   g_N2905/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/478.diag

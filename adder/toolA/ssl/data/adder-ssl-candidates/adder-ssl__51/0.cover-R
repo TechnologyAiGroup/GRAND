@@ -1,0 +1,74 @@
+==
+Candidate 0
+site . N2465
+polarity . 0
+neighbor . N1247 N1282
+failing-states . 
+11 . 244
+10 . 2
+passing-states . 
+01 . 2
+00 . 1
+==
+Candidate 1
+site . N1247
+polarity . 0
+neighbor . N1423 N1307
+failing-states . 
+11 . 246
+passing-states . 
+10 . 2
+01 . 1
+==
+Candidate 2
+site . N1683->N1423
+polarity . 1
+neighbor . N1359
+failing-states . 
+0 . 246
+passing-states . 
+0 . 2
+1 . 1
+==
+Candidate 3
+site . N1423
+polarity . 0
+neighbor . N1683 N1307
+failing-states . 
+01 . 246
+passing-states . 
+00 . 2
+11 . 1
+==
+Candidate 4
+site . N1307
+polarity . 0
+neighbor . N1423 N1698
+failing-states . 
+10 . 246
+passing-states . 
+11 . 2
+00 . 1
+==
+Candidate 5
+site . N1698
+polarity . 1
+neighbor . N1820
+failing-states . 
+0 . 246
+passing-states . 
+1 . 2
+0 . 1
+==
+Candidate 6
+site . N1820
+polarity . 1
+neighbor . N1520 N718
+failing-states . 
+00 . 244
+10 . 1
+01 . 1
+passing-states . 
+11 . 2
+10 . 1
+==

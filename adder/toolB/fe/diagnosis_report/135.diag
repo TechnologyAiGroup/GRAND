@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/135.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 4 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/135.fail
+ #failing_pat=4, #failures=4, #defects=1, #faults=5, CPU_time=0.02
+ Simulated : #failing_pat=4, #passing_pat=96, #failures=4
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=4, #passing_pat=96, #failures=4
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N1690/Y   (AND2X1)
+ sa01   --   g_N639/Y   (BUFX2)
+ sa01   --   g_N639/A   (BUFX2)
+ sa01   --   g_N364/Y   (BUFX2)
+ sa01   --   g_N364/A   (BUFX2)
+ sa01   --   N364   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N3676/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N3676/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N1630/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N1630/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/136.diag

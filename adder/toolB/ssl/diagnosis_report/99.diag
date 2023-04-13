@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/99.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/99.fail
+ #failing_pat=2, #failures=2, #defects=1, #faults=4, CPU_time=0.06
+ Simulated : #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa0   DS   N269   (_PO)
+ sa0   --   g_N269/Y   (BUFX2)
+ sa0   --   g_N269/A   (BUFX2)
+ sa0   --   g_N1905/Y   (BUFX2)
+ sa0   --   g_N1905/A   (BUFX2)
+ sa0   --   g_N2682/Y   (AND2X1)
+ sa0   --   g_N2682/A   (AND2X1)
+ sa0   --   g_N2682/B   (AND2X1)
+ sa0   --   g_N1454/Y   (INVX1)
+ sa1   --   g_N1454/A   (INVX1)
+ sa0   --   g_N1515/Y   (INVX1)
+ sa1   --   g_N1515/A   (INVX1)
+ sa1   --   g_N1260/Y   (BUFX2)
+ sa1   --   g_N1260/A   (BUFX2)
+ sa1   --   g_N3035/Y   (BUFX2)
+ sa1   --   g_N3035/A   (BUFX2)
+ sa1   --   g_N469/Y   (AND2X1)
+ sa1   --   g_N1264/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_N1264/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_N469/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=96>
+ sa1   DS   g_N1168/Y   (BUFX2)
+ sa1   --   g_N1168/A   (BUFX2)
+ sa1   --   g_N1320/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+quit

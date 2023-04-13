@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/286.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 8 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/286.fail
+ #failing_pat=4, #failures=8, #defects=2, #faults=5, CPU_time=0.05
+ Simulated : #failing_pat=4, #passing_pat=96, #failures=8
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=3, #passing_pat=97, #failures=5
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=97>
+ sa1   DS   g_N1872/Y   (BUFX2)
+ sa1   --   g_N1872/A   (BUFX2)
+ sa1   --   g_N1380/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=99, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=99>
+ sa1   DS   g_N3082/Y   (BUFX2)
+ sa1   --   g_N3082/A   (BUFX2)
+ sa1   --   g_N2928/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=99>
+ sa1   DS   g_N2290/Y   (INVX1)
+ sa0   --   g_N2290/A   (INVX1)
+ sa1   --   g_N2928/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=99>
+ sa0   DS   N256   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=99>
+ sa1   DS   g_N1092/Y   (INVX1)
+ sa0   --   g_N1092/A   (INVX1)
+ sa1   --   g_N1796/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/287.diag

@@ -1,0 +1,173 @@
+==
+Candidate 0
+site . N2507
+polarity . 0
+neighbor . N149 N386
+failing-states . 
+01 . 1
+passing-states . 
+01 . 244
+00 . 2
+10 . 1
+11 . 1
+==
+Candidate 1
+site . N386
+polarity . 0
+neighbor . N215 N2507
+failing-states . 
+00 . 1
+passing-states . 
+01 . 244
+11 . 2
+10 . 1
+00 . 1
+==
+Candidate 2
+site . N2507->N2448
+polarity . 0
+neighbor . N149 N386
+failing-states . 
+01 . 1
+passing-states . 
+01 . 244
+00 . 2
+10 . 1
+11 . 1
+==
+Candidate 3
+site . N386->N2448
+polarity . 0
+neighbor . N215 N2507
+failing-states . 
+00 . 1
+passing-states . 
+01 . 244
+11 . 2
+10 . 1
+00 . 1
+==
+Candidate 4
+site . N2448
+polarity . 0
+neighbor . N386 N2507
+failing-states . 
+10 . 1
+passing-states . 
+11 . 244
+01 . 2
+00 . 1
+10 . 1
+==
+Candidate 5
+site . N2448->N1944
+polarity . 0
+neighbor . N386 N2507
+failing-states . 
+10 . 1
+passing-states . 
+11 . 244
+01 . 2
+00 . 1
+10 . 1
+==
+Candidate 6
+site . N1944
+polarity . 0
+neighbor . N2448
+failing-states . 
+0 . 1
+passing-states . 
+1 . 244
+0 . 4
+==
+Candidate 7
+site . N1282
+polarity . 0
+neighbor . N2368 N2465
+failing-states . 
+11 . 1
+passing-states . 
+01 . 243
+11 . 2
+00 . 2
+10 . 1
+==
+Candidate 8
+site . N2465->N3671
+polarity . 0
+neighbor . N1247 N1282
+failing-states . 
+10 . 1
+passing-states . 
+11 . 243
+10 . 2
+01 . 2
+00 . 1
+==
+Candidate 9
+site . N1282->N3671
+polarity . 0
+neighbor . N2368 N2465
+failing-states . 
+11 . 1
+passing-states . 
+01 . 243
+11 . 2
+00 . 2
+10 . 1
+==
+Candidate 10
+site . N1944->N1284
+polarity . 0
+neighbor . N2448
+failing-states . 
+0 . 1
+passing-states . 
+1 . 244
+0 . 4
+==
+Candidate 11
+site . N3671
+polarity . 0
+neighbor . N1282 N2465
+failing-states . 
+01 . 1
+passing-states . 
+11 . 243
+01 . 2
+10 . 2
+00 . 1
+==
+Candidate 12
+site . N3671->N2493
+polarity . 0
+neighbor . N1282 N2465
+failing-states . 
+01 . 1
+passing-states . 
+11 . 243
+01 . 2
+10 . 2
+00 . 1
+==
+Candidate 13
+site . N2493
+polarity . 0
+neighbor . N3671
+failing-states . 
+0 . 1
+passing-states . 
+1 . 243
+0 . 5
+==
+Candidate 14
+site . N2493->N688
+polarity . 0
+neighbor . N3671
+failing-states . 
+0 . 1
+passing-states . 
+1 . 243
+0 . 5
+==

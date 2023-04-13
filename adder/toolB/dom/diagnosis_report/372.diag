@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/372.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 4 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/372.fail
+ #failing_pat=4, #failures=4, #defects=1, #faults=4, CPU_time=0.06
+ Simulated : #failing_pat=4, #passing_pat=96, #failures=4
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=4, #passing_pat=96, #failures=4
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N1439/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N3016/Y   (AND2X1)
+ sa01   --   g_N3738/Y   (BUFX2)
+ sa01   --   g_N3738/A   (BUFX2)
+ sa01   --   g_N279/Y   (BUFX2)
+ sa01   --   g_N279/A   (BUFX2)
+ sa01   --   N279   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N1439/Y   (AND2X1)
+ sa01   --   g_N3192/Y   (BUFX2)
+ sa01   --   g_N3192/A   (BUFX2)
+ sa01   --   g_N1558/Y   (INVX1)
+ sa01   --   g_N1558/A   (INVX1)
+ sa01   --   g_N3016/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=96>
+ sa01   DS   g_N2667/Y   (AND2X1)
+ sa01   --   g_N3940/Y   (BUFX2)
+ sa01   --   g_N3940/A   (BUFX2)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/373.diag

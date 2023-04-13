@@ -1,0 +1,55 @@
+run_diagnosis ./tmax_fail/123.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/123.fail
+ #failing_pat=3, #failures=3, #defects=1, #faults=8, CPU_time=0.06
+ Simulated : #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N886/Y   (INVX1)
+ sa01   --   g_N886/A   (INVX1)
+ sa01   --   g_N2641/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N2641/Y   (AND2X1)
+ sa01   --   g_N2547/Y   (BUFX2)
+ sa01   --   g_N2547/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   N28   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N1631/Y   (AND2X1)
+ sa01   --   g_N3395/Y   (BUFX2)
+ sa01   --   g_N3395/A   (BUFX2)
+ sa01   --   g_N360/Y   (BUFX2)
+ sa01   --   g_N360/A   (BUFX2)
+ sa01   --   N360   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N3027/Y   (AND2X1)
+ sa01   --   g_N810/Y   (BUFX2)
+ sa01   --   g_N810/A   (BUFX2)
+ sa01   --   g_N2454/Y   (INVX1)
+ sa01   --   g_N2454/A   (INVX1)
+ sa01   --   g_N1631/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N3529/Y   (INVX1)
+ sa01   --   g_N3529/A   (INVX1)
+ sa01   --   g_N3027/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N2479/Y   (INVX1)
+ sa01   --   g_N2479/A   (INVX1)
+ sa01   --   g_N1582/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N1582/Y   (AND2X1)
+ sa01   --   g_N1022/Y   (BUFX2)
+ sa01   --   g_N1022/A   (BUFX2)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/124.diag

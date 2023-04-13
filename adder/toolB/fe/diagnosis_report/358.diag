@@ -1,0 +1,80 @@
+run_diagnosis ./tmax_fail/358.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 248 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/358.fail
+ #failing_pat=248, #failures=248, #defects=1, #faults=15, CPU_time=0.02
+ Simulated : #failing_pat=248, #passing_pat=1, #failures=248
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=15, #failing_pat=248, #passing_pat=1, #failures=248
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N1061/Y   (AND2X1)
+ sa01   --   g_N3511/Y   (BUFX2)
+ sa01   --   g_N3511/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N1166/Y   (AND2X1)
+ sa01   --   g_N2855/Y   (BUFX2)
+ sa01   --   g_N2855/A   (BUFX2)
+ sa01   --   g_N365/Y   (BUFX2)
+ sa01   --   g_N365/A   (BUFX2)
+ sa01   --   N365   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N994/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N1166/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N994/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N475/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N475/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N3785/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N1061/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N3511/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N365/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N365/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N2855/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=248, passing=1>
+ sa01   DS   g_N2855/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.99%, #explained patterns: <failing=244, passing=0>
+ sa1   DS   N365   (_PO)
+ sa1   --   g_N365/Y   (BUFX2)
+ sa1   --   g_N365/A   (BUFX2)
+ sa1   --   g_N2855/Y   (BUFX2)
+ sa1   --   g_N2855/A   (BUFX2)
+ sa1   --   g_N1166/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/359.diag

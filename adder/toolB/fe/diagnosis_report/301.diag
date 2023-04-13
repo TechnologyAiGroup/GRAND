@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/301.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 246 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/301.fail
+ #failing_pat=246, #failures=246, #defects=1, #faults=5, CPU_time=0.09
+ Simulated : #failing_pat=246, #passing_pat=3, #failures=246
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=246, #passing_pat=3, #failures=246
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=246, passing=3>
+ sa1   DS   g_N2177/Y   (INVX1)
+ sa0   --   g_N2177/A   (INVX1)
+ sa1   --   g_N2502/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=246, passing=2>
+ sa1   DS   g_N713/Y   (BUFX2)
+ sa1   --   g_N713/A   (BUFX2)
+ sa1   --   g_N2502/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.60%, #explained patterns: <failing=245, passing=3>
+ sa0   DS   g_N1395/Y   (BUFX2)
+ sa0   --   g_N1395/A   (BUFX2)
+ sa0   --   g_N1780/Y   (AND2X1)
+ sa0   --   g_N1780/A   (AND2X1)
+ sa0   --   g_N1780/B   (AND2X1)
+ sa0   --   g_N873/Y   (INVX1)
+ sa1   --   g_N873/A   (INVX1)
+ sa0   --   g_N1713/Y   (INVX1)
+ sa1   --   g_N1713/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=245, passing=2>
+ sa1   DS   N197   (_PI)
+ ------------------------------------------------------------------------------
+ match=98.80%, #explained patterns: <failing=245, passing=2>
+ sa1   DS   N88   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/302.diag

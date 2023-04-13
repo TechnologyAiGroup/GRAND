@@ -1,0 +1,41 @@
+==
+Candidate 0
+site . N1235
+polarity . 0
+neighbor . N3881
+failing-states . 
+1 . 1
+passing-states . 
+0 . 248
+==
+Candidate 1
+site . N156->N3881
+polarity . 0
+neighbor . N56
+failing-states . 
+1 . 1
+passing-states . 
+0 . 246
+1 . 2
+==
+Candidate 2
+site . N56->N3881
+polarity . 0
+neighbor . N156
+failing-states . 
+1 . 1
+passing-states . 
+0 . 247
+1 . 1
+==
+Candidate 3
+site . N3881
+polarity . 0
+neighbor . N156 N56
+failing-states . 
+11 . 1
+passing-states . 
+00 . 245
+10 . 1
+01 . 2
+==

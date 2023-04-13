@@ -1,0 +1,93 @@
+run_diagnosis ./tmax_fail/333.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 2 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/333.fail
+ #failing_pat=2, #failures=2, #defects=2, #faults=9, CPU_time=0.07
+ Simulated : #failing_pat=2, #passing_pat=96, #failures=2
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=97, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N3789/Y   (INVX1)
+ sa0   --   g_N3789/A   (INVX1)
+ sa1   --   g_N2937/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N3863/Y   (INVX1)
+ sa0   --   g_N3863/A   (INVX1)
+ sa1   --   g_N2126/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N3151/Y   (INVX1)
+ sa0   --   g_N3151/A   (INVX1)
+ sa1   --   g_N1843/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa0   DS   N312   (_PO)
+ sa0   --   g_N312/Y   (BUFX2)
+ sa0   --   g_N312/A   (BUFX2)
+ sa0   --   g_N3453/Y   (BUFX2)
+ sa0   --   g_N3453/A   (BUFX2)
+ sa0   --   g_N3405/Y   (AND2X1)
+ sa0   --   g_N3405/B   (AND2X1)
+ sa0   --   g_N3405/A   (AND2X1)
+ sa0   --   g_N2596/Y   (INVX1)
+ sa1   --   g_N2596/A   (INVX1)
+ sa0   --   g_N2957/Y   (INVX1)
+ sa1   --   g_N2957/A   (INVX1)
+ sa1   --   g_N1194/Y   (BUFX2)
+ sa1   --   g_N1194/A   (BUFX2)
+ sa1   --   g_N2207/Y   (BUFX2)
+ sa1   --   g_N2207/A   (BUFX2)
+ sa1   --   g_N1843/Y   (AND2X1)
+ sa1   --   g_N2126/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=5, #failing_pat=1, #passing_pat=97, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N535/Y   (INVX1)
+ sa0   --   g_N535/A   (INVX1)
+ sa0   --   g_N1161/Y   (BUFX2)
+ sa0   --   g_N1161/A   (BUFX2)
+ sa0   --   g_N600/Y   (AND2X1)
+ sa0   --   g_N600/B   (AND2X1)
+ sa0   --   g_N600/A   (AND2X1)
+ sa0   --   g_N2577/Y   (INVX1)
+ sa1   --   g_N2577/A   (INVX1)
+ sa0   --   g_N2544/Y   (INVX1)
+ sa1   --   g_N2544/A   (INVX1)
+ sa1   --   g_N2593/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N3350/Y   (BUFX2)
+ sa1   --   g_N3350/A   (BUFX2)
+ sa1   --   g_N2593/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa0   DS   N358   (_PO)
+ sa0   --   g_N358/Y   (BUFX2)
+ sa0   --   g_N358/A   (BUFX2)
+ sa0   --   g_N2514/Y   (BUFX2)
+ sa0   --   g_N2514/A   (BUFX2)
+ sa0   --   g_N777/Y   (AND2X1)
+ sa0   --   g_N777/A   (AND2X1)
+ sa0   --   g_N777/B   (AND2X1)
+ sa0   --   g_N1632/Y   (INVX1)
+ sa1   --   g_N1632/A   (INVX1)
+ sa0   --   g_N1656/Y   (INVX1)
+ sa1   --   g_N1656/A   (INVX1)
+ sa1   --   g_N2002/Y   (BUFX2)
+ sa1   --   g_N2002/A   (BUFX2)
+ sa1   --   g_N3094/Y   (BUFX2)
+ sa1   --   g_N3094/A   (BUFX2)
+ sa1   --   g_N1243/Y   (AND2X1)
+ sa1   --   g_N3126/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N3126/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=97>
+ sa1   DS   g_N1243/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/334.diag

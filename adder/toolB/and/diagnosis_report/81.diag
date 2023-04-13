@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/81.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 5 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/81.fail
+ #failing_pat=5, #failures=5, #defects=1, #faults=4, CPU_time=0.23
+ Simulated : #failing_pat=5, #passing_pat=96, #failures=5
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=5, #passing_pat=96, #failures=5
+ ------------------------------------------------------------------------------
+ match=3.00%, #explained patterns: <failing=3, passing=1>
+ sa1   DS   g_N3632/Y   (INVX1)
+ sa0   --   g_N3632/A   (INVX1)
+ sa0   --   g_N1170/Y   (BUFX2)
+ sa0   --   g_N1170/A   (BUFX2)
+ sa0   --   g_N1917/Y   (AND2X1)
+ sa0   --   g_N1917/A   (AND2X1)
+ sa0   --   g_N1917/B   (AND2X1)
+ sa0   --   g_N1530/Y   (INVX1)
+ sa1   --   g_N1530/A   (INVX1)
+ sa1   --   g_N2632/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=3.00%, #explained patterns: <failing=3, passing=2>
+ sa1   DS   g_N3160/Y   (INVX1)
+ sa0   --   g_N3160/A   (INVX1)
+ sa1   --   g_N833/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=2.97%, #explained patterns: <failing=3, passing=2>
+ sa0   DS   g_N2296/Y   (BUFX2)
+ sa0   --   g_N2296/A   (BUFX2)
+ sa0   --   g_N3087/Y   (AND2X1)
+ sa0   --   g_N3087/A   (AND2X1)
+ sa0   --   g_N3087/B   (AND2X1)
+ sa0   --   g_N555/Y   (INVX1)
+ sa1   --   g_N555/A   (INVX1)
+ sa0   --   g_N3169/Y   (INVX1)
+ sa1   --   g_N3169/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=2.94%, #explained patterns: <failing=3, passing=2>
+ sa1   DS   N105   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/82.diag

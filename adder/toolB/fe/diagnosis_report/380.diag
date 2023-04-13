@@ -1,0 +1,73 @@
+run_diagnosis ./tmax_fail/380.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 245 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/380.fail
+ #failing_pat=244, #failures=245, #defects=1, #faults=12, CPU_time=0.10
+ Simulated : #failing_pat=244, #passing_pat=5, #failures=245
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=12, #failing_pat=244, #passing_pat=5, #failures=245
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2486/Y   (AND2X1)
+ sa01   --   g_N2427/Y   (BUFX2)
+ sa01   --   g_N2427/A   (BUFX2)
+ sa01   --   g_N1306/Y   (INVX1)
+ sa01   --   g_N1306/A   (INVX1)
+ sa01   --   g_N2934/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2934/Y   (AND2X1)
+ sa01   --   g_N503/Y   (BUFX2)
+ sa01   --   g_N503/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2486/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.19%, #explained patterns: <failing=242, passing=5>
+ sa01   DS   N38   (_PI)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2427/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2427/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2934/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N2934/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.39%, #explained patterns: <failing=244, passing=5>
+ sa01   DS   g_N1306/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.99%, #explained patterns: <failing=243, passing=1>
+ sa0   DS   g_N503/Y   (BUFX2)
+ sa0   --   g_N503/A   (BUFX2)
+ sa0   --   g_N2934/Y   (AND2X1)
+ sa0   --   g_N2934/B   (AND2X1)
+ sa0   --   g_N2934/A   (AND2X1)
+ sa0   --   g_N1408/Y   (INVX1)
+ sa1   --   g_N1408/A   (INVX1)
+ sa0   --   g_N1306/Y   (INVX1)
+ sa1   --   g_N1306/A   (INVX1)
+ sa1   --   g_N2427/Y   (BUFX2)
+ sa1   --   g_N2427/A   (BUFX2)
+ sa1   --   g_N2486/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=97.60%, #explained patterns: <failing=242, passing=1>
+ sa1   DS   N38   (_PI)
+ ------------------------------------------------------------------------------
+ match=96.83%, #explained patterns: <failing=243, passing=1>
+ sa1   DS   g_N3466/Y   (BUFX2)
+ sa1   --   g_N3466/A   (BUFX2)
+ sa1   --   g_N1952/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/381.diag

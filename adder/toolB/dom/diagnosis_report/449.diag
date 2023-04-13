@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/449.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/449.fail
+ #failing_pat=3, #failures=3, #defects=1, #faults=5, CPU_time=0.07
+ Simulated : #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N3004/Y   (AND2X1)
+ sa01   --   g_N2831/Y   (BUFX2)
+ sa01   --   g_N2831/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N2911/Y   (AND2X1)
+ sa01   --   g_N3063/Y   (BUFX2)
+ sa01   --   g_N3063/A   (BUFX2)
+ sa01   --   g_N366/Y   (BUFX2)
+ sa01   --   g_N366/A   (BUFX2)
+ sa01   --   N366   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N2442/Y   (AND2X1)
+ sa01   --   g_N3821/Y   (BUFX2)
+ sa01   --   g_N3821/A   (BUFX2)
+ sa01   --   g_N2739/Y   (INVX1)
+ sa01   --   g_N2739/A   (INVX1)
+ sa01   --   g_N3004/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N1518/Y   (AND2X1)
+ sa01   --   g_N678/Y   (BUFX2)
+ sa01   --   g_N678/A   (BUFX2)
+ sa01   --   g_N881/Y   (INVX1)
+ sa01   --   g_N881/A   (INVX1)
+ sa01   --   g_N2911/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_N1518/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/45.diag

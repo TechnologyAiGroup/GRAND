@@ -1,0 +1,46 @@
+run_diagnosis ./tmax_fail/202.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/202.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=4, CPU_time=0.05
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N446/Y   (INVX1)
+ sa0   --   g_N446/A   (INVX1)
+ sa1   --   g_N3551/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N1774/Y   (INVX1)
+ sa0   --   g_N1774/A   (INVX1)
+ sa1   --   g_N2106/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_N3202/Y   (INVX1)
+ sa0   --   g_N3202/A   (INVX1)
+ sa1   --   g_N2014/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   N278   (_PO)
+ sa0   --   g_N278/Y   (BUFX2)
+ sa0   --   g_N278/A   (BUFX2)
+ sa0   --   g_N3003/Y   (BUFX2)
+ sa0   --   g_N3003/A   (BUFX2)
+ sa0   --   g_N1666/Y   (AND2X1)
+ sa0   --   g_N1666/A   (AND2X1)
+ sa0   --   g_N1666/B   (AND2X1)
+ sa0   --   g_N2585/Y   (INVX1)
+ sa1   --   g_N2585/A   (INVX1)
+ sa0   --   g_N1155/Y   (INVX1)
+ sa1   --   g_N1155/A   (INVX1)
+ sa1   --   g_N2138/Y   (BUFX2)
+ sa1   --   g_N2138/A   (BUFX2)
+ sa1   --   g_N1261/Y   (BUFX2)
+ sa1   --   g_N1261/A   (BUFX2)
+ sa1   --   g_N2014/Y   (AND2X1)
+ sa1   --   g_N3551/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/203.diag

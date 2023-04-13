@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/341.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 243 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/341.fail
+ #failing_pat=243, #failures=243, #defects=1, #faults=5, CPU_time=0.06
+ Simulated : #failing_pat=243, #passing_pat=6, #failures=243
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=243, #passing_pat=6, #failures=243
+ ------------------------------------------------------------------------------
+ match=98.78%, #explained patterns: <failing=243, passing=3>
+ sa1   DS   g_N1251/Y   (INVX1)
+ sa0   --   g_N1251/A   (INVX1)
+ sa1   --   g_N2575/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=98.38%, #explained patterns: <failing=243, passing=2>
+ sa1   DS   g_N1210/Y   (BUFX2)
+ sa1   --   g_N1210/A   (BUFX2)
+ sa1   --   g_N2575/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=97.98%, #explained patterns: <failing=241, passing=3>
+ sa0   DS   g_N3564/Y   (BUFX2)
+ sa0   --   g_N3564/A   (BUFX2)
+ sa0   --   g_N1664/Y   (AND2X1)
+ sa0   --   g_N1664/A   (AND2X1)
+ sa0   --   g_N1664/B   (AND2X1)
+ sa0   --   g_N3112/Y   (INVX1)
+ sa1   --   g_N3112/A   (INVX1)
+ sa0   --   g_N720/Y   (INVX1)
+ sa1   --   g_N720/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=97.59%, #explained patterns: <failing=241, passing=2>
+ sa1   DS   N135   (_PI)
+ ------------------------------------------------------------------------------
+ match=97.20%, #explained patterns: <failing=241, passing=2>
+ sa1   DS   N204   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/342.diag

@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/450.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 242 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/450.fail
+ #failing_pat=242, #failures=242, #defects=1, #faults=5, CPU_time=0.08
+ Simulated : #failing_pat=242, #passing_pat=7, #failures=242
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=242, #passing_pat=7, #failures=242
+ ------------------------------------------------------------------------------
+ match=98.78%, #explained patterns: <failing=242, passing=4>
+ sa1   DS   g_N1554/Y   (INVX1)
+ sa0   --   g_N1554/A   (INVX1)
+ sa1   --   g_N405/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=98.37%, #explained patterns: <failing=241, passing=4>
+ sa0   DS   g_N3663/Y   (BUFX2)
+ sa0   --   g_N3663/A   (BUFX2)
+ sa0   --   g_N2321/Y   (AND2X1)
+ sa0   --   g_N2321/A   (AND2X1)
+ sa0   --   g_N2321/B   (AND2X1)
+ sa0   --   g_N3513/Y   (INVX1)
+ sa1   --   g_N3513/A   (INVX1)
+ sa0   --   g_N3173/Y   (INVX1)
+ sa1   --   g_N3173/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=97.98%, #explained patterns: <failing=241, passing=3>
+ sa1   DS   N173   (_PI)
+ ------------------------------------------------------------------------------
+ match=97.98%, #explained patterns: <failing=242, passing=2>
+ sa1   DS   g_N2713/Y   (BUFX2)
+ sa1   --   g_N2713/A   (BUFX2)
+ sa1   --   g_N405/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=97.58%, #explained patterns: <failing=241, passing=3>
+ sa1   DS   N46   (_PI)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/451.diag

@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/500.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 247 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/500.fail
+ #failing_pat=247, #failures=247, #defects=1, #faults=6, CPU_time=0.02
+ Simulated : #failing_pat=247, #passing_pat=2, #failures=247
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=247, #passing_pat=2, #failures=247
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N2984/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N3482/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N3482/Y   (AND2X1)
+ sa01   --   g_N1982/Y   (BUFX2)
+ sa01   --   g_N1982/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N2984/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.20%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N1982/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.20%, #explained patterns: <failing=247, passing=2>
+ sa01   DS   g_N1982/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/51.diag

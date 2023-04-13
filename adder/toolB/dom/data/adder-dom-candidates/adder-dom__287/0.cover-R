@@ -1,0 +1,165 @@
+==
+Candidate 0
+site . N1894
+polarity . 1
+neighbor . N2167 N2062
+failing-states . 
+11 . 2
+01 . 1
+10 . 1
+passing-states . 
+11 . 244
+01 . 1
+==
+Candidate 1
+site . N1607
+polarity . 1
+neighbor . N1894 N2103
+failing-states . 
+11 . 2
+01 . 2
+passing-states . 
+11 . 243
+00 . 1
+10 . 1
+==
+Candidate 2
+site . N1894->N1607
+polarity . 1
+neighbor . N2167 N2062
+failing-states . 
+11 . 2
+01 . 1
+10 . 1
+passing-states . 
+11 . 244
+01 . 1
+==
+Candidate 3
+site . N1874
+polarity . 1
+neighbor . N2103 N1607
+failing-states . 
+11 . 2
+10 . 2
+passing-states . 
+11 . 243
+00 . 1
+01 . 1
+==
+Candidate 4
+site . N3322
+polarity . 1
+neighbor . N1874
+failing-states . 
+0 . 2
+1 . 2
+passing-states . 
+1 . 243
+0 . 2
+==
+Candidate 5
+site . N1874->N3322
+polarity . 1
+neighbor . N2103 N1607
+failing-states . 
+11 . 2
+10 . 2
+passing-states . 
+11 . 243
+00 . 1
+01 . 1
+==
+Candidate 6
+site . N3477
+polarity . 1
+neighbor . N3322 N1093
+failing-states . 
+01 . 2
+11 . 2
+passing-states . 
+11 . 243
+00 . 1
+01 . 1
+==
+Candidate 7
+site . N3322->N3477
+polarity . 1
+neighbor . N1874
+failing-states . 
+0 . 2
+1 . 2
+passing-states . 
+1 . 243
+0 . 2
+==
+Candidate 8
+site . N3477->N2039
+polarity . 1
+neighbor . N3322 N1093
+failing-states . 
+01 . 2
+11 . 2
+passing-states . 
+11 . 243
+00 . 1
+01 . 1
+==
+Candidate 9
+site . N2039
+polarity . 1
+neighbor . N1093 N3477
+failing-states . 
+11 . 2
+10 . 2
+passing-states . 
+10 . 243
+01 . 1
+11 . 1
+==
+Candidate 10
+site . N2653
+polarity . 1
+neighbor . N2039
+failing-states . 
+1 . 2
+0 . 2
+passing-states . 
+0 . 244
+1 . 1
+==
+Candidate 11
+site . N2039->N2653
+polarity . 1
+neighbor . N1093 N3477
+failing-states . 
+11 . 2
+10 . 2
+passing-states . 
+10 . 243
+01 . 1
+11 . 1
+==
+Candidate 12
+site . N2653->N357
+polarity . 1
+neighbor . N2039
+failing-states . 
+1 . 2
+0 . 2
+passing-states . 
+0 . 244
+1 . 1
+==
+Candidate 13
+site . N1607->N1874
+polarity . 1
+neighbor . N1894 N2103
+failing-states . 
+11 . 2
+01 . 2
+passing-states . 
+11 . 243
+00 . 1
+10 . 1
+==
