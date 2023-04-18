@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/70.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 57 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/70.fail
+ #failing_pat=57, #failures=57, #defects=1, #faults=3, CPU_time=0.17
+ Simulated : #failing_pat=57, #passing_pat=96, #failures=57
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=56, #passing_pat=97, #failures=56
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=56, passing=97>
+ sa1   DS   g_n938/Y   (BUFX2)
+ sa1   --   g_n938/A   (BUFX2)
+ sa1   --   g_and_not_n933_n937/Y   (AND2X1)
+ sa1   --   g_and_not_n924_n938/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=56, passing=97>
+ sa1   DS   g_n937/Y   (BUFX2)
+ sa1   --   g_n937/A   (BUFX2)
+ sa1   --   g_and_not_pi129_657123623635342801395430_not_n936/Y   (AND2X1)
+ sa1   --   g_and_not_n933_n937/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=90.32%, #explained patterns: <failing=56, passing=91>
+ sa1   DS   po053   (_PO)
+ sa1   --   g_po053/Y   (BUFX2)
+ sa1   --   g_po053/A   (BUFX2)
+ sa1   --   g_po053_driver/Y   (BUFX2)
+ sa1   --   g_po053_driver/A   (BUFX2)
+ sa1   --   g_and_not_n924_n938/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/71.diag

@@ -1,0 +1,141 @@
+==
+Candidate 0
+site . not_n1320
+polarity . 1
+neighbor . not_n1321 n1320
+failing-states . 
+11 . 7
+10 . 1
+passing-states . 
+10 . 581
+00 . 14
+==
+Candidate 1
+site . n1320->not_n1320
+polarity . 0
+neighbor . and_pi077_not_n1271_6
+failing-states . 
+1 . 7
+0 . 1
+passing-states . 
+0 . 595
+==
+Candidate 2
+site . n1320
+polarity . 0
+neighbor . and_pi077_not_n1271_6
+failing-states . 
+1 . 7
+0 . 1
+passing-states . 
+0 . 595
+==
+Candidate 3
+site . and_pi077_not_n1271_6->n1320
+polarity . 0
+neighbor . pi077 not_n1271_6
+failing-states . 
+11 . 7
+01 . 1
+passing-states . 
+01 . 580
+00 . 14
+10 . 1
+==
+Candidate 4
+site . and_pi077_not_n1271_6
+polarity . 0
+neighbor . pi077 not_n1271_6
+failing-states . 
+11 . 7
+01 . 1
+passing-states . 
+01 . 580
+00 . 14
+10 . 1
+==
+Candidate 5
+site . not_n1271_6->and_pi077_not_n1271_6
+polarity . 0
+neighbor . pi077 n1271
+failing-states . 
+10 . 7
+00 . 1
+passing-states . 
+00 . 580
+01 . 14
+11 . 1
+==
+Candidate 6
+site . not_n1271_6
+polarity . 0
+neighbor . pi077 n1271
+failing-states . 
+10 . 7
+00 . 1
+passing-states . 
+00 . 580
+01 . 14
+11 . 1
+==
+Candidate 7
+site . n1271->not_n1271_6
+polarity . 1
+neighbor . not_pi140_0 not_pi144_0 not_pi141_0 not_pi142_0 and_n1251_n1270 not_pi139_0 not_pi146_0 not_pi145_0 not_pi143
+failing-states . 
+111101111 . 8
+passing-states . 
+111101111 . 527
+110111111 . 2
+011101111 . 6
+111111111 . 3
+111110111 . 2
+111101101 . 5
+011111111 . 2
+111001111 . 6
+111100111 . 9
+101101111 . 5
+110101111 . 8
+111101110 . 8
+111101011 . 6
+111111110 . 2
+111111101 . 1
+101111111 . 1
+111111011 . 1
+111011111 . 1
+==
+Candidate 8
+site . not_n1320->and_not_n1320_not_n1321
+polarity . 1
+neighbor . not_n1321 n1320
+failing-states . 
+11 . 7
+10 . 1
+passing-states . 
+10 . 581
+00 . 14
+==
+Candidate 9
+site . not_pi003_10
+polarity . 1
+neighbor . n602 pi003
+failing-states . 
+00 . 7
+11 . 1
+passing-states . 
+00 . 564
+01 . 28
+10 . 3
+==
+Candidate 10
+site . not_pi003_10->and_not_pi003_10_n602
+polarity . 1
+neighbor . n602 pi003
+failing-states . 
+00 . 7
+11 . 1
+passing-states . 
+00 . 564
+01 . 28
+10 . 3
+==

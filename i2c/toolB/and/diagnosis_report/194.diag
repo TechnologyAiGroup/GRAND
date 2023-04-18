@@ -1,0 +1,85 @@
+run_diagnosis ./tmax_fail/194.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 466 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/194.fail
+ #failing_pat=466, #failures=466, #defects=1, #faults=5, CPU_time=0.21
+ Simulated : #failing_pat=466, #passing_pat=96, #failures=466
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=466, #passing_pat=96, #failures=466
+ ------------------------------------------------------------------------------
+ match=99.36%, #explained patterns: <failing=466, passing=93>
+ sa1   DS   g_not_n1177/Y   (INVX1)
+ sa0   --   g_not_n1177/A   (INVX1)
+ sa0   --   g_n1177/Y   (BUFX2)
+ sa0   --   g_n1177/A   (BUFX2)
+ sa0   --   g_and_not_n1174_not_n1176/Y   (AND2X1)
+ sa0   --   g_and_not_n1174_not_n1176/A   (AND2X1)
+ sa0   --   g_and_not_n1174_not_n1176/B   (AND2X1)
+ sa0   --   g_not_n1176/Y   (INVX1)
+ sa1   --   g_not_n1176/A   (INVX1)
+ sa0   --   g_not_n1174/Y   (INVX1)
+ sa1   --   g_not_n1174/A   (INVX1)
+ sa1   --   g_n1176/Y   (BUFX2)
+ sa1   --   g_n1176/A   (BUFX2)
+ sa1   --   g_n1174/Y   (BUFX2)
+ sa1   --   g_n1174/A   (BUFX2)
+ sa1   --   g_and_not_pi058_7_n1175/Y   (AND2X1)
+ sa1   --   g_and_not_pi053_6_not_n1173/Y   (AND2X1)
+ sa1   --   g_and_not_pi085_7_not_n1177/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=96.88%, #explained patterns: <failing=466, passing=81>
+ sa1   DS   g_not_n1180/Y   (INVX1)
+ sa0   --   g_not_n1180/A   (INVX1)
+ sa0   --   g_n1180/Y   (BUFX2)
+ sa0   --   g_n1180/A   (BUFX2)
+ sa0   --   g_and_not_n1178_not_n1179/Y   (AND2X1)
+ sa0   --   g_and_not_n1178_not_n1179/A   (AND2X1)
+ sa0   --   g_and_not_n1178_not_n1179/B   (AND2X1)
+ sa0   --   g_not_n1179/Y   (INVX1)
+ sa1   --   g_not_n1179/A   (INVX1)
+ sa0   --   g_not_n1178/Y   (INVX1)
+ sa1   --   g_not_n1178/A   (INVX1)
+ sa1   --   g_n1179/Y   (BUFX2)
+ sa1   --   g_n1179/A   (BUFX2)
+ sa1   --   g_n1178/Y   (BUFX2)
+ sa1   --   g_n1178/A   (BUFX2)
+ sa1   --   g_and_n787_n1175/Y   (AND2X1)
+ sa1   --   g_and_not_pi085_7_not_n1177/Y   (AND2X1)
+ sa1   --   g_and_not_pi027_10_not_n1180/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=94.14%, #explained patterns: <failing=466, passing=67>
+ sa1   DS   g_not_n1184/Y   (INVX1)
+ sa0   --   g_not_n1184/A   (INVX1)
+ sa0   --   g_n1184/Y   (BUFX2)
+ sa0   --   g_n1184/A   (BUFX2)
+ sa0   --   g_and_not_n1181_not_n1183/Y   (AND2X1)
+ sa0   --   g_and_not_n1181_not_n1183/A   (AND2X1)
+ sa0   --   g_and_not_n1181_not_n1183/B   (AND2X1)
+ sa0   --   g_not_n1183/Y   (INVX1)
+ sa1   --   g_not_n1183/A   (INVX1)
+ sa0   --   g_not_n1181/Y   (INVX1)
+ sa1   --   g_not_n1181/A   (INVX1)
+ sa1   --   g_n1183/Y   (BUFX2)
+ sa1   --   g_n1183/A   (BUFX2)
+ sa1   --   g_n1181/Y   (BUFX2)
+ sa1   --   g_n1181/A   (BUFX2)
+ sa1   --   g_and_n1175_n1182/Y   (AND2X1)
+ sa1   --   g_and_not_pi027_10_not_n1180/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_21838143759917965991093122527538323430_not_n1184/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=87.43%, #explained patterns: <failing=466, passing=29>
+ sa1   DS   g_n1185/Y   (BUFX2)
+ sa1   --   g_n1185/A   (BUFX2)
+ sa1   --   g_and_not_pi129_21838143759917965991093122527538323430_not_n1184/Y   (AND2X1)
+ sa1   --   g_and_not_pi003_138412872010_n1185/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=84.57%, #explained patterns: <failing=466, passing=11>
+ sa1   DS   po071   (_PO)
+ sa1   --   g_po071/Y   (BUFX2)
+ sa1   --   g_po071/A   (BUFX2)
+ sa1   --   g_po071_driver/Y   (BUFX2)
+ sa1   --   g_po071_driver/A   (BUFX2)
+ sa1   --   g_and_not_pi003_138412872010_n1185/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/195.diag

@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/101.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 479 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/101.fail
+ #failing_pat=479, #failures=479, #defects=1, #faults=8, CPU_time=0.18
+ Simulated : #failing_pat=479, #passing_pat=96, #failures=479
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=479, #passing_pat=96, #failures=479
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_not_n1022/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_n1022/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_n1022/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_not_n1022/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_and_not_n1020_not_n1021/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_and_not_n1023_n1024/Y   (AND2X1)
+ sa01   --   g_po059_driver/Y   (BUFX2)
+ sa01   --   g_po059_driver/A   (BUFX2)
+ sa01   --   g_po059/Y   (BUFX2)
+ sa01   --   g_po059/A   (BUFX2)
+ sa01   --   po059   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_and_not_n1019_not_n1022/Y   (AND2X1)
+ sa01   --   g_n1023/Y   (BUFX2)
+ sa01   --   g_n1023/A   (BUFX2)
+ sa01   --   g_not_n1023/Y   (INVX1)
+ sa01   --   g_not_n1023/A   (INVX1)
+ sa01   --   g_and_not_n1023_n1024/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=479, passing=96>
+ sa01   DS   g_and_not_n1019_not_n1022/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/102.diag

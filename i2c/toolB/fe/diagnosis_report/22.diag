@@ -1,0 +1,29 @@
+run_diagnosis ./tmax_fail/22.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 521 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/22.fail
+ #failing_pat=521, #failures=521, #defects=1, #faults=3, CPU_time=0.14
+ Simulated : #failing_pat=521, #passing_pat=82, #failures=521
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=521, #passing_pat=82, #failures=521
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=521, passing=82>
+ sa01   DS   g_and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597/Y   (AND2X1)
+ sa01   --   g_n1598/Y   (BUFX2)
+ sa01   --   g_n1598/A   (BUFX2)
+ sa01   --   g_and_not_pi003_5585458640832840070_n1598/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=521, passing=82>
+ sa01   DS   g_and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=521, passing=82>
+ sa01   DS   g_and_not_pi003_5585458640832840070_n1598/Y   (AND2X1)
+ sa01   --   g_po128_driver/Y   (BUFX2)
+ sa01   --   g_po128_driver/A   (BUFX2)
+ sa01   --   g_po128/Y   (BUFX2)
+ sa01   --   g_po128/A   (BUFX2)
+ sa01   --   po128   (_PO)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/23.diag

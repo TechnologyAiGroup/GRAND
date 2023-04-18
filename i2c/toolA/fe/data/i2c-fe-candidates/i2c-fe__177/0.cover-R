@@ -1,0 +1,143 @@
+==
+Candidate 0
+site . and_not_n817_not_n821
+polarity . 1
+neighbor . not_n817 not_n821
+failing-states . 
+10 . 1
+passing-states . 
+11 . 570
+01 . 31
+10 . 1
+==
+Candidate 1
+site . not_n821
+polarity . 1
+neighbor . not_n817 n821
+failing-states . 
+11 . 1
+passing-states . 
+10 . 570
+00 . 31
+11 . 1
+==
+Candidate 2
+site . n821
+polarity . 0
+neighbor . and_n819_n820
+failing-states . 
+1 . 1
+passing-states . 
+0 . 601
+1 . 1
+==
+Candidate 3
+site . n819->and_n819_n820
+polarity . 0
+neighbor . and_not_pi116_4_n818 n824 n820
+failing-states . 
+101 . 1
+passing-states . 
+000 . 557
+100 . 15
+001 . 14
+101 . 1
+010 . 14
+110 . 1
+==
+Candidate 4
+site . and_n819_n820
+polarity . 0
+neighbor . n819 n820
+failing-states . 
+11 . 1
+passing-states . 
+00 . 571
+10 . 16
+01 . 14
+11 . 1
+==
+Candidate 5
+site . n820
+polarity . 0
+neighbor . and_not_pi026_8_n749 n819
+failing-states . 
+11 . 1
+passing-states . 
+00 . 571
+01 . 16
+10 . 14
+11 . 1
+==
+Candidate 6
+site . n749->and_not_pi026_8_n749
+polarity . 0
+neighbor . not_pi027_0 not_pi026_8 and_pi053_not_pi085_2
+failing-states . 
+111 . 1
+passing-states . 
+110 . 540
+100 . 22
+101 . 3
+010 . 16
+111 . 13
+000 . 6
+011 . 2
+==
+Candidate 7
+site . and_not_pi026_8_n749
+polarity . 0
+neighbor . not_pi026_8 n749
+failing-states . 
+11 . 1
+passing-states . 
+10 . 556
+00 . 28
+01 . 3
+11 . 15
+==
+Candidate 8
+site . pi026->not_pi026_8
+polarity . 1
+neighbor . pi053 n718 pi116 n768 n855 not_pi058_6 not_pi027_5
+failing-states . 
+1001011 . 1
+passing-states . 
+0000011 . 8
+0001111 . 505
+0010111 . 9
+1001011 . 9
+0101111 . 12
+0010001 . 8
+0010010 . 3
+0000010 . 2
+1101011 . 1
+1001001 . 2
+0010011 . 4
+0001010 . 11
+1000011 . 3
+0011010 . 3
+0100011 . 2
+0001001 . 7
+0101001 . 3
+0101000 . 1
+0011111 . 1
+0001000 . 1
+1010011 . 3
+1010001 . 1
+1001010 . 1
+0101010 . 1
+1101010 . 1
+==
+Candidate 9
+site . not_pi026_8
+polarity . 0
+neighbor . n749 pi026
+failing-states . 
+10 . 1
+passing-states . 
+00 . 556
+01 . 28
+11 . 3
+10 . 15
+==

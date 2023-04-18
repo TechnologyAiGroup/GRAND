@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/166.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 51 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/166.fail
+ #failing_pat=51, #failures=51, #defects=1, #faults=1, CPU_time=0.11
+ Simulated : #failing_pat=51, #passing_pat=96, #failures=51
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=51, #passing_pat=96, #failures=51
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=51, passing=96>
+ sa1   DS   g_not_n1354/Y   (INVX1)
+ sa0   --   g_not_n1354/A   (INVX1)
+ sa0   --   g_n1354/Y   (BUFX2)
+ sa0   --   g_n1354/A   (BUFX2)
+ sa0   --   g_and_not_n1349_not_n1353/Y   (AND2X1)
+ sa0   --   g_and_not_n1349_not_n1353/A   (AND2X1)
+ sa0   --   g_and_not_n1349_not_n1353/B   (AND2X1)
+ sa0   --   g_not_n1353/Y   (INVX1)
+ sa1   --   g_not_n1353/A   (INVX1)
+ sa0   --   g_not_n1349/Y   (INVX1)
+ sa1   --   g_not_n1349/A   (INVX1)
+ sa1   --   g_n1353/Y   (BUFX2)
+ sa1   --   g_n1353/A   (BUFX2)
+ sa1   --   g_n1349/Y   (BUFX2)
+ sa1   --   g_n1349/A   (BUFX2)
+ sa1   --   g_and_not_pi136_1_not_n1352/Y   (AND2X1)
+ sa1   --   g_and_pi136_not_n1348/Y   (AND2X1)
+ sa1   --   g_and_not_pi137_2_not_n1354/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/167.diag

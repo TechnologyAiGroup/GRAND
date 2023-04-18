@@ -1,0 +1,50 @@
+run_diagnosis ./tmax_fail/75.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 62 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/75.fail
+ #failing_pat=62, #failures=62, #defects=2, #faults=2, CPU_time=0.14
+ Simulated : #failing_pat=62, #passing_pat=96, #failures=62
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=52, #passing_pat=106, #failures=52
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=52, passing=106>
+ sa1   DS   g_not_n338/Y   (INVX1)
+ sa0   --   g_not_n338/A   (INVX1)
+ sa0   --   g_n338/Y   (BUFX2)
+ sa0   --   g_n338/A   (BUFX2)
+ sa0   --   g_and_not_n307_not_n337/Y   (AND2X1)
+ sa0   --   g_and_not_n307_not_n337/B   (AND2X1)
+ sa0   --   g_and_not_n307_not_n337/A   (AND2X1)
+ sa0   --   g_not_n307/Y   (INVX1)
+ sa1   --   g_not_n307/A   (INVX1)
+ sa0   --   g_not_n337/Y   (INVX1)
+ sa1   --   g_not_n337/A   (INVX1)
+ sa1   --   g_n307/Y   (BUFX2)
+ sa1   --   g_n307/A   (BUFX2)
+ sa1   --   g_n337/Y   (BUFX2)
+ sa1   --   g_n337/A   (BUFX2)
+ sa1   --   g_and_not_pi000_not_n306/Y   (AND2X1)
+ sa1   --   g_and_pi054_not_n336/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_not_n338/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=10, #passing_pat=148, #failures=10
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=148>
+ sa0   DS   po111   (_PO)
+ sa0   --   g_po111/Y   (BUFX2)
+ sa0   --   g_po111/A   (BUFX2)
+ sa0   --   g_po111_driver/Y   (BUFX2)
+ sa0   --   g_po111_driver/A   (BUFX2)
+ sa0   --   g_and_not_pi129_85383234134508499009700170379408027452893070589186688070_not_n1430/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_85383234134508499009700170379408027452893070589186688070_not_n1430/A   (AND2X1)
+ sa0   --   g_and_not_pi129_85383234134508499009700170379408027452893070589186688070_not_n1430/B   (AND2X1)
+ sa0   --   g_not_pi129_85383234134508499009700170379408027452893070589186688070/Y   (INVX1)
+ sa1   --   g_not_pi129_85383234134508499009700170379408027452893070589186688070/A   (INVX1)
+ sa0   --   g_not_n1430/Y   (INVX1)
+ sa1   --   g_not_n1430/A   (INVX1)
+ sa1   --   g_n1430/Y   (BUFX2)
+ sa1   --   g_n1430/A   (BUFX2)
+ sa1   --   g_and_not_n1428_not_n1429/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/76.diag

@@ -1,0 +1,99 @@
+==
+Candidate 0
+site . not_n949
+polarity . 1
+neighbor . pi082 n949
+failing-states . 
+11 . 1
+passing-states . 
+01 . 471
+10 . 66
+00 . 24
+11 . 41
+==
+Candidate 1
+site . n949->not_n949
+polarity . 0
+neighbor . and_n389_n948
+failing-states . 
+1 . 1
+passing-states . 
+1 . 512
+0 . 90
+==
+Candidate 2
+site . n949
+polarity . 0
+neighbor . and_n389_n948
+failing-states . 
+1 . 1
+passing-states . 
+1 . 512
+0 . 90
+==
+Candidate 3
+site . and_n389_n948->n949
+polarity . 0
+neighbor . n948 n389
+failing-states . 
+11 . 1
+passing-states . 
+11 . 512
+10 . 17
+01 . 65
+00 . 8
+==
+Candidate 4
+site . and_n389_n948
+polarity . 0
+neighbor . n948 n389
+failing-states . 
+11 . 1
+passing-states . 
+11 . 512
+10 . 17
+01 . 65
+00 . 8
+==
+Candidate 5
+site . n389->and_n389_n948
+polarity . 0
+neighbor . n392 and_n387_n388 n1012 n948
+failing-states . 
+1101 . 1
+passing-states . 
+1101 . 504
+1001 . 12
+0100 . 16
+1100 . 36
+1000 . 6
+1110 . 12
+0101 . 8
+1010 . 2
+0001 . 5
+0110 . 1
+==
+Candidate 6
+site . n948->and_n389_n948
+polarity . 0
+neighbor . and_n579_n919 n389
+failing-states . 
+11 . 1
+passing-states . 
+11 . 512
+10 . 17
+01 . 65
+00 . 8
+==
+Candidate 7
+site . not_n949->and_pi082_not_n949
+polarity . 1
+neighbor . pi082 n949
+failing-states . 
+11 . 1
+passing-states . 
+01 . 471
+10 . 66
+00 . 24
+11 . 41
+==

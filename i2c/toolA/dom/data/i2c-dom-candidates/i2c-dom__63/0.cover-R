@@ -1,0 +1,145 @@
+==
+Candidate 0
+site . and_not_pi026_3430_not_pi053_7
+polarity . 1
+neighbor . not_pi026_3430 not_pi053_7
+failing-states . 
+10 . 1
+00 . 1
+passing-states . 
+11 . 553
+10 . 18
+01 . 28
+00 . 2
+==
+Candidate 1
+site . and_not_pi058_8_not_n1190
+polarity . 1
+neighbor . not_n1190 not_pi058_8
+failing-states . 
+11 . 2
+passing-states . 
+11 . 520
+01 . 58
+10 . 23
+==
+Candidate 2
+site . n1192->and_not_pi116_9_n1192
+polarity . 1
+neighbor . n1196 and_not_pi085_10_n1187 n1200 not_pi116_9
+failing-states . 
+0011 . 2
+passing-states . 
+0001 . 40
+0101 . 522
+0100 . 11
+0000 . 19
+1000 . 1
+0111 . 3
+0011 . 4
+1100 . 1
+==
+Candidate 3
+site . and_not_pi116_9_n1192
+polarity . 1
+neighbor . not_pi116_9 n1192
+failing-states . 
+10 . 2
+passing-states . 
+10 . 44
+11 . 525
+01 . 12
+00 . 20
+==
+Candidate 4
+site . not_n1190
+polarity . 1
+neighbor . n1190 not_pi058_8
+failing-states . 
+11 . 2
+passing-states . 
+01 . 572
+11 . 6
+00 . 23
+==
+Candidate 5
+site . n1190
+polarity . 0
+neighbor . and_not_n1187_not_n1189
+failing-states . 
+1 . 2
+passing-states . 
+0 . 595
+1 . 6
+==
+Candidate 6
+site . and_not_n1187_not_n1189
+polarity . 0
+neighbor . not_n1189 not_n1187
+failing-states . 
+11 . 2
+passing-states . 
+10 . 16
+00 . 537
+01 . 42
+11 . 6
+==
+Candidate 7
+site . n1187->not_n1187
+polarity . 1
+neighbor . not_pi085_10 and_not_pi026_3430_not_pi053_7
+failing-states . 
+00 . 1
+10 . 1
+passing-states . 
+01 . 16
+11 . 537
+10 . 44
+00 . 4
+==
+Candidate 8
+site . not_n1187
+polarity . 0
+neighbor . not_n1189 n1187
+failing-states . 
+10 . 2
+passing-states . 
+11 . 16
+01 . 537
+00 . 42
+10 . 6
+==
+Candidate 9
+site . not_n1189
+polarity . 0
+neighbor . not_n1187 n1189
+failing-states . 
+10 . 2
+passing-states . 
+00 . 16
+01 . 537
+11 . 42
+10 . 6
+==
+Candidate 10
+site . n1189
+polarity . 1
+neighbor . and_not_pi085_9_not_n1188
+failing-states . 
+0 . 2
+passing-states . 
+0 . 22
+1 . 579
+==
+Candidate 11
+site . and_not_pi085_9_not_n1188
+polarity . 1
+neighbor . not_n1188 not_pi085_9
+failing-states . 
+10 . 1
+01 . 1
+passing-states . 
+10 . 20
+11 . 579
+01 . 2
+==

@@ -1,0 +1,141 @@
+==
+Candidate 0
+site . n1414
+polarity . 1
+neighbor . pi143 pi146 and_n1412_n1413 pi144 pi142 pi145
+failing-states . 
+101000 . 1
+passing-states . 
+000000 . 558
+001000 . 9
+001001 . 2
+000010 . 5
+000001 . 4
+001100 . 1
+101000 . 2
+010000 . 5
+100000 . 7
+001010 . 2
+011000 . 2
+000100 . 5
+==
+Candidate 1
+site . and_n1412_n1413->n1414
+polarity . 1
+neighbor . n1413 n1412
+failing-states . 
+11 . 1
+passing-states . 
+00 . 456
+01 . 83
+10 . 45
+11 . 18
+==
+Candidate 2
+site . and_n1412_n1413
+polarity . 1
+neighbor . n1413 n1412
+failing-states . 
+11 . 1
+passing-states . 
+00 . 456
+01 . 83
+10 . 45
+11 . 18
+==
+Candidate 3
+site . n1246->and_pi138_n1246
+polarity . 1
+neighbor . n1244 not_n1585 not_n1591 and_pi131_n1245 not_n1603 pi138 not_n1421 not_pi138_0
+failing-states . 
+00000100 . 1
+passing-states . 
+00101011 . 463
+00111011 . 52
+00101110 . 32
+00001110 . 2
+00011100 . 1
+00010100 . 12
+01111011 . 1
+00110011 . 1
+00111110 . 6
+10111011 . 9
+10101011 . 10
+01101110 . 2
+00100100 . 2
+01101011 . 2
+00110100 . 1
+00011011 . 1
+00110110 . 1
+01010100 . 2
+00100110 . 1
+00011110 . 1
+==
+Candidate 4
+site . n1413
+polarity . 1
+neighbor . n1412 and_pi138_n1246
+failing-states . 
+11 . 1
+passing-states . 
+00 . 456
+10 . 83
+01 . 45
+11 . 18
+==
+Candidate 5
+site . and_pi138_n1246->n1413
+polarity . 1
+neighbor . n1246 pi138
+failing-states . 
+01 . 1
+passing-states . 
+00 . 475
+10 . 64
+01 . 39
+11 . 24
+==
+Candidate 6
+site . and_pi138_n1246
+polarity . 1
+neighbor . n1246 pi138
+failing-states . 
+01 . 1
+passing-states . 
+00 . 475
+10 . 64
+01 . 39
+11 . 24
+==
+Candidate 7
+site . n1413->and_n1412_n1413
+polarity . 1
+neighbor . n1412 and_pi138_n1246
+failing-states . 
+11 . 1
+passing-states . 
+00 . 456
+10 . 83
+01 . 45
+11 . 18
+==
+Candidate 8
+site . n1414->and_pi143_n1414
+polarity . 1
+neighbor . pi143 pi146 and_n1412_n1413 pi144 pi142 pi145
+failing-states . 
+101000 . 1
+passing-states . 
+000000 . 558
+001000 . 9
+001001 . 2
+000010 . 5
+000001 . 4
+001100 . 1
+101000 . 2
+010000 . 5
+100000 . 7
+001010 . 2
+011000 . 2
+000100 . 5
+==

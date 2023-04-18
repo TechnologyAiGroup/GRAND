@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/59.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 129 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/59.fail
+ #failing_pat=129, #failures=129, #defects=2, #faults=2, CPU_time=0.14
+ Simulated : #failing_pat=129, #passing_pat=96, #failures=129
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=127, #passing_pat=98, #failures=127
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=127, passing=98>
+ sa1   DS   po118   (_PO)
+ sa1   --   g_po118/Y   (BUFX2)
+ sa1   --   g_po118/A   (BUFX2)
+ sa1   --   g_po118_driver/Y   (BUFX2)
+ sa1   --   g_po118_driver/A   (BUFX2)
+ sa1   --   g_or_n1484_n1494/Y   (OR2X1)
+ sa1   --   g_or_n1484_n1494/A   (OR2X1)
+ sa1   --   g_or_n1484_n1494/B   (OR2X1)
+ sa1   --   g_n1494/Y   (BUFX2)
+ sa1   --   g_n1494/A   (BUFX2)
+ sa1   --   g_n1484/Y   (BUFX2)
+ sa1   --   g_n1484/A   (BUFX2)
+ sa1   --   g_and_not_pi138_9_not_n1493/Y   (AND2X1)
+ sa1   --   g_and_pi138_not_n1483/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=2, #passing_pat=223, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=223>
+ sa1   DS   g_n580/Y   (BUFX2)
+ sa1   --   g_n580/A   (BUFX2)
+ sa1   --   g_and_n570_n579/Y   (AND2X1)
+ sa1   --   g_and_n407_n580/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/6.diag

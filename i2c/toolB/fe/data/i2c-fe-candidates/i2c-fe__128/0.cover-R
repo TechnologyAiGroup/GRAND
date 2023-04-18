@@ -1,0 +1,167 @@
+==
+Candidate 0
+site . and_not_n604_not_n616
+polarity . 1
+neighbor . not_n604 not_n616
+failing-states . 
+11 . 518
+10 . 1
+01 . 1
+passing-states . 
+11 . 81
+01 . 2
+==
+Candidate 1
+site . not_n617
+polarity . 1
+neighbor . not_pi129_1176490 n617
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+01 . 54
+11 . 27
+00 . 1
+10 . 1
+==
+Candidate 2
+site . not_n617->and_not_pi129_1176490_not_n617
+polarity . 1
+neighbor . not_pi129_1176490 n617
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+01 . 54
+11 . 27
+00 . 1
+10 . 1
+==
+Candidate 3
+site . and_not_pi003_70_n618
+polarity . 1
+neighbor . not_pi003_70 n618
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+10 . 54
+01 . 27
+00 . 2
+==
+Candidate 4
+site . po032_driver
+polarity . 1
+neighbor . and_not_pi003_70_n618
+failing-states . 
+1 . 518
+0 . 2
+passing-states . 
+0 . 83
+==
+Candidate 5
+site . and_not_pi003_70_n618->po032_driver
+polarity . 1
+neighbor . not_pi003_70 n618
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+10 . 54
+01 . 27
+00 . 2
+==
+Candidate 6
+site . po032_driver->po032
+polarity . 1
+neighbor . and_not_pi003_70_n618
+failing-states . 
+1 . 518
+0 . 2
+passing-states . 
+0 . 83
+==
+Candidate 7
+site . n617
+polarity . 1
+neighbor . and_not_n604_not_n616
+failing-states . 
+1 . 518
+0 . 2
+passing-states . 
+1 . 81
+0 . 2
+==
+Candidate 8
+site . and_not_n604_not_n616->n617
+polarity . 1
+neighbor . not_n604 not_n616
+failing-states . 
+11 . 518
+10 . 1
+01 . 1
+passing-states . 
+11 . 81
+01 . 2
+==
+Candidate 9
+site . and_not_pi129_1176490_not_n617
+polarity . 1
+neighbor . not_n617 not_pi129_1176490
+failing-states . 
+01 . 518
+11 . 2
+passing-states . 
+00 . 54
+01 . 27
+10 . 1
+11 . 1
+==
+Candidate 10
+site . n618
+polarity . 1
+neighbor . not_pi003_70 and_not_pi129_1176490_not_n617
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+10 . 54
+01 . 27
+00 . 2
+==
+Candidate 11
+site . and_not_pi129_1176490_not_n617->n618
+polarity . 1
+neighbor . not_n617 not_pi129_1176490
+failing-states . 
+01 . 518
+11 . 2
+passing-states . 
+00 . 54
+01 . 27
+10 . 1
+11 . 1
+==
+Candidate 12
+site . n618->and_not_pi003_70_n618
+polarity . 1
+neighbor . not_pi003_70 and_not_pi129_1176490_not_n617
+failing-states . 
+11 . 518
+10 . 2
+passing-states . 
+10 . 54
+01 . 27
+00 . 2
+==
+Candidate 13
+site . n617->not_n617
+polarity . 1
+neighbor . and_not_n604_not_n616
+failing-states . 
+1 . 518
+0 . 2
+passing-states . 
+1 . 81
+0 . 2
+==

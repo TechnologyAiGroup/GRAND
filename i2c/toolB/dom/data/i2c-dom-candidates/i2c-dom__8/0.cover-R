@@ -1,0 +1,113 @@
+==
+Candidate 0
+site . and_not_pi129_29286449308136415160327158440136953416342323212091034008010_not_n1442
+polarity . 1
+neighbor . not_pi129_29286449308136415160327158440136953416342323212091034008010 not_n1442
+failing-states . 
+11 . 91
+10 . 4
+passing-states . 
+10 . 453
+00 . 55
+==
+Candidate 1
+site . po114_driver
+polarity . 1
+neighbor . and_not_pi129_29286449308136415160327158440136953416342323212091034008010_not_n1442
+failing-states . 
+1 . 91
+0 . 4
+passing-states . 
+0 . 508
+==
+Candidate 2
+site . and_not_pi129_29286449308136415160327158440136953416342323212091034008010_not_n1442->po114_driver
+polarity . 1
+neighbor . not_pi129_29286449308136415160327158440136953416342323212091034008010 not_n1442
+failing-states . 
+11 . 91
+10 . 4
+passing-states . 
+10 . 453
+00 . 55
+==
+Candidate 3
+site . po114_driver->po114
+polarity . 1
+neighbor . and_not_pi129_29286449308136415160327158440136953416342323212091034008010_not_n1442
+failing-states . 
+1 . 91
+0 . 4
+passing-states . 
+0 . 508
+==
+Candidate 4
+site . and_not_n1440_not_n1441
+polarity . 1
+neighbor . not_n1441 not_n1440
+failing-states . 
+11 . 91
+10 . 3
+01 . 1
+passing-states . 
+11 . 507
+10 . 1
+==
+Candidate 5
+site . n1442
+polarity . 1
+neighbor . and_not_n1440_not_n1441
+failing-states . 
+1 . 91
+0 . 4
+passing-states . 
+1 . 507
+0 . 1
+==
+Candidate 6
+site . and_not_n1440_not_n1441->n1442
+polarity . 1
+neighbor . not_n1441 not_n1440
+failing-states . 
+11 . 91
+10 . 3
+01 . 1
+passing-states . 
+11 . 507
+10 . 1
+==
+Candidate 7
+site . not_n1442
+polarity . 1
+neighbor . n1442 not_pi129_29286449308136415160327158440136953416342323212091034008010
+failing-states . 
+11 . 91
+01 . 4
+passing-states . 
+11 . 453
+10 . 54
+00 . 1
+==
+Candidate 8
+site . n1442->not_n1442
+polarity . 1
+neighbor . and_not_n1440_not_n1441
+failing-states . 
+1 . 91
+0 . 4
+passing-states . 
+1 . 507
+0 . 1
+==
+Candidate 9
+site . not_n1442->and_not_pi129_29286449308136415160327158440136953416342323212091034008010_not_n1442
+polarity . 1
+neighbor . n1442 not_pi129_29286449308136415160327158440136953416342323212091034008010
+failing-states . 
+11 . 91
+01 . 4
+passing-states . 
+11 . 453
+10 . 54
+00 . 1
+==

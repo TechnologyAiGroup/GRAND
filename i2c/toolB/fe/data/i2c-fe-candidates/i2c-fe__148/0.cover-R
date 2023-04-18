@@ -1,0 +1,171 @@
+==
+Candidate 0
+site . n1520
+polarity . 0
+neighbor . n1527 and_not_pi137_8_not_n1519
+failing-states . 
+00 . 471
+passing-states . 
+00 . 129
+10 . 3
+==
+Candidate 1
+site . and_not_pi137_8_not_n1519->n1520
+polarity . 0
+neighbor . not_pi137_8 not_n1519
+failing-states . 
+11 . 471
+passing-states . 
+01 . 60
+10 . 51
+00 . 21
+==
+Candidate 2
+site . and_not_pi137_8_not_n1519
+polarity . 0
+neighbor . not_pi137_8 not_n1519
+failing-states . 
+11 . 471
+passing-states . 
+01 . 60
+10 . 51
+00 . 21
+==
+Candidate 3
+site . not_pi137_8->and_not_pi137_8_not_n1519
+polarity . 0
+neighbor . not_n1519 pi137
+failing-states . 
+10 . 471
+passing-states . 
+11 . 60
+00 . 51
+01 . 21
+==
+Candidate 4
+site . not_n1519->and_not_pi137_8_not_n1519
+polarity . 0
+neighbor . not_pi137_8 n1519
+failing-states . 
+10 . 471
+passing-states . 
+00 . 60
+11 . 51
+01 . 21
+==
+Candidate 5
+site . not_pi137_8
+polarity . 0
+neighbor . not_n1519 pi137
+failing-states . 
+10 . 471
+passing-states . 
+11 . 60
+00 . 51
+01 . 21
+==
+Candidate 6
+site . not_n1519
+polarity . 0
+neighbor . not_pi137_8 n1519
+failing-states . 
+10 . 471
+passing-states . 
+00 . 60
+11 . 51
+01 . 21
+==
+Candidate 7
+site . n1519->not_n1519
+polarity . 1
+neighbor . and_not_n1514_not_n1518
+failing-states . 
+0 . 471
+passing-states . 
+0 . 60
+1 . 72
+==
+Candidate 8
+site . n1519
+polarity . 1
+neighbor . and_not_n1514_not_n1518
+failing-states . 
+0 . 471
+passing-states . 
+0 . 60
+1 . 72
+==
+Candidate 9
+site . and_not_n1514_not_n1518->n1519
+polarity . 1
+neighbor . not_n1514 not_n1518
+failing-states . 
+10 . 454
+01 . 17
+passing-states . 
+01 . 29
+11 . 72
+10 . 31
+==
+Candidate 10
+site . and_not_n1514_not_n1518
+polarity . 1
+neighbor . not_n1514 not_n1518
+failing-states . 
+10 . 454
+01 . 17
+passing-states . 
+01 . 29
+11 . 72
+10 . 31
+==
+Candidate 11
+site . n1520->or_n1520_n1527
+polarity . 0
+neighbor . n1527 and_not_pi137_8_not_n1519
+failing-states . 
+00 . 471
+passing-states . 
+00 . 129
+10 . 3
+==
+Candidate 12
+site . po120_driver->po120
+polarity . 0
+neighbor . or_n1520_n1527
+failing-states . 
+0 . 471
+passing-states . 
+0 . 129
+1 . 3
+==
+Candidate 13
+site . po120_driver
+polarity . 0
+neighbor . or_n1520_n1527
+failing-states . 
+0 . 471
+passing-states . 
+0 . 129
+1 . 3
+==
+Candidate 14
+site . or_n1520_n1527->po120_driver
+polarity . 0
+neighbor . n1527 n1520
+failing-states . 
+00 . 471
+passing-states . 
+00 . 129
+10 . 3
+==
+Candidate 15
+site . or_n1520_n1527
+polarity . 0
+neighbor . n1527 n1520
+failing-states . 
+00 . 471
+passing-states . 
+00 . 129
+10 . 3
+==

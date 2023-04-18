@@ -1,0 +1,17 @@
+run_diagnosis ./tmax_fail/20.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 547 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/20.fail
+ #failing_pat=547, #failures=547, #defects=1, #faults=1, CPU_time=0.11
+ Simulated : #failing_pat=547, #passing_pat=56, #failures=547
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=547, #passing_pat=56, #failures=547
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=547, passing=56>
+ sa1   DS   g_n1623/Y   (BUFX2)
+ sa1   --   g_n1623/A   (BUFX2)
+ sa1   --   g_and_pi081_pi120/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070_n1623/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/200.diag

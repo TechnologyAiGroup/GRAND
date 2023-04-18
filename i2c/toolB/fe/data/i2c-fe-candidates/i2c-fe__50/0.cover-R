@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . po105_driver->po105
+polarity . 1
+neighbor . and_not_pi129_725745515342319093317411710931737859674906464051430_not_n1397
+failing-states . 
+1 . 598
+passing-states . 
+1 . 4
+0 . 1
+==
+Candidate 1
+site . po105_driver
+polarity . 1
+neighbor . and_not_pi129_725745515342319093317411710931737859674906464051430_not_n1397
+failing-states . 
+1 . 598
+passing-states . 
+1 . 4
+0 . 1
+==
+Candidate 2
+site . and_not_pi129_725745515342319093317411710931737859674906464051430_not_n1397->po105_driver
+polarity . 1
+neighbor . not_n1397 not_pi129_725745515342319093317411710931737859674906464051430
+failing-states . 
+01 . 544
+00 . 54
+passing-states . 
+11 . 4
+10 . 1
+==
+Candidate 3
+site . and_not_pi129_725745515342319093317411710931737859674906464051430_not_n1397
+polarity . 1
+neighbor . not_n1397 not_pi129_725745515342319093317411710931737859674906464051430
+failing-states . 
+01 . 544
+00 . 54
+passing-states . 
+11 . 4
+10 . 1
+==

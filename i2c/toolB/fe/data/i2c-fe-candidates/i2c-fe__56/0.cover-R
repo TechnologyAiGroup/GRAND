@@ -1,0 +1,49 @@
+==
+Candidate 0
+site . n680
+polarity . 1
+neighbor . and_n677_n679 n675
+failing-states . 
+11 . 47
+passing-states . 
+10 . 550
+11 . 3
+01 . 3
+==
+Candidate 1
+site . and_n677_n679->n680
+polarity . 1
+neighbor . n677 n679
+failing-states . 
+10 . 30
+00 . 17
+passing-states . 
+10 . 523
+00 . 23
+11 . 7
+01 . 3
+==
+Candidate 2
+site . and_n677_n679
+polarity . 1
+neighbor . n677 n679
+failing-states . 
+10 . 30
+00 . 17
+passing-states . 
+10 . 523
+00 . 23
+11 . 7
+01 . 3
+==
+Candidate 3
+site . n680->and_n675_n680
+polarity . 1
+neighbor . and_n677_n679 n675
+failing-states . 
+11 . 47
+passing-states . 
+10 . 550
+11 . 3
+01 . 3
+==

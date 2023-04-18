@@ -1,0 +1,145 @@
+==
+Candidate 0
+site . and_not_n713_0_not_n1530
+polarity . 1
+neighbor . not_n1530 not_n713_0
+failing-states . 
+11 . 19
+passing-states . 
+11 . 578
+10 . 6
+==
+Candidate 1
+site . not_n1530
+polarity . 1
+neighbor . not_n713_0 n1530
+failing-states . 
+11 . 19
+passing-states . 
+10 . 576
+11 . 2
+00 . 6
+==
+Candidate 2
+site . n1530
+polarity . 0
+neighbor . and_not_pi027_3430_n1529
+failing-states . 
+1 . 19
+passing-states . 
+0 . 582
+1 . 2
+==
+Candidate 3
+site . and_not_pi027_3430_n1529
+polarity . 0
+neighbor . n1529 not_pi027_3430
+failing-states . 
+11 . 19
+passing-states . 
+01 . 558
+11 . 2
+00 . 23
+10 . 1
+==
+Candidate 4
+site . n1529
+polarity . 0
+neighbor . and_n788_n1370 not_pi027_3430
+failing-states . 
+11 . 19
+passing-states . 
+01 . 558
+11 . 2
+00 . 23
+10 . 1
+==
+Candidate 5
+site . pi027->not_pi027_3430
+polarity . 1
+neighbor . pi116 not_n739 n838 n768 not_pi026_5 n1182
+failing-states . 
+110011 . 2
+000111 . 15
+001111 . 1
+010111 . 1
+passing-states . 
+000010 . 11
+000111 . 477
+000110 . 14
+001101 . 3
+000101 . 10
+000100 . 4
+110001 . 6
+010111 . 10
+110010 . 14
+110011 . 3
+001111 . 10
+010110 . 5
+100101 . 2
+110000 . 3
+010010 . 1
+001010 . 2
+011111 . 1
+010100 . 1
+100111 . 2
+001110 . 3
+010101 . 1
+010000 . 1
+==
+Candidate 6
+site . not_pi027_3430
+polarity . 0
+neighbor . n1529 pi027
+failing-states . 
+10 . 19
+passing-states . 
+00 . 558
+10 . 2
+01 . 23
+11 . 1
+==
+Candidate 7
+site . n1370->and_n788_n1370
+polarity . 0
+neighbor . n788 and_not_pi110_5_n1369 pi096
+failing-states . 
+110 . 16
+111 . 3
+passing-states . 
+100 . 509
+000 . 61
+110 . 3
+101 . 6
+010 . 4
+011 . 1
+==
+Candidate 8
+site . n788->and_n788_n1370
+polarity . 0
+neighbor . n786 n1370 and_not_pi026_3_n787
+failing-states . 
+111 . 3
+011 . 16
+passing-states . 
+001 . 507
+000 . 51
+011 . 2
+100 . 10
+101 . 8
+010 . 4
+111 . 1
+110 . 1
+==
+Candidate 9
+site . and_n788_n1370
+polarity . 0
+neighbor . n788 n1370
+failing-states . 
+11 . 19
+passing-states . 
+10 . 515
+00 . 61
+11 . 3
+01 . 5
+==

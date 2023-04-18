@@ -1,0 +1,151 @@
+==
+Candidate 0
+site . not_pi012_2
+polarity . 1
+neighbor . n461 pi012
+failing-states . 
+11 . 1
+00 . 1
+passing-states . 
+00 . 574
+01 . 8
+10 . 19
+==
+Candidate 1
+site . not_pi012_2->and_not_pi012_2_n461
+polarity . 1
+neighbor . n461 pi012
+failing-states . 
+11 . 1
+00 . 1
+passing-states . 
+00 . 574
+01 . 8
+10 . 19
+==
+Candidate 2
+site . n613
+polarity . 1
+neighbor . n612 and_not_pi029_1_pi059
+failing-states . 
+10 . 1
+11 . 1
+passing-states . 
+10 . 546
+11 . 23
+00 . 30
+01 . 2
+==
+Candidate 3
+site . and_not_pi029_1_pi059->n613
+polarity . 1
+neighbor . pi059 not_pi029_1
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 575
+11 . 25
+00 . 1
+==
+Candidate 4
+site . and_not_pi029_1_pi059
+polarity . 1
+neighbor . pi059 not_pi029_1
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 575
+11 . 25
+00 . 1
+==
+Candidate 5
+site . n613->and_n612_n613
+polarity . 1
+neighbor . n612 and_not_pi029_1_pi059
+failing-states . 
+10 . 1
+11 . 1
+passing-states . 
+10 . 546
+11 . 23
+00 . 30
+01 . 2
+==
+Candidate 6
+site . n614
+polarity . 1
+neighbor . and_n612_n613 n611
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+00 . 520
+11 . 7
+01 . 58
+10 . 16
+==
+Candidate 7
+site . and_n612_n613->n614
+polarity . 1
+neighbor . n612 n613
+failing-states . 
+10 . 1
+11 . 1
+passing-states . 
+10 . 546
+11 . 23
+00 . 30
+01 . 2
+==
+Candidate 8
+site . and_n612_n613
+polarity . 1
+neighbor . n612 n613
+failing-states . 
+10 . 1
+11 . 1
+passing-states . 
+10 . 546
+11 . 23
+00 . 30
+01 . 2
+==
+Candidate 9
+site . n614->and_n611_n614
+polarity . 1
+neighbor . and_n612_n613 n611
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+00 . 520
+11 . 7
+01 . 58
+10 . 16
+==
+Candidate 10
+site . not_pi029_1
+polarity . 1
+neighbor . pi029 pi059
+failing-states . 
+00 . 1
+11 . 1
+passing-states . 
+00 . 556
+01 . 25
+10 . 20
+==
+Candidate 11
+site . not_pi029_1->and_not_pi029_1_pi059
+polarity . 1
+neighbor . pi029 pi059
+failing-states . 
+00 . 1
+11 . 1
+passing-states . 
+00 . 556
+01 . 25
+10 . 20
+==

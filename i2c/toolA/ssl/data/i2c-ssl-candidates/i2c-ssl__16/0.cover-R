@@ -1,0 +1,32 @@
+==
+Candidate 0
+site . and_pi100_not_n1423_2
+polarity . 1
+neighbor . not_n1423_2 pi100
+failing-states . 
+11 . 1
+passing-states . 
+11 . 11
+10 . 591
+==
+Candidate 1
+site . n1423->not_n1423_2
+polarity . 0
+neighbor . and_not_n1420_not_n1422
+failing-states . 
+1 . 1
+passing-states . 
+0 . 552
+1 . 50
+==
+Candidate 2
+site . not_n1423_2
+polarity . 1
+neighbor . pi100 n1423
+failing-states . 
+11 . 1
+passing-states . 
+10 . 11
+00 . 541
+01 . 50
+==

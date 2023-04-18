@@ -1,0 +1,111 @@
+==
+Candidate 0
+site . and_not_pi129_14811132966169777414641055325137507340304213552070_not_n1389
+polarity . 1
+neighbor . not_pi129_14811132966169777414641055325137507340304213552070 not_n1389
+failing-states . 
+10 . 544
+11 . 4
+passing-states . 
+00 . 54
+01 . 1
+==
+Candidate 1
+site . po103_driver
+polarity . 1
+neighbor . and_not_pi129_14811132966169777414641055325137507340304213552070_not_n1389
+failing-states . 
+1 . 544
+0 . 4
+passing-states . 
+0 . 55
+==
+Candidate 2
+site . and_not_pi129_14811132966169777414641055325137507340304213552070_not_n1389->po103_driver
+polarity . 1
+neighbor . not_pi129_14811132966169777414641055325137507340304213552070 not_n1389
+failing-states . 
+10 . 544
+11 . 4
+passing-states . 
+00 . 54
+01 . 1
+==
+Candidate 3
+site . po103_driver->po103
+polarity . 1
+neighbor . and_not_pi129_14811132966169777414641055325137507340304213552070_not_n1389
+failing-states . 
+1 . 544
+0 . 4
+passing-states . 
+0 . 55
+==
+Candidate 4
+site . not_n1389->and_not_pi129_14811132966169777414641055325137507340304213552070_not_n1389
+polarity . 1
+neighbor . not_pi129_14811132966169777414641055325137507340304213552070 n1389
+failing-states . 
+11 . 544
+10 . 4
+passing-states . 
+01 . 54
+00 . 1
+==
+Candidate 5
+site . not_n1389
+polarity . 1
+neighbor . not_pi129_14811132966169777414641055325137507340304213552070 n1389
+failing-states . 
+11 . 544
+10 . 4
+passing-states . 
+01 . 54
+00 . 1
+==
+Candidate 6
+site . and_not_n1387_not_n1388
+polarity . 1
+neighbor . not_n1388 not_n1387
+failing-states . 
+11 . 544
+10 . 3
+01 . 1
+passing-states . 
+11 . 54
+10 . 1
+==
+Candidate 7
+site . and_not_n1387_not_n1388->n1389
+polarity . 1
+neighbor . not_n1388 not_n1387
+failing-states . 
+11 . 544
+10 . 3
+01 . 1
+passing-states . 
+11 . 54
+10 . 1
+==
+Candidate 8
+site . n1389
+polarity . 1
+neighbor . and_not_n1387_not_n1388
+failing-states . 
+1 . 544
+0 . 4
+passing-states . 
+1 . 54
+0 . 1
+==
+Candidate 9
+site . n1389->not_n1389
+polarity . 1
+neighbor . and_not_n1387_not_n1388
+failing-states . 
+1 . 544
+0 . 4
+passing-states . 
+1 . 54
+0 . 1
+==

@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/145.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 39 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/145.fail
+ #failing_pat=32, #failures=39, #defects=1, #faults=2, CPU_time=0.04
+ Simulated : #failing_pat=32, #passing_pat=96, #failures=39
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=32, #passing_pat=96, #failures=39
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=32, passing=96>
+ sa1   DS   g_not_n1420/Y   (INVX1)
+ sa0   --   g_not_n1420/A   (INVX1)
+ sa0   --   g_n1420/Y   (BUFX2)
+ sa0   --   g_n1420/A   (BUFX2)
+ sa0   --   g_and_not_pi110_6_n1419/Y   (AND2X1)
+ sa0   --   g_and_not_pi110_6_n1419/A   (AND2X1)
+ sa0   --   g_and_not_pi110_6_n1419/B   (AND2X1)
+ sa0   --   g_not_pi110_6/Y   (INVX1)
+ sa1   --   g_not_pi110_6/A   (INVX1)
+ sa0   --   g_n1419/Y   (BUFX2)
+ sa0   --   g_n1419/A   (BUFX2)
+ sa0   --   g_and_not_pi003_2326305139872070_not_n1246/Y   (AND2X1)
+ sa0   --   g_and_not_pi003_2326305139872070_not_n1246/B   (AND2X1)
+ sa0   --   g_and_not_pi003_2326305139872070_not_n1246/A   (AND2X1)
+ sa0   --   g_not_pi003_2326305139872070/Y   (INVX1)
+ sa1   --   g_not_pi003_2326305139872070/A   (INVX1)
+ sa0   --   g_not_n1246/Y   (INVX1)
+ sa1   --   g_not_n1246/A   (INVX1)
+ sa1   --   g_and_not_n1420_not_n1422/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=32, passing=96>
+ sa1   DS   g_n1423/Y   (BUFX2)
+ sa1   --   g_n1423/A   (BUFX2)
+ sa1   --   g_and_not_n1420_not_n1422/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/146.diag

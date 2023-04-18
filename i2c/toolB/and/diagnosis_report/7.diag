@@ -1,0 +1,48 @@
+run_diagnosis ./tmax_fail/7.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 438 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/7.fail
+ #failing_pat=438, #failures=438, #defects=1, #faults=1, CPU_time=0.22
+ Simulated : #failing_pat=438, #passing_pat=96, #failures=438
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=438, #passing_pat=96, #failures=438
+ ------------------------------------------------------------------------------
+ match=94.81%, #explained patterns: <failing=438, passing=72>
+ sa0   DS   po063   (_PO)
+ sa0   --   g_po063/Y   (BUFX2)
+ sa0   --   g_po063/A   (BUFX2)
+ sa0   --   g_po063_driver/Y   (BUFX2)
+ sa0   --   g_po063_driver/A   (BUFX2)
+ sa0   --   g_and_not_n1085_n1098/Y   (AND2X1)
+ sa0   --   g_and_not_n1085_n1098/B   (AND2X1)
+ sa0   --   g_and_not_n1085_n1098/A   (AND2X1)
+ sa0   --   g_n1098/Y   (BUFX2)
+ sa0   --   g_n1098/A   (BUFX2)
+ sa0   --   g_not_n1085/Y   (INVX1)
+ sa1   --   g_not_n1085/A   (INVX1)
+ sa0   --   g_and_not_n1092_n1097/Y   (AND2X1)
+ sa0   --   g_and_not_n1092_n1097/A   (AND2X1)
+ sa0   --   g_and_not_n1092_n1097/B   (AND2X1)
+ sa1   --   g_n1085/Y   (BUFX2)
+ sa1   --   g_n1085/A   (BUFX2)
+ sa0   --   g_n1097/Y   (BUFX2)
+ sa0   --   g_n1097/A   (BUFX2)
+ sa0   --   g_not_n1092/Y   (INVX1)
+ sa1   --   g_not_n1092/A   (INVX1)
+ sa1   --   g_and_not_pi048_3_not_n1084/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_185621159210175743024531636712070_not_n1096/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_185621159210175743024531636712070_not_n1096/A   (AND2X1)
+ sa0   --   g_and_not_pi129_185621159210175743024531636712070_not_n1096/B   (AND2X1)
+ sa1   --   g_n1092/Y   (BUFX2)
+ sa1   --   g_n1092/A   (BUFX2)
+ sa0   --   g_not_pi129_185621159210175743024531636712070/Y   (INVX1)
+ sa1   --   g_not_pi129_185621159210175743024531636712070/A   (INVX1)
+ sa0   --   g_not_n1096/Y   (INVX1)
+ sa1   --   g_not_n1096/A   (INVX1)
+ sa1   --   g_and_pi062_n1091/Y   (AND2X1)
+ sa1   --   g_n1096/Y   (BUFX2)
+ sa1   --   g_n1096/A   (BUFX2)
+ sa1   --   g_and_n1093_n1095/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/70.diag

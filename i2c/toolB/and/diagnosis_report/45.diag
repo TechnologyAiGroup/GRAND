@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/45.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 12 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/45.fail
+ #failing_pat=12, #failures=12, #defects=1, #faults=6, CPU_time=0.10
+ Simulated : #failing_pat=12, #passing_pat=96, #failures=12
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=12, #passing_pat=96, #failures=12
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa1   DS   g_not_n1202/Y   (INVX1)
+ sa0   --   g_not_n1202/A   (INVX1)
+ sa0   --   g_n1202/Y   (BUFX2)
+ sa0   --   g_n1202/A   (BUFX2)
+ sa0   --   g_and_not_n1199_not_n1201/Y   (AND2X1)
+ sa0   --   g_and_not_n1199_not_n1201/A   (AND2X1)
+ sa0   --   g_and_not_n1199_not_n1201/B   (AND2X1)
+ sa0   --   g_not_n1201/Y   (INVX1)
+ sa1   --   g_not_n1201/A   (INVX1)
+ sa0   --   g_not_n1199/Y   (INVX1)
+ sa1   --   g_not_n1199/A   (INVX1)
+ sa1   --   g_n1201/Y   (BUFX2)
+ sa1   --   g_n1201/A   (BUFX2)
+ sa1   --   g_n1199/Y   (BUFX2)
+ sa1   --   g_n1199/A   (BUFX2)
+ sa1   --   g_and_n1192_n1200/Y   (AND2X1)
+ sa1   --   g_and_not_pi027_70_not_n1198/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_152867006319425761937651857692768264010_not_n1202/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa0   DS   g_n1202/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa0   DS   g_n1202/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa0   DS   g_and_not_n1199_not_n1201/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa0   DS   g_and_not_n1199_not_n1201/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=12.63%, #explained patterns: <failing=12, passing=13>
+ sa0   DS   g_and_not_n1199_not_n1201/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/47.diag

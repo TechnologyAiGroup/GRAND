@@ -1,0 +1,51 @@
+==
+Candidate 0
+site . n598
+polarity . 1
+neighbor . n417 and_n345_n597
+failing-states . 
+10 . 31
+passing-states . 
+10 . 526
+00 . 38
+11 . 7
+01 . 1
+==
+Candidate 1
+site . and_n345_n597->n598
+polarity . 1
+neighbor . n345 n597
+failing-states . 
+10 . 19
+00 . 11
+01 . 1
+passing-states . 
+10 . 549
+00 . 15
+11 . 8
+==
+Candidate 2
+site . and_n345_n597
+polarity . 1
+neighbor . n345 n597
+failing-states . 
+10 . 19
+00 . 11
+01 . 1
+passing-states . 
+10 . 549
+00 . 15
+11 . 8
+==
+Candidate 3
+site . n598->and_n417_n598
+polarity . 1
+neighbor . n417 and_n345_n597
+failing-states . 
+10 . 31
+passing-states . 
+10 . 526
+00 . 38
+11 . 7
+01 . 1
+==

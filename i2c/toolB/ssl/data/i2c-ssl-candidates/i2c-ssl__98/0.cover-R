@@ -1,0 +1,187 @@
+==
+Candidate 0
+site . n504
+polarity . 1
+neighbor . and_not_pi009_2_n449 n448
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 78
+00 . 6
+01 . 13
+==
+Candidate 1
+site . and_not_pi009_2_n449->n504
+polarity . 1
+neighbor . not_pi009_2 n449
+failing-states . 
+11 . 1
+passing-states . 
+11 . 583
+10 . 19
+==
+Candidate 2
+site . and_not_pi009_2_n449
+polarity . 1
+neighbor . not_pi009_2 n449
+failing-states . 
+11 . 1
+passing-states . 
+11 . 583
+10 . 19
+==
+Candidate 3
+site . n504->and_n448_n504
+polarity . 1
+neighbor . and_not_pi009_2_n449 n448
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 78
+00 . 6
+01 . 13
+==
+Candidate 4
+site . not_pi054_4
+polarity . 1
+neighbor . pi054 pi009
+failing-states . 
+11 . 1
+passing-states . 
+00 . 504
+10 . 89
+01 . 3
+11 . 6
+==
+Candidate 5
+site . not_pi054_4->and_pi009_not_pi054_4
+polarity . 1
+neighbor . pi054 pi009
+failing-states . 
+11 . 1
+passing-states . 
+00 . 504
+10 . 89
+01 . 3
+11 . 6
+==
+Candidate 6
+site . not_pi009_2
+polarity . 1
+neighbor . pi009 n449
+failing-states . 
+11 . 1
+passing-states . 
+01 . 574
+11 . 9
+00 . 19
+==
+Candidate 7
+site . not_pi009_2->and_not_pi009_2_n449
+polarity . 1
+neighbor . pi009 n449
+failing-states . 
+11 . 1
+passing-states . 
+01 . 574
+11 . 9
+00 . 19
+==
+Candidate 8
+site . n506
+polarity . 1
+neighbor . and_n503_n505 n502
+failing-states . 
+11 . 1
+passing-states . 
+00 . 539
+10 . 55
+01 . 6
+11 . 2
+==
+Candidate 9
+site . and_n503_n505->n506
+polarity . 1
+neighbor . n503 n505
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 57
+01 . 21
+00 . 19
+==
+Candidate 10
+site . and_n503_n505
+polarity . 1
+neighbor . n503 n505
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 57
+01 . 21
+00 . 19
+==
+Candidate 11
+site . n506->and_n502_n506
+polarity . 1
+neighbor . and_n503_n505 n502
+failing-states . 
+11 . 1
+passing-states . 
+00 . 539
+10 . 55
+01 . 6
+11 . 2
+==
+Candidate 12
+site . n505
+polarity . 1
+neighbor . n503 and_n448_n504
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 57
+01 . 21
+00 . 19
+==
+Candidate 13
+site . and_n448_n504->n505
+polarity . 1
+neighbor . n504 n448
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 78
+00 . 6
+01 . 13
+==
+Candidate 14
+site . and_n448_n504
+polarity . 1
+neighbor . n504 n448
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 78
+00 . 6
+01 . 13
+==
+Candidate 15
+site . n505->and_n503_n505
+polarity . 1
+neighbor . n503 and_n448_n504
+failing-states . 
+11 . 1
+passing-states . 
+10 . 505
+11 . 57
+01 . 21
+00 . 19
+==

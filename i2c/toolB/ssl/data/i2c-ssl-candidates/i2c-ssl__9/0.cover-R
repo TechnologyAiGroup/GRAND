@@ -1,0 +1,51 @@
+==
+Candidate 0
+site . n444
+polarity . 1
+neighbor . n445 and_n441_n443
+failing-states . 
+10 . 16
+passing-states . 
+10 . 515
+00 . 51
+11 . 20
+01 . 1
+==
+Candidate 1
+site . and_n441_n443->n444
+polarity . 1
+neighbor . n443 n441
+failing-states . 
+10 . 2
+00 . 7
+01 . 7
+passing-states . 
+01 . 545
+11 . 21
+00 . 21
+==
+Candidate 2
+site . and_n441_n443
+polarity . 1
+neighbor . n443 n441
+failing-states . 
+10 . 2
+00 . 7
+01 . 7
+passing-states . 
+01 . 545
+11 . 21
+00 . 21
+==
+Candidate 3
+site . n444->and_n444_n445
+polarity . 1
+neighbor . n445 and_n441_n443
+failing-states . 
+10 . 16
+passing-states . 
+10 . 515
+00 . 51
+11 . 20
+01 . 1
+==

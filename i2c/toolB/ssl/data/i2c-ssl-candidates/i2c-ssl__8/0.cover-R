@@ -1,0 +1,136 @@
+==
+Candidate 0
+site . n934->and_n934_n1074
+polarity . 1
+neighbor . and_not_pi044_1_pi082 n1042 pi042 n1094 n1011 n1131 n935 n1074
+failing-states . 
+00000001 . 1
+passing-states . 
+00000000 . 484
+10000100 . 7
+10000000 . 56
+10100000 . 4
+10001000 . 12
+10010000 . 10
+00100000 . 1
+10000010 . 2
+00010000 . 7
+00001000 . 2
+01000000 . 2
+11000000 . 2
+00000100 . 3
+10000001 . 3
+10001001 . 1
+00000010 . 2
+11010000 . 1
+10010001 . 1
+11001000 . 1
+10011000 . 1
+==
+Candidate 1
+site . n1071
+polarity . 1
+neighbor . pi064 and_not_n379_70_not_n1070
+failing-states . 
+10 . 1
+passing-states . 
+01 . 514
+00 . 82
+11 . 4
+10 . 2
+==
+Candidate 2
+site . and_not_n379_70_not_n1070->n1071
+polarity . 1
+neighbor . not_n1070 not_n379_70
+failing-states . 
+10 . 1
+passing-states . 
+11 . 518
+01 . 60
+00 . 7
+10 . 17
+==
+Candidate 3
+site . and_not_n379_70_not_n1070
+polarity . 1
+neighbor . not_n1070 not_n379_70
+failing-states . 
+10 . 1
+passing-states . 
+11 . 518
+01 . 60
+00 . 7
+10 . 17
+==
+Candidate 4
+site . n1071->and_pi064_n1071
+polarity . 1
+neighbor . pi064 and_not_n379_70_not_n1070
+failing-states . 
+10 . 1
+passing-states . 
+01 . 514
+00 . 82
+11 . 4
+10 . 2
+==
+Candidate 5
+site . not_n379_70
+polarity . 1
+neighbor . not_n1070 n379
+failing-states . 
+11 . 1
+passing-states . 
+10 . 518
+00 . 60
+01 . 7
+11 . 17
+==
+Candidate 6
+site . n379->not_n379_70
+polarity . 0
+neighbor . not_n950 not_n986 not_n1082 not_n966 not_pi082 not_n1002 and_pi122_pi127 not_n1122 not_n1050 not_n1031 not_n1065 not_n693 not_n921 not_pi044_3
+failing-states . 
+11111111111111 . 1
+passing-states . 
+11111101111111 . 477
+00110101111101 . 4
+00000010000001 . 3
+11111111111111 . 15
+00100000011101 . 5
+00000000000001 . 17
+11110101111111 . 38
+00000010000101 . 1
+00100100011101 . 8
+00100000010101 . 11
+00110100111101 . 1
+00000000000101 . 2
+11110111111111 . 1
+00000000000100 . 1
+00110100011101 . 2
+00110111111101 . 1
+10110111111111 . 1
+00000000000000 . 2
+00110101111110 . 1
+00000000010101 . 4
+00110101111111 . 1
+00110100011100 . 1
+11111101111110 . 1
+11111111111110 . 1
+10110101111110 . 1
+00100110011101 . 1
+11110101111110 . 1
+==
+Candidate 7
+site . not_n379_70->and_not_n379_70_not_n1070
+polarity . 1
+neighbor . not_n1070 n379
+failing-states . 
+11 . 1
+passing-states . 
+10 . 518
+00 . 60
+01 . 7
+11 . 17
+==

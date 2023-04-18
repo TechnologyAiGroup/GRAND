@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/177.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 498 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/177.fail
+ #failing_pat=498, #failures=498, #defects=1, #faults=4, CPU_time=0.14
+ Simulated : #failing_pat=498, #passing_pat=96, #failures=498
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=498, #passing_pat=96, #failures=498
+ ------------------------------------------------------------------------------
+ match=95.59%, #explained patterns: <failing=498, passing=73>
+ sa1   DS   g_and_not_pi139_0_n1271/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=94.32%, #explained patterns: <failing=498, passing=66>
+ sa1   DS   g_and_pi067_not_n1271_0/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=93.96%, #explained patterns: <failing=498, passing=64>
+ sa0   DS   g_n1278/Y   (BUFX2)
+ sa0   --   g_n1278/A   (BUFX2)
+ sa0   --   g_and_not_n1276_not_n1277/Y   (AND2X1)
+ sa0   --   g_and_not_n1276_not_n1277/A   (AND2X1)
+ sa0   --   g_and_not_n1276_not_n1277/B   (AND2X1)
+ sa0   --   g_not_n1276/Y   (INVX1)
+ sa1   --   g_not_n1276/A   (INVX1)
+ sa0   --   g_not_n1277/Y   (INVX1)
+ sa1   --   g_not_n1277/A   (INVX1)
+ sa1   --   g_n1276/Y   (BUFX2)
+ sa1   --   g_n1276/A   (BUFX2)
+ sa1   --   g_n1277/Y   (BUFX2)
+ sa1   --   g_n1277/A   (BUFX2)
+ sa1   --   g_and_pi067_not_n1271_0/Y   (AND2X1)
+ sa1   --   g_and_not_pi139_0_n1271/Y   (AND2X1)
+ sa0   --   g_or_pi129_n1278/B   (OR2X1)
+ ------------------------------------------------------------------------------
+ match=85.71%, #explained patterns: <failing=498, passing=13>
+ sa0   DS   po082   (_PO)
+ sa0   --   g_po082/Y   (BUFX2)
+ sa0   --   g_po082/A   (BUFX2)
+ sa0   --   g_po082_driver/Y   (BUFX2)
+ sa0   --   g_po082_driver/A   (BUFX2)
+ sa0   --   g_or_pi129_n1278/Y   (OR2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/178.diag

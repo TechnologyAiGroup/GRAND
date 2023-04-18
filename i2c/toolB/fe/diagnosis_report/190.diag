@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/190.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 6 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/190.fail
+ #failing_pat=6, #failures=6, #defects=1, #faults=5, CPU_time=0.04
+ Simulated : #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401/Y   (AND2X1)
+ sa01   --   g_po106_driver/Y   (BUFX2)
+ sa01   --   g_po106_driver/A   (BUFX2)
+ sa01   --   g_po106/Y   (BUFX2)
+ sa01   --   g_po106/A   (BUFX2)
+ sa01   --   po106   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_not_pi129_5080218607396233653221881976522165017724345248360010/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_not_pi129_5080218607396233653221881976522165017724345248360010/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/191.diag

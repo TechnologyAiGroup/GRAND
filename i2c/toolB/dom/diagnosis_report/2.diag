@@ -1,0 +1,44 @@
+run_diagnosis ./tmax_fail/2.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2.fail
+ #failing_pat=3, #failures=3, #defects=1, #faults=5, CPU_time=0.08
+ Simulated : #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_and_not_n544_not_n553/Y   (AND2X1)
+ sa01   --   g_n554/Y   (BUFX2)
+ sa01   --   g_n554/A   (BUFX2)
+ sa01   --   g_not_n554/Y   (INVX1)
+ sa01   --   g_not_n554/A   (INVX1)
+ sa01   --   g_and_not_pi129_490_not_n554/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_and_pi013_not_pi054_8/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_and_not_pi129_490_not_n554/Y   (AND2X1)
+ sa01   --   g_n555/Y   (BUFX2)
+ sa01   --   g_n555/A   (BUFX2)
+ sa01   --   g_and_not_pi003_8_n555/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_and_pi013_not_pi054_8/Y   (AND2X1)
+ sa01   --   g_n544/Y   (BUFX2)
+ sa01   --   g_n544/A   (BUFX2)
+ sa01   --   g_not_n544/Y   (INVX1)
+ sa01   --   g_not_n544/A   (INVX1)
+ sa01   --   g_and_not_n544_not_n553/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=96>
+ sa01   DS   g_and_not_pi003_8_n555/Y   (AND2X1)
+ sa01   --   g_po028_driver/Y   (BUFX2)
+ sa01   --   g_po028_driver/A   (BUFX2)
+ sa01   --   g_po028/Y   (BUFX2)
+ sa01   --   g_po028/A   (BUFX2)
+ sa01   --   po028   (_PO)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/20.diag

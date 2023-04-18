@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . po071_driver->po071
+polarity . 1
+neighbor . and_not_pi003_138412872010_n1185
+failing-states . 
+1 . 29
+passing-states . 
+0 . 560
+1 . 14
+==
+Candidate 1
+site . po071_driver
+polarity . 1
+neighbor . and_not_pi003_138412872010_n1185
+failing-states . 
+1 . 29
+passing-states . 
+0 . 560
+1 . 14
+==
+Candidate 2
+site . and_not_pi003_138412872010_n1185->po071_driver
+polarity . 1
+neighbor . not_pi003_138412872010 n1185
+failing-states . 
+00 . 28
+01 . 1
+passing-states . 
+10 . 560
+11 . 14
+==
+Candidate 3
+site . and_not_pi003_138412872010_n1185
+polarity . 1
+neighbor . not_pi003_138412872010 n1185
+failing-states . 
+00 . 28
+01 . 1
+passing-states . 
+10 . 560
+11 . 14
+==

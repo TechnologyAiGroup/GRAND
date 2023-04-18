@@ -1,0 +1,97 @@
+==
+Candidate 0
+site . and_not_n696_n711
+polarity . 1
+neighbor . not_n696 n711
+failing-states . 
+11 . 63
+10 . 11
+passing-states . 
+11 . 457
+01 . 71
+10 . 1
+==
+Candidate 1
+site . po039_driver
+polarity . 1
+neighbor . and_not_n696_n711
+failing-states . 
+1 . 63
+0 . 11
+passing-states . 
+1 . 457
+0 . 72
+==
+Candidate 2
+site . and_not_n696_n711->po039_driver
+polarity . 1
+neighbor . not_n696 n711
+failing-states . 
+11 . 63
+10 . 11
+passing-states . 
+11 . 457
+01 . 71
+10 . 1
+==
+Candidate 3
+site . po039_driver->po039
+polarity . 1
+neighbor . and_not_n696_n711
+failing-states . 
+1 . 63
+0 . 11
+passing-states . 
+1 . 457
+0 . 72
+==
+Candidate 4
+site . and_not_n703_n710
+polarity . 1
+neighbor . n710 not_n703
+failing-states . 
+01 . 56
+11 . 11
+10 . 7
+passing-states . 
+11 . 527
+01 . 2
+==
+Candidate 5
+site . n711
+polarity . 1
+neighbor . and_not_n703_n710 not_n696
+failing-states . 
+01 . 63
+11 . 11
+passing-states . 
+11 . 457
+10 . 70
+01 . 1
+00 . 1
+==
+Candidate 6
+site . and_not_n703_n710->n711
+polarity . 1
+neighbor . n710 not_n703
+failing-states . 
+01 . 56
+11 . 11
+10 . 7
+passing-states . 
+11 . 527
+01 . 2
+==
+Candidate 7
+site . n711->and_not_n696_n711
+polarity . 1
+neighbor . and_not_n703_n710 not_n696
+failing-states . 
+01 . 63
+11 . 11
+passing-states . 
+11 . 457
+10 . 70
+01 . 1
+00 . 1
+==

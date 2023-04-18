@@ -1,0 +1,52 @@
+run_diagnosis ./tmax_fail/172.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/172.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=2, CPU_time=0.16
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_not_n972/Y   (INVX1)
+ sa0   --   g_not_n972/A   (INVX1)
+ sa0   --   g_n972/Y   (BUFX2)
+ sa0   --   g_n972/A   (BUFX2)
+ sa0   --   g_and_n927_n971/Y   (AND2X1)
+ sa0   --   g_and_n927_n971/A   (AND2X1)
+ sa0   --   g_and_n927_n971/B   (AND2X1)
+ sa0   --   g_n971/Y   (BUFX2)
+ sa0   --   g_n971/A   (BUFX2)
+ sa0   --   g_and_n404_n970/Y   (AND2X1)
+ sa0   --   g_and_n404_n970/A   (AND2X1)
+ sa0   --   g_and_n404_n970/B   (AND2X1)
+ sa0   --   g_n970/Y   (BUFX2)
+ sa0   --   g_n970/A   (BUFX2)
+ sa0   --   g_and_n381_n405/Y   (AND2X1)
+ sa0   --   g_and_n381_n405/A   (AND2X1)
+ sa0   --   g_and_n381_n405/B   (AND2X1)
+ sa1   --   g_and_pi082_not_n972/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_n927/Y   (BUFX2)
+ sa0   --   g_n927/A   (BUFX2)
+ sa0   --   g_and_n401_n926/Y   (AND2X1)
+ sa0   --   g_and_n401_n926/A   (AND2X1)
+ sa0   --   g_and_n401_n926/B   (AND2X1)
+ sa0   --   g_n926/Y   (BUFX2)
+ sa0   --   g_n926/A   (BUFX2)
+ sa0   --   g_and_n398_n925/Y   (AND2X1)
+ sa0   --   g_and_n398_n925/A   (AND2X1)
+ sa0   --   g_and_n398_n925/B   (AND2X1)
+ sa0   --   g_n925/Y   (BUFX2)
+ sa0   --   g_n925/A   (BUFX2)
+ sa0   --   g_and_not_pi002_2_not_pi048_2/Y   (AND2X1)
+ sa0   --   g_and_not_pi002_2_not_pi048_2/A   (AND2X1)
+ sa0   --   g_and_not_pi002_2_not_pi048_2/B   (AND2X1)
+ sa0   --   g_not_pi048_2/Y   (INVX1)
+ sa1   --   g_not_pi048_2/A   (INVX1)
+ sa0   --   g_not_pi002_2/Y   (INVX1)
+ sa1   --   g_not_pi002_2/A   (INVX1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/173.diag

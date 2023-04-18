@@ -1,0 +1,128 @@
+==
+Candidate 0
+site . n1623
+polarity . 1
+neighbor . not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070 and_pi081_pi120
+failing-states . 
+10 . 547
+passing-states . 
+00 . 54
+11 . 1
+01 . 1
+==
+Candidate 1
+site . and_pi081_pi120->n1623
+polarity . 1
+neighbor . pi120 pi081
+failing-states . 
+00 . 543
+01 . 2
+10 . 2
+passing-states . 
+00 . 54
+11 . 2
+==
+Candidate 2
+site . and_pi081_pi120
+polarity . 1
+neighbor . pi120 pi081
+failing-states . 
+00 . 543
+01 . 2
+10 . 2
+passing-states . 
+00 . 54
+11 . 2
+==
+Candidate 3
+site . n1623->and_not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070_n1623
+polarity . 1
+neighbor . not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070 and_pi081_pi120
+failing-states . 
+10 . 547
+passing-states . 
+00 . 54
+11 . 1
+01 . 1
+==
+Candidate 4
+site . not_pi116_7
+polarity . 1
+neighbor . pi116 pi058
+failing-states . 
+00 . 503
+10 . 21
+11 . 9
+01 . 14
+passing-states . 
+00 . 54
+10 . 2
+==
+Candidate 5
+site . not_pi116_7->and_pi058_not_pi116_7
+polarity . 1
+neighbor . pi116 pi058
+failing-states . 
+00 . 503
+10 . 21
+11 . 9
+01 . 14
+passing-states . 
+00 . 54
+10 . 2
+==
+Candidate 6
+site . n369->and_n369_n431
+polarity . 1
+neighbor . and_n345_n357 n431 n528 n417 pi009
+failing-states . 
+10010 . 471
+00010 . 42
+10000 . 9
+10001 . 6
+10100 . 7
+00100 . 1
+01000 . 3
+11000 . 4
+00000 . 2
+00001 . 2
+passing-states . 
+10010 . 46
+10001 . 2
+00010 . 5
+11000 . 1
+10100 . 1
+10000 . 1
+==
+Candidate 7
+site . n391->and_n391_n572
+polarity . 1
+neighbor . n572 and_not_pi040_n390 n388 not_pi050_2 not_pi002
+failing-states . 
+11111 . 501
+01001 . 10
+11110 . 10
+10111 . 17
+01011 . 3
+01111 . 3
+00001 . 1
+00011 . 2
+passing-states . 
+11111 . 56
+==
+Candidate 8
+site . n383->and_not_pi002_5_n383
+polarity . 1
+neighbor . n384 not_pi002_5 and_not_pi015_not_pi020 not_pi049_0
+failing-states . 
+1111 . 514
+1011 . 8
+1101 . 11
+1001 . 1
+0100 . 1
+0110 . 6
+0111 . 5
+0011 . 1
+passing-states . 
+1111 . 56
+==

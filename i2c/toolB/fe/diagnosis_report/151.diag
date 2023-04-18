@@ -1,0 +1,59 @@
+run_diagnosis ./tmax_fail/151.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 26 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/151.fail
+ #failing_pat=26, #failures=26, #defects=1, #faults=6, CPU_time=0.05
+ Simulated : #failing_pat=26, #passing_pat=96, #failures=26
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=6, #failing_pat=26, #passing_pat=96, #failures=26
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=96>
+ sa01   DS   g_and_not_pi003_16284135979104490_n1532/Y   (AND2X1)
+ sa01   --   g_po121_driver/Y   (BUFX2)
+ sa01   --   g_po121_driver/A   (BUFX2)
+ sa01   --   g_po121/Y   (BUFX2)
+ sa01   --   g_po121/A   (BUFX2)
+ sa01   --   po121   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=96>
+ sa01   DS   g_and_not_pi003_16284135979104490_n1532/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=96>
+ sa01   DS   g_not_pi003_16284135979104490/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=96>
+ sa01   DS   g_not_pi003_16284135979104490/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=26, passing=96>
+ sa01   DS   g_and_not_pi003_16284135979104490_n1532/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=96.15%, #explained patterns: <failing=25, passing=96>
+ sa0   DS   po121   (_PO)
+ sa0   --   g_po121/Y   (BUFX2)
+ sa0   --   g_po121/A   (BUFX2)
+ sa0   --   g_po121_driver/Y   (BUFX2)
+ sa0   --   g_po121_driver/A   (BUFX2)
+ sa0   --   g_and_not_pi003_16284135979104490_n1532/Y   (AND2X1)
+ sa0   --   g_and_not_pi003_16284135979104490_n1532/A   (AND2X1)
+ sa0   --   g_and_not_pi003_16284135979104490_n1532/B   (AND2X1)
+ sa0   --   g_n1532/Y   (BUFX2)
+ sa0   --   g_n1532/A   (BUFX2)
+ sa0   --   g_not_pi003_16284135979104490/Y   (INVX1)
+ sa1   --   g_not_pi003_16284135979104490/A   (INVX1)
+ sa0   --   g_and_not_pi129_1435036016098684342856030763566710717400773837392460666392490_not_n1531/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_1435036016098684342856030763566710717400773837392460666392490_not_n1531/B   (AND2X1)
+ sa0   --   g_and_not_pi129_1435036016098684342856030763566710717400773837392460666392490_not_n1531/A   (AND2X1)
+ sa0   --   g_not_pi129_1435036016098684342856030763566710717400773837392460666392490/Y   (INVX1)
+ sa1   --   g_not_pi129_1435036016098684342856030763566710717400773837392460666392490/A   (INVX1)
+ sa0   --   g_not_n1531/Y   (INVX1)
+ sa1   --   g_not_n1531/A   (INVX1)
+ sa1   --   g_n1531/Y   (BUFX2)
+ sa1   --   g_n1531/A   (BUFX2)
+ sa1   --   g_and_not_n713_0_not_n1530/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/153.diag

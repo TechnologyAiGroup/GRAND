@@ -1,0 +1,38 @@
+run_diagnosis ./tmax_fail/199.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 15 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/199.fail
+ #failing_pat=15, #failures=15, #defects=1, #faults=4, CPU_time=0.07
+ Simulated : #failing_pat=15, #passing_pat=96, #failures=15
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=4, #failing_pat=15, #passing_pat=96, #failures=15
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=15, passing=96>
+ sa01   DS   g_and_pi093_not_n1386_4/Y   (AND2X1)
+ sa01   --   g_n1407/Y   (BUFX2)
+ sa01   --   g_n1407/A   (BUFX2)
+ sa01   --   g_not_n1407/Y   (INVX1)
+ sa01   --   g_not_n1407/A   (INVX1)
+ sa01   --   g_and_not_n1407_not_n1408/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=15, passing=96>
+ sa01   DS   g_and_not_pi129_248930711762415449007872216849586085868492917169640490_not_n1409/Y   (AND2X1)
+ sa01   --   g_po108_driver/Y   (BUFX2)
+ sa01   --   g_po108_driver/A   (BUFX2)
+ sa01   --   g_po108/Y   (BUFX2)
+ sa01   --   g_po108/A   (BUFX2)
+ sa01   --   po108   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=15, passing=96>
+ sa01   DS   g_and_pi093_not_n1386_4/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=15, passing=96>
+ sa01   DS   g_and_not_n1407_not_n1408/Y   (AND2X1)
+ sa01   --   g_n1409/Y   (BUFX2)
+ sa01   --   g_n1409/A   (BUFX2)
+ sa01   --   g_not_n1409/Y   (INVX1)
+ sa01   --   g_not_n1409/A   (INVX1)
+ sa01   --   g_and_not_pi129_248930711762415449007872216849586085868492917169640490_not_n1409/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/2.diag

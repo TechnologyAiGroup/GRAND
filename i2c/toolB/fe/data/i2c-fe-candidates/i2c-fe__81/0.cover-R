@@ -1,0 +1,141 @@
+==
+Candidate 0
+site . not_n953
+polarity . 1
+neighbor . n953 n963
+failing-states . 
+01 . 26
+passing-states . 
+01 . 515
+00 . 62
+==
+Candidate 1
+site . n953->not_n953
+polarity . 0
+neighbor . and_not_pi040_2_not_n952
+failing-states . 
+0 . 26
+passing-states . 
+0 . 577
+==
+Candidate 2
+site . n953
+polarity . 0
+neighbor . and_not_pi040_2_not_n952
+failing-states . 
+0 . 26
+passing-states . 
+0 . 577
+==
+Candidate 3
+site . and_not_pi040_2_not_n952->n953
+polarity . 0
+neighbor . not_pi040_2 not_n952
+failing-states . 
+10 . 26
+passing-states . 
+10 . 570
+00 . 7
+==
+Candidate 4
+site . and_not_pi040_2_not_n952
+polarity . 0
+neighbor . not_pi040_2 not_n952
+failing-states . 
+10 . 26
+passing-states . 
+10 . 570
+00 . 7
+==
+Candidate 5
+site . not_pi040_2->and_not_pi040_2_not_n952
+polarity . 0
+neighbor . pi040 not_n952
+failing-states . 
+00 . 26
+passing-states . 
+00 . 570
+10 . 7
+==
+Candidate 6
+site . not_n952->and_not_pi040_2_not_n952
+polarity . 0
+neighbor . not_pi040_2 n952
+failing-states . 
+11 . 26
+passing-states . 
+11 . 570
+01 . 7
+==
+Candidate 7
+site . not_pi040_2
+polarity . 0
+neighbor . pi040 not_n952
+failing-states . 
+00 . 26
+passing-states . 
+00 . 570
+10 . 7
+==
+Candidate 8
+site . not_n952
+polarity . 0
+neighbor . not_pi040_2 n952
+failing-states . 
+11 . 26
+passing-states . 
+11 . 570
+01 . 7
+==
+Candidate 9
+site . n952->not_n952
+polarity . 1
+neighbor . and_not_n947_not_n951
+failing-states . 
+1 . 26
+passing-states . 
+1 . 577
+==
+Candidate 10
+site . n952
+polarity . 1
+neighbor . and_not_n947_not_n951
+failing-states . 
+1 . 26
+passing-states . 
+1 . 577
+==
+Candidate 11
+site . and_not_n947_not_n951->n952
+polarity . 1
+neighbor . not_n947 not_n951
+failing-states . 
+10 . 16
+01 . 10
+passing-states . 
+11 . 573
+10 . 3
+01 . 1
+==
+Candidate 12
+site . and_not_n947_not_n951
+polarity . 1
+neighbor . not_n947 not_n951
+failing-states . 
+10 . 16
+01 . 10
+passing-states . 
+11 . 573
+10 . 3
+01 . 1
+==
+Candidate 13
+site . not_n953->and_not_n953_n963
+polarity . 1
+neighbor . n953 n963
+failing-states . 
+01 . 26
+passing-states . 
+01 . 515
+00 . 62
+==

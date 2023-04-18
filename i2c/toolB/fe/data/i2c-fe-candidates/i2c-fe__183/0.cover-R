@@ -1,0 +1,39 @@
+==
+Candidate 0
+site . po117_driver->po117
+polarity . 0
+neighbor . or_n1469_n1479
+failing-states . 
+0 . 473
+passing-states . 
+0 . 130
+==
+Candidate 1
+site . po117_driver
+polarity . 0
+neighbor . or_n1469_n1479
+failing-states . 
+0 . 473
+passing-states . 
+0 . 130
+==
+Candidate 2
+site . or_n1469_n1479->po117_driver
+polarity . 0
+neighbor . n1469 n1479
+failing-states . 
+01 . 471
+10 . 2
+passing-states . 
+00 . 130
+==
+Candidate 3
+site . or_n1469_n1479
+polarity . 0
+neighbor . n1469 n1479
+failing-states . 
+01 . 471
+10 . 2
+passing-states . 
+00 . 130
+==

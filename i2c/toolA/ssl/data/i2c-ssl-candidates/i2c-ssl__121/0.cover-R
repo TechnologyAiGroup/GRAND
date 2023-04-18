@@ -1,0 +1,48 @@
+==
+Candidate 0
+site . and_pi080_not_n1325_1
+polarity . 1
+neighbor . pi080 not_n1325_1
+failing-states . 
+11 . 1
+passing-states . 
+01 . 601
+11 . 1
+==
+Candidate 1
+site . n1325->not_n1325_1
+polarity . 0
+neighbor . pi144 pi139 pi146 pi140 and_n1251_n1324 pi141 pi142 pi145 pi143
+failing-states . 
+000010000 . 1
+passing-states . 
+000000000 . 530
+000001000 . 8
+000100000 . 6
+010000000 . 9
+000000010 . 5
+000010100 . 2
+000000100 . 5
+010010000 . 2
+100000000 . 4
+000110000 . 2
+000000001 . 8
+001010000 . 1
+001000000 . 6
+100010000 . 2
+000010000 . 7
+000010001 . 2
+000010010 . 1
+000011000 . 2
+==
+Candidate 2
+site . not_n1325_1
+polarity . 1
+neighbor . pi080 n1325
+failing-states . 
+11 . 1
+passing-states . 
+00 . 580
+01 . 21
+10 . 1
+==

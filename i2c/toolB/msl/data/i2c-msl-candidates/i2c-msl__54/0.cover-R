@@ -1,0 +1,149 @@
+==
+Candidate 0
+site . n1586
+polarity . 1
+neighbor . and_n1246_not_n1585 not_pi129_492217353521848729599618551903381776068465426225614008572624070
+failing-states . 
+01 . 546
+00 . 7
+passing-states . 
+00 . 47
+11 . 2
+10 . 1
+==
+Candidate 1
+site . and_n1246_not_n1585->n1586
+polarity . 1
+neighbor . not_n1585 n1246
+failing-states . 
+00 . 470
+01 . 79
+10 . 4
+passing-states . 
+00 . 41
+11 . 3
+01 . 6
+==
+Candidate 2
+site . and_n1246_not_n1585
+polarity . 1
+neighbor . not_n1585 n1246
+failing-states . 
+00 . 470
+01 . 79
+10 . 4
+passing-states . 
+00 . 41
+11 . 3
+01 . 6
+==
+Candidate 3
+site . n1586->and_not_pi129_492217353521848729599618551903381776068465426225614008572624070_n1586
+polarity . 1
+neighbor . and_n1246_not_n1585 not_pi129_492217353521848729599618551903381776068465426225614008572624070
+failing-states . 
+01 . 546
+00 . 7
+passing-states . 
+00 . 47
+11 . 2
+10 . 1
+==
+Candidate 4
+site . not_pi137_4
+polarity . 1
+neighbor . not_n1456 pi137
+failing-states . 
+10 . 427
+11 . 60
+00 . 45
+01 . 21
+passing-states . 
+10 . 44
+00 . 6
+==
+Candidate 5
+site . not_pi137_4->and_not_pi137_4_not_n1456
+polarity . 1
+neighbor . not_n1456 pi137
+failing-states . 
+10 . 427
+11 . 60
+00 . 45
+01 . 21
+passing-states . 
+10 . 44
+00 . 6
+==
+Candidate 6
+site . n387->and_n381_n387
+polarity . 1
+neighbor . n388 and_not_pi041_not_pi046 not_pi043_2 n381
+failing-states . 
+1111 . 507
+0111 . 14
+1110 . 5
+1100 . 16
+1011 . 6
+1000 . 2
+0011 . 2
+1010 . 1
+passing-states . 
+1111 . 50
+==
+Candidate 7
+site . n500
+polarity . 1
+neighbor . n332 and_pi011_n459
+failing-states . 
+10 . 526
+00 . 16
+11 . 10
+01 . 1
+passing-states . 
+10 . 47
+00 . 2
+11 . 1
+==
+Candidate 8
+site . and_pi011_n459->n500
+polarity . 1
+neighbor . pi011 n459
+failing-states . 
+01 . 520
+11 . 11
+00 . 21
+10 . 1
+passing-states . 
+01 . 47
+00 . 2
+11 . 1
+==
+Candidate 9
+site . and_pi011_n459
+polarity . 1
+neighbor . pi011 n459
+failing-states . 
+01 . 520
+11 . 11
+00 . 21
+10 . 1
+passing-states . 
+01 . 47
+00 . 2
+11 . 1
+==
+Candidate 10
+site . n500->and_n332_n500
+polarity . 1
+neighbor . n332 and_pi011_n459
+failing-states . 
+10 . 526
+00 . 16
+11 . 10
+01 . 1
+passing-states . 
+10 . 47
+00 . 2
+11 . 1
+==

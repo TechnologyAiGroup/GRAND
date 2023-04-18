@@ -1,0 +1,44 @@
+==
+Candidate 0
+site . n487
+polarity . 1
+neighbor . and_n369_n417 n667 n633 n493 n623
+failing-states . 
+00100 . 1
+01000 . 4
+00010 . 1
+00001 . 1
+passing-states . 
+10000 . 513
+00000 . 79
+11000 . 1
+10010 . 1
+10001 . 1
+10100 . 1
+==
+Candidate 1
+site . and_n369_n417->n487
+polarity . 1
+neighbor . n417 n369
+failing-states . 
+01 . 4
+10 . 3
+passing-states . 
+11 . 517
+10 . 44
+01 . 27
+00 . 8
+==
+Candidate 2
+site . and_n369_n417
+polarity . 1
+neighbor . n417 n369
+failing-states . 
+01 . 4
+10 . 3
+passing-states . 
+11 . 517
+10 . 44
+01 . 27
+00 . 8
+==

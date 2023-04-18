@@ -1,0 +1,91 @@
+==
+Candidate 0
+site . n1249->and_not_pi140_n1249
+polarity . 1
+neighbor . pi090 and_pi136_not_pi137_0 not_pi146 pi099 pi091 not_pi144 not_pi140 not_pi143_0 not_pi139 not_pi142 not_pi145 not_pi141
+failing-states . 
+001001111110 . 4
+001001111111 . 15
+001001110111 . 4
+001001111101 . 3
+000001111111 . 3
+001001101111 . 4
+001000111111 . 3
+101001111111 . 1
+001001111011 . 3
+001011111111 . 1
+001101111111 . 1
+passing-states . 
+001001111111 . 490
+011011111111 . 2
+111001111111 . 1
+001011111111 . 3
+001101111111 . 3
+001001011111 . 6
+001001111101 . 2
+011001111111 . 17
+001001111011 . 3
+011001011111 . 2
+011001111011 . 1
+011001110111 . 2
+101001111111 . 3
+001000111111 . 2
+001001111110 . 4
+001001101111 . 4
+000001111111 . 3
+010001111111 . 1
+001001110111 . 5
+011101111111 . 1
+011001111110 . 2
+011001111101 . 1
+011001101111 . 2
+011000111111 . 1
+==
+Candidate 1
+site . n1250
+polarity . 1
+neighbor . n1251 and_not_pi140_n1249
+failing-states . 
+11 . 42
+passing-states . 
+01 . 533
+00 . 6
+10 . 7
+11 . 15
+==
+Candidate 2
+site . and_not_pi140_n1249->n1250
+polarity . 1
+neighbor . not_pi140 n1249
+failing-states . 
+10 . 42
+passing-states . 
+10 . 522
+11 . 31
+00 . 6
+01 . 2
+==
+Candidate 3
+site . and_not_pi140_n1249
+polarity . 1
+neighbor . not_pi140 n1249
+failing-states . 
+10 . 42
+passing-states . 
+10 . 522
+11 . 31
+00 . 6
+01 . 2
+==
+Candidate 4
+site . n1250->and_n1250_n1251
+polarity . 1
+neighbor . n1251 and_not_pi140_n1249
+failing-states . 
+11 . 42
+passing-states . 
+01 . 533
+00 . 6
+10 . 7
+11 . 15
+==

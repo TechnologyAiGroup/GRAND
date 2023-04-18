@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/52.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 6 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/52.fail
+ #failing_pat=6, #failures=6, #defects=1, #faults=5, CPU_time=0.17
+ Simulated : #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=5, #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n705_n708/Y   (AND2X1)
+ sa01   --   g_n709/Y   (BUFX2)
+ sa01   --   g_n709/A   (BUFX2)
+ sa01   --   g_not_n709/Y   (INVX1)
+ sa01   --   g_not_n709/A   (INVX1)
+ sa01   --   g_and_not_pi129_968890104070_not_n709/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n703_n710/Y   (AND2X1)
+ sa01   --   g_n711/Y   (BUFX2)
+ sa01   --   g_n711/A   (BUFX2)
+ sa01   --   g_and_not_n696_n711/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n649_n707/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n696_n711/Y   (AND2X1)
+ sa01   --   g_po039_driver/Y   (BUFX2)
+ sa01   --   g_po039_driver/A   (BUFX2)
+ sa01   --   g_po039/Y   (BUFX2)
+ sa01   --   g_po039/A   (BUFX2)
+ sa01   --   po039   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi129_968890104070_not_n709/Y   (AND2X1)
+ sa01   --   g_n710/Y   (BUFX2)
+ sa01   --   g_n710/A   (BUFX2)
+ sa01   --   g_and_not_n703_n710/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/53.diag

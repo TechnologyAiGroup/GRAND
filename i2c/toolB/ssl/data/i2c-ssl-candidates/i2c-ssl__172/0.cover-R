@@ -1,0 +1,53 @@
+==
+Candidate 0
+site . n1414
+polarity . 1
+neighbor . and_n1412_n1413 pi142 pi143 pi146 pi145 pi144
+failing-states . 
+010000 . 4
+000000 . 7
+000010 . 4
+000100 . 4
+001000 . 7
+000001 . 4
+passing-states . 
+000000 . 553
+100000 . 7
+100010 . 2
+010000 . 1
+100001 . 1
+101000 . 2
+110000 . 2
+100100 . 2
+000100 . 1
+000001 . 1
+001000 . 1
+==
+Candidate 1
+site . and_n1412_n1413->n1414
+polarity . 1
+neighbor . n1413 n1412
+failing-states . 
+00 . 27
+01 . 2
+10 . 1
+passing-states . 
+00 . 466
+01 . 84
+11 . 16
+10 . 7
+==
+Candidate 2
+site . and_n1412_n1413
+polarity . 1
+neighbor . n1413 n1412
+failing-states . 
+00 . 27
+01 . 2
+10 . 1
+passing-states . 
+00 . 466
+01 . 84
+11 . 16
+10 . 7
+==

@@ -1,0 +1,157 @@
+run_diagnosis ./tmax_fail/68.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 87 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/68.fail
+ #failing_pat=87, #failures=87, #defects=7, #faults=19, CPU_time=0.53
+ Simulated : #failing_pat=87, #passing_pat=96, #failures=87
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=68, #passing_pat=115, #failures=68
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=68, passing=115>
+ sa1   DS   g_not_n1362/Y   (INVX1)
+ sa0   --   g_not_n1362/A   (INVX1)
+ sa0   --   g_n1362/Y   (BUFX2)
+ sa0   --   g_n1362/A   (BUFX2)
+ sa0   --   g_and_not_n1359_not_n1361/Y   (AND2X1)
+ sa0   --   g_and_not_n1359_not_n1361/A   (AND2X1)
+ sa0   --   g_and_not_n1359_not_n1361/B   (AND2X1)
+ sa0   --   g_not_n1361/Y   (INVX1)
+ sa1   --   g_not_n1361/A   (INVX1)
+ sa0   --   g_not_n1359/Y   (INVX1)
+ sa1   --   g_not_n1359/A   (INVX1)
+ sa1   --   g_n1361/Y   (BUFX2)
+ sa1   --   g_n1361/A   (BUFX2)
+ sa1   --   g_n1359/Y   (BUFX2)
+ sa1   --   g_n1359/A   (BUFX2)
+ sa1   --   g_and_pi031_n1360/Y   (AND2X1)
+ sa1   --   g_and_not_pi136_2_not_n1358/Y   (AND2X1)
+ sa1   --   g_and_pi137_not_n1362/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=182, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ sa1   DS   g_not_n903/Y   (INVX1)
+ sa0   --   g_not_n903/A   (INVX1)
+ sa0   --   g_n903/Y   (BUFX2)
+ sa0   --   g_n903/A   (BUFX2)
+ sa0   --   g_and_pi098_pi106/Y   (AND2X1)
+ sa0   --   g_and_pi098_pi106/A   (AND2X1)
+ sa0   --   g_and_pi098_pi106/B   (AND2X1)
+ sa1   --   g_and_not_n903_not_n907/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=2, #failing_pat=3, #passing_pat=180, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=180>
+ sa0   DS   g_n790/Y   (BUFX2)
+ sa0   --   g_n790/A   (BUFX2)
+ sa0   --   g_and_not_pi026_4_not_n723_0/Y   (AND2X1)
+ sa0   --   g_and_not_pi026_4_not_n723_0/B   (AND2X1)
+ sa0   --   g_and_not_pi026_4_not_n723_0/A   (AND2X1)
+ sa0   --   g_not_pi026_4/Y   (INVX1)
+ sa1   --   g_not_pi026_4/A   (INVX1)
+ sa0   --   g_not_n723_0/Y   (INVX1)
+ sa1   --   g_not_n723_0/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=75.00%, #explained patterns: <failing=2, passing=180>
+ sa1   DS   g_n723/Y   (BUFX2)
+ sa1   --   g_n723/A   (BUFX2)
+ sa1   --   g_and_not_pi039_n722/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 4: stuck fault model, #faults=3, #failing_pat=1, #passing_pat=182, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ sa1   DS   g_not_pi045_1/Y   (INVX1)
+ sa0   --   g_not_pi045_1/A   (INVX1)
+ sa1   --   g_and_not_pi045_1_n384/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ sa1   DS   g_and_n570_n579/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ sa1   DS   g_n580/Y   (BUFX2)
+ sa1   --   g_n580/A   (BUFX2)
+ sa1   --   g_and_n570_n579/Y   (AND2X1)
+ sa1   --   g_and_n407_n580/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 5: stuck fault model, #faults=1, #failing_pat=14, #passing_pat=169, #failures=14
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=169>
+ sa1   DS   g_n611/Y   (BUFX2)
+ sa1   --   g_n611/A   (BUFX2)
+ sa1   --   g_and_n450_n610/Y   (AND2X1)
+ sa1   --   g_and_n611_n614/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 6: transition fault model, #faults=2, #failing_pat=1, #passing_pat=182, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ str   DS   po051   (_PO)
+ str   --   g_po051/Y   (BUFX2)
+ str   --   g_po051/A   (BUFX2)
+ str   --   g_po051_driver/Y   (BUFX2)
+ str   --   g_po051_driver/A   (BUFX2)
+ str   --   g_and_not_pi129_13410686196639649008070_not_n908/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_not_n903/Y   (INVX1)
+ str   --   g_not_n903/A   (INVX1)
+ str   --   g_n903/Y   (BUFX2)
+ str   --   g_n903/A   (BUFX2)
+ str   --   g_and_pi098_pi106/Y   (AND2X1)
+ stf   --   g_and_not_n903_not_n907/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 7: transition fault model, #faults=9, #failing_pat=1, #passing_pat=182, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ str   DS   pi015   (_PI)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_n570/Y   (BUFX2)
+ stf   --   g_n570/A   (BUFX2)
+ stf   --   g_and_not_pi045_1_n384/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_not_pi045_1/Y   (INVX1)
+ str   --   g_not_pi045_1/A   (INVX1)
+ stf   --   g_and_not_pi045_1_n384/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ str   DS   po030   (_PO)
+ str   --   g_po030/Y   (BUFX2)
+ str   --   g_po030/A   (BUFX2)
+ str   --   g_po030_driver/Y   (BUFX2)
+ str   --   g_po030_driver/A   (BUFX2)
+ str   --   g_and_not_pi129_24010_not_n593/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_n592/Y   (BUFX2)
+ stf   --   g_n592/A   (BUFX2)
+ stf   --   g_and_not_n590_not_n591/Y   (AND2X1)
+ stf   --   g_and_not_n578_n592/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_and_n570_n579/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_n580/Y   (BUFX2)
+ stf   --   g_n580/A   (BUFX2)
+ stf   --   g_and_n570_n579/Y   (AND2X1)
+ stf   --   g_and_n407_n580/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_not_n582/Y   (INVX1)
+ str   --   g_not_n582/A   (INVX1)
+ str   --   g_n582/Y   (BUFX2)
+ str   --   g_n582/A   (BUFX2)
+ str   --   g_and_pi015_not_n581/Y   (AND2X1)
+ stf   --   g_and_not_n582_not_n588/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=182>
+ stf   DS   g_not_n590/Y   (INVX1)
+ str   --   g_not_n590/A   (INVX1)
+ str   --   g_n590/Y   (BUFX2)
+ str   --   g_n590/A   (BUFX2)
+ str   --   g_and_pi082_not_n589/Y   (AND2X1)
+ stf   --   g_and_not_n590_not_n591/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/69.diag

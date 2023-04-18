@@ -1,0 +1,101 @@
+run_diagnosis ./tmax_fail/57.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 5 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/57.fail
+ #failing_pat=5, #failures=5, #defects=2, #faults=7, CPU_time=0.10
+ Simulated : #failing_pat=5, #passing_pat=96, #failures=5
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=4, #passing_pat=97, #failures=4
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=97>
+ sa1   DS   g_not_n1199/Y   (INVX1)
+ sa0   --   g_not_n1199/A   (INVX1)
+ sa0   --   g_n1199/Y   (BUFX2)
+ sa0   --   g_n1199/A   (BUFX2)
+ sa0   --   g_and_not_pi027_70_not_n1198/Y   (AND2X1)
+ sa0   --   g_and_not_pi027_70_not_n1198/A   (AND2X1)
+ sa0   --   g_and_not_pi027_70_not_n1198/B   (AND2X1)
+ sa0   --   g_not_pi027_70/Y   (INVX1)
+ sa1   --   g_not_pi027_70/A   (INVX1)
+ sa0   --   g_not_n1198/Y   (INVX1)
+ sa1   --   g_not_n1198/A   (INVX1)
+ sa1   --   g_n1198/Y   (BUFX2)
+ sa1   --   g_n1198/A   (BUFX2)
+ sa1   --   g_and_not_n1195_not_n1197/Y   (AND2X1)
+ sa1   --   g_and_not_n1199_not_n1201/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=97>
+ sa0   DS   po072   (_PO)
+ sa0   --   g_po072/Y   (BUFX2)
+ sa0   --   g_po072/A   (BUFX2)
+ sa0   --   g_po072_driver/Y   (BUFX2)
+ sa0   --   g_po072_driver/A   (BUFX2)
+ sa0   --   g_and_not_pi003_968890104070_n1203/Y   (AND2X1)
+ sa0   --   g_and_not_pi003_968890104070_n1203/A   (AND2X1)
+ sa0   --   g_and_not_pi003_968890104070_n1203/B   (AND2X1)
+ sa0   --   g_not_pi003_968890104070/Y   (INVX1)
+ sa1   --   g_not_pi003_968890104070/A   (INVX1)
+ sa0   --   g_n1203/Y   (BUFX2)
+ sa0   --   g_n1203/A   (BUFX2)
+ sa0   --   g_and_not_pi129_152867006319425761937651857692768264010_not_n1202/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_152867006319425761937651857692768264010_not_n1202/A   (AND2X1)
+ sa0   --   g_and_not_pi129_152867006319425761937651857692768264010_not_n1202/B   (AND2X1)
+ sa0   --   g_not_pi129_152867006319425761937651857692768264010/Y   (INVX1)
+ sa1   --   g_not_pi129_152867006319425761937651857692768264010/A   (INVX1)
+ sa0   --   g_not_n1202/Y   (INVX1)
+ sa1   --   g_not_n1202/A   (INVX1)
+ sa1   --   g_n1202/Y   (BUFX2)
+ sa1   --   g_n1202/A   (BUFX2)
+ sa1   --   g_and_not_n1199_not_n1201/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=4, passing=97>
+ sa1   DS   g_not_n1195/Y   (INVX1)
+ sa0   --   g_not_n1195/A   (INVX1)
+ sa0   --   g_n1195/Y   (BUFX2)
+ sa0   --   g_n1195/A   (BUFX2)
+ sa0   --   g_and_pi057_not_n1194/Y   (AND2X1)
+ sa0   --   g_and_pi057_not_n1194/A   (AND2X1)
+ sa0   --   g_and_pi057_not_n1194/B   (AND2X1)
+ sa0   --   g_not_n1194/Y   (INVX1)
+ sa1   --   g_not_n1194/A   (INVX1)
+ sa1   --   g_n1194/Y   (BUFX2)
+ sa1   --   g_n1194/A   (BUFX2)
+ sa1   --   g_and_not_n1191_not_n1193/Y   (AND2X1)
+ sa1   --   g_and_not_n1195_not_n1197/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=4, #failing_pat=1, #passing_pat=100, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=100>
+ sa1   DS   g_n1105/Y   (BUFX2)
+ sa1   --   g_n1105/A   (BUFX2)
+ sa1   --   g_and_not_pi024_4_not_pi042_2/Y   (AND2X1)
+ sa1   --   g_and_n990_n1105/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=100>
+ sa1   DS   g_not_pi042_2/Y   (INVX1)
+ sa0   --   g_not_pi042_2/A   (INVX1)
+ sa1   --   g_and_not_pi024_4_not_pi042_2/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=100>
+ sa1   DS   g_not_n1108/Y   (INVX1)
+ sa0   --   g_not_n1108/A   (INVX1)
+ sa0   --   g_n1108/Y   (BUFX2)
+ sa0   --   g_n1108/A   (BUFX2)
+ sa0   --   g_and_pi049_not_n1107/Y   (AND2X1)
+ sa0   --   g_and_pi049_not_n1107/B   (AND2X1)
+ sa0   --   g_and_pi049_not_n1107/A   (AND2X1)
+ sa0   --   g_not_n1107/Y   (INVX1)
+ sa1   --   g_not_n1107/A   (INVX1)
+ sa1   --   g_n1107/Y   (BUFX2)
+ sa1   --   g_n1107/A   (BUFX2)
+ sa1   --   g_and_n705_n1106/Y   (AND2X1)
+ sa1   --   g_and_not_n1108_not_n1112/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=100>
+ sa1   DS   g_n1106/Y   (BUFX2)
+ sa1   --   g_n1106/A   (BUFX2)
+ sa1   --   g_and_n990_n1105/Y   (AND2X1)
+ sa1   --   g_and_n705_n1106/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/59.diag

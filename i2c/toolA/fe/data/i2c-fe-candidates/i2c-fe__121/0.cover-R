@@ -1,0 +1,120 @@
+==
+Candidate 0
+site . and_not_n1500_not_n1501
+polarity . 1
+neighbor . not_n1501 not_n1500
+failing-states . 
+11 . 452
+passing-states . 
+11 . 82
+10 . 69
+==
+Candidate 1
+site . not_n1501
+polarity . 1
+neighbor . n1501 not_n1500
+failing-states . 
+01 . 452
+passing-states . 
+01 . 82
+00 . 69
+==
+Candidate 2
+site . n1501
+polarity . 0
+neighbor . and_not_pi073_not_pi136_10
+failing-states . 
+0 . 452
+passing-states . 
+0 . 151
+==
+Candidate 3
+site . and_not_pi073_not_pi136_10
+polarity . 0
+neighbor . not_pi073 not_pi136_10
+failing-states . 
+11 . 452
+passing-states . 
+01 . 8
+10 . 71
+11 . 72
+==
+Candidate 4
+site . pi073->not_pi073
+polarity . 1
+neighbor . not_n1271_2 n958
+failing-states . 
+11 . 356
+10 . 82
+01 . 14
+passing-states . 
+01 . 1
+11 . 145
+10 . 5
+==
+Candidate 5
+site . not_pi073
+polarity . 0
+neighbor . not_pi136_10 pi073
+failing-states . 
+10 . 452
+passing-states . 
+11 . 8
+00 . 71
+10 . 72
+==
+Candidate 6
+site . pi136->not_pi136_10
+polarity . 1
+neighbor . pi137 not_pi137_0 pi033 not_n1348 not_n1513 not_n1536 n1243 not_pi138_4 pi032 not_pi069_0 not_n1554 not_pi068 not_pi063 pi034 not_n1454
+failing-states . 
+010111110111101 . 419
+010111110111001 . 7
+010111111111101 . 2
+010111110101101 . 5
+010111110110101 . 6
+011111110111101 . 2
+010011110111101 . 7
+010111110111100 . 1
+010101110111101 . 1
+010111110111111 . 2
+passing-states . 
+010111110111101 . 9
+100111010111101 . 53
+010000000001100 . 1
+010000000101100 . 36
+101111010111101 . 2
+100000000101100 . 20
+010000000101000 . 1
+010011110111101 . 2
+100111010111111 . 2
+010111110111001 . 1
+010111110101101 . 2
+100111011111101 . 2
+100001000101100 . 1
+100111010111001 . 1
+010110110111101 . 2
+010100000101100 . 1
+010001000101100 . 1
+011111110111001 . 1
+010111110011101 . 2
+010111110111100 . 2
+010111110110101 . 1
+010000000101101 . 1
+010111110011111 . 1
+010111111110101 . 1
+010101110111101 . 3
+010000000111100 . 1
+010010000101100 . 1
+==
+Candidate 7
+site . not_pi136_10
+polarity . 0
+neighbor . pi136 not_pi073
+failing-states . 
+01 . 452
+passing-states . 
+00 . 8
+11 . 71
+01 . 72
+==

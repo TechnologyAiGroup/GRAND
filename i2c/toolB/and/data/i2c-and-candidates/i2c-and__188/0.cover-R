@@ -1,0 +1,148 @@
+==
+Candidate 0
+site . n312
+polarity . 0
+neighbor . n357 and_not_pi007_0_pi013 n311
+failing-states . 
+111 . 4
+101 . 3
+passing-states . 
+101 . 538
+001 . 28
+111 . 9
+100 . 17
+110 . 1
+011 . 1
+000 . 2
+==
+Candidate 1
+site . and_not_pi007_0_pi013->n312
+polarity . 0
+neighbor . not_pi007_0 pi013
+failing-states . 
+11 . 4
+10 . 3
+passing-states . 
+10 . 573
+00 . 11
+11 . 11
+01 . 1
+==
+Candidate 2
+site . and_not_pi007_0_pi013
+polarity . 0
+neighbor . not_pi007_0 pi013
+failing-states . 
+11 . 4
+10 . 3
+passing-states . 
+10 . 573
+00 . 11
+11 . 11
+01 . 1
+==
+Candidate 3
+site . not_pi007_0->and_not_pi007_0_pi013
+polarity . 0
+neighbor . pi007 pi013
+failing-states . 
+01 . 4
+00 . 3
+passing-states . 
+00 . 573
+10 . 11
+01 . 11
+11 . 1
+==
+Candidate 4
+site . not_pi007_0
+polarity . 0
+neighbor . pi007 pi013
+failing-states . 
+01 . 4
+00 . 3
+passing-states . 
+00 . 573
+10 . 11
+01 . 11
+11 . 1
+==
+Candidate 5
+site . not_n1371
+polarity . 1
+neighbor . n1371 not_n761_0
+failing-states . 
+01 . 7
+passing-states . 
+00 . 15
+01 . 581
+==
+Candidate 6
+site . n1371->not_n1371
+polarity . 0
+neighbor . and_pi096_n1370
+failing-states . 
+0 . 7
+passing-states . 
+0 . 596
+==
+Candidate 7
+site . n1371
+polarity . 0
+neighbor . and_pi096_n1370
+failing-states . 
+0 . 7
+passing-states . 
+0 . 596
+==
+Candidate 8
+site . and_pi096_n1370->n1371
+polarity . 0
+neighbor . n1370 pi096
+failing-states . 
+00 . 4
+11 . 3
+passing-states . 
+00 . 566
+10 . 23
+01 . 6
+11 . 1
+==
+Candidate 9
+site . and_pi096_n1370
+polarity . 0
+neighbor . n1370 pi096
+failing-states . 
+00 . 4
+11 . 3
+passing-states . 
+00 . 566
+10 . 23
+01 . 6
+11 . 1
+==
+Candidate 10
+site . n1370->and_pi096_n1370
+polarity . 0
+neighbor . n788 pi096 and_not_pi110_5_n1369
+failing-states . 
+100 . 4
+111 . 3
+passing-states . 
+100 . 505
+101 . 19
+000 . 61
+110 . 6
+001 . 4
+011 . 1
+==
+Candidate 11
+site . not_n1371->and_not_n761_0_not_n1371
+polarity . 1
+neighbor . n1371 not_n761_0
+failing-states . 
+01 . 7
+passing-states . 
+00 . 15
+01 . 581
+==

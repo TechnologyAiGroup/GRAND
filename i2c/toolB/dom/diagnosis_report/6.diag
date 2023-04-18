@@ -1,0 +1,35 @@
+run_diagnosis ./tmax_fail/6.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 9 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/6.fail
+ #failing_pat=9, #failures=9, #defects=1, #faults=3, CPU_time=0.07
+ Simulated : #failing_pat=9, #passing_pat=96, #failures=9
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=9, #passing_pat=96, #failures=9
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_and_pi145_n1414/Y   (AND2X1)
+ sa01   --   g_n1433/Y   (BUFX2)
+ sa01   --   g_n1433/A   (BUFX2)
+ sa01   --   g_not_n1433/Y   (INVX1)
+ sa01   --   g_not_n1433/A   (INVX1)
+ sa01   --   g_and_not_n1432_not_n1433/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_and_not_n1432_not_n1433/Y   (AND2X1)
+ sa01   --   g_n1434/Y   (BUFX2)
+ sa01   --   g_n1434/A   (BUFX2)
+ sa01   --   g_not_n1434/Y   (INVX1)
+ sa01   --   g_not_n1434/A   (INVX1)
+ sa01   --   g_and_not_pi129_597682638941559493067901192655856192170251494124306816490_not_n1434/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=96>
+ sa01   DS   g_and_not_pi129_597682638941559493067901192655856192170251494124306816490_not_n1434/Y   (AND2X1)
+ sa01   --   g_po112_driver/Y   (BUFX2)
+ sa01   --   g_po112_driver/A   (BUFX2)
+ sa01   --   g_po112/Y   (BUFX2)
+ sa01   --   g_po112/A   (BUFX2)
+ sa01   --   po112   (_PO)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/60.diag

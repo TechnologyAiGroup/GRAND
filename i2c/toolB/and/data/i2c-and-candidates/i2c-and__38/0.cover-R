@@ -1,0 +1,145 @@
+==
+Candidate 0
+site . not_n1349
+polarity . 1
+neighbor . n1349 not_n1353
+failing-states . 
+01 . 7
+00 . 7
+passing-states . 
+00 . 477
+01 . 97
+11 . 15
+==
+Candidate 1
+site . n1349->not_n1349
+polarity . 0
+neighbor . and_pi136_not_n1348
+failing-states . 
+0 . 14
+passing-states . 
+0 . 574
+1 . 15
+==
+Candidate 2
+site . n1349
+polarity . 0
+neighbor . and_pi136_not_n1348
+failing-states . 
+0 . 14
+passing-states . 
+0 . 574
+1 . 15
+==
+Candidate 3
+site . and_pi136_not_n1348->n1349
+polarity . 0
+neighbor . not_n1348 pi136
+failing-states . 
+01 . 6
+00 . 8
+passing-states . 
+10 . 444
+01 . 50
+00 . 80
+11 . 15
+==
+Candidate 4
+site . and_pi136_not_n1348
+polarity . 0
+neighbor . not_n1348 pi136
+failing-states . 
+01 . 6
+00 . 8
+passing-states . 
+10 . 444
+01 . 50
+00 . 80
+11 . 15
+==
+Candidate 5
+site . not_n1348->and_pi136_not_n1348
+polarity . 0
+neighbor . pi136 n1348
+failing-states . 
+11 . 3
+01 . 8
+10 . 3
+passing-states . 
+00 . 484
+10 . 44
+11 . 21
+01 . 40
+==
+Candidate 6
+site . not_n1348
+polarity . 0
+neighbor . pi136 n1348
+failing-states . 
+11 . 3
+01 . 8
+10 . 3
+passing-states . 
+00 . 484
+10 . 44
+11 . 21
+01 . 40
+==
+Candidate 7
+site . n1348->not_n1348
+polarity . 1
+neighbor . and_not_n1346_not_n1347
+failing-states . 
+1 . 11
+0 . 3
+passing-states . 
+0 . 528
+1 . 61
+==
+Candidate 8
+site . n1348
+polarity . 1
+neighbor . and_not_n1346_not_n1347
+failing-states . 
+1 . 11
+0 . 3
+passing-states . 
+0 . 528
+1 . 61
+==
+Candidate 9
+site . and_not_n1346_not_n1347->n1348
+polarity . 1
+neighbor . not_n1347 not_n1346
+failing-states . 
+11 . 11
+01 . 2
+10 . 1
+passing-states . 
+01 . 528
+11 . 61
+==
+Candidate 10
+site . and_not_n1346_not_n1347
+polarity . 1
+neighbor . not_n1347 not_n1346
+failing-states . 
+11 . 11
+01 . 2
+10 . 1
+passing-states . 
+01 . 528
+11 . 61
+==
+Candidate 11
+site . not_n1349->and_not_n1349_not_n1353
+polarity . 1
+neighbor . n1349 not_n1353
+failing-states . 
+01 . 7
+00 . 7
+passing-states . 
+00 . 477
+01 . 97
+11 . 15
+==

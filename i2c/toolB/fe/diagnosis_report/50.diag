@@ -1,0 +1,19 @@
+run_diagnosis ./tmax_fail/50.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 598 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/50.fail
+ #failing_pat=598, #failures=598, #defects=1, #faults=1, CPU_time=0.14
+ Simulated : #failing_pat=598, #passing_pat=5, #failures=598
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=598, #passing_pat=5, #failures=598
+ ------------------------------------------------------------------------------
+ match=99.83%, #explained patterns: <failing=598, passing=4>
+ sa1   DS   po105   (_PO)
+ sa1   --   g_po105/Y   (BUFX2)
+ sa1   --   g_po105/A   (BUFX2)
+ sa1   --   g_po105_driver/Y   (BUFX2)
+ sa1   --   g_po105_driver/A   (BUFX2)
+ sa1   --   g_and_not_pi129_725745515342319093317411710931737859674906464051430_not_n1397/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/51.diag

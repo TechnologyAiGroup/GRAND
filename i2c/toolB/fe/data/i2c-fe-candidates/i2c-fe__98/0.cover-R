@@ -1,0 +1,41 @@
+==
+Candidate 0
+site . po040_driver->po040
+polarity . 1
+neighbor . and_not_pi003_1176490_n759
+failing-states . 
+1 . 579
+passing-states . 
+1 . 24
+==
+Candidate 1
+site . po040_driver
+polarity . 1
+neighbor . and_not_pi003_1176490_n759
+failing-states . 
+1 . 579
+passing-states . 
+1 . 24
+==
+Candidate 2
+site . and_not_pi003_1176490_n759->po040_driver
+polarity . 1
+neighbor . not_pi003_1176490 n759
+failing-states . 
+10 . 550
+00 . 28
+01 . 1
+passing-states . 
+11 . 24
+==
+Candidate 3
+site . and_not_pi003_1176490_n759
+polarity . 1
+neighbor . not_pi003_1176490 n759
+failing-states . 
+10 . 550
+00 . 28
+01 . 1
+passing-states . 
+11 . 24
+==

@@ -1,0 +1,39 @@
+run_diagnosis ./tmax_fail/195.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 530 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/195.fail
+ #failing_pat=530, #failures=530, #defects=1, #faults=2, CPU_time=0.15
+ Simulated : #failing_pat=530, #passing_pat=73, #failures=530
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=530, #passing_pat=73, #failures=530
+ ------------------------------------------------------------------------------
+ match=97.43%, #explained patterns: <failing=530, passing=59>
+ sa1   DS   g_not_n873/Y   (INVX1)
+ sa0   --   g_not_n873/A   (INVX1)
+ sa0   --   g_n873/Y   (BUFX2)
+ sa0   --   g_n873/A   (BUFX2)
+ sa0   --   g_and_not_n868_not_n872/Y   (AND2X1)
+ sa0   --   g_and_not_n868_not_n872/B   (AND2X1)
+ sa0   --   g_and_not_n868_not_n872/A   (AND2X1)
+ sa0   --   g_not_n868/Y   (INVX1)
+ sa1   --   g_not_n868/A   (INVX1)
+ sa0   --   g_not_n872/Y   (INVX1)
+ sa1   --   g_not_n872/A   (INVX1)
+ sa1   --   g_n868/Y   (BUFX2)
+ sa1   --   g_n868/A   (BUFX2)
+ sa1   --   g_n872/Y   (BUFX2)
+ sa1   --   g_n872/A   (BUFX2)
+ sa1   --   g_and_pi089_pi106/Y   (AND2X1)
+ sa1   --   g_and_not_pi106_0_not_n871/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_797922662976120010_not_n873/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=88.48%, #explained patterns: <failing=530, passing=4>
+ sa1   DS   po046   (_PO)
+ sa1   --   g_po046/Y   (BUFX2)
+ sa1   --   g_po046/A   (BUFX2)
+ sa1   --   g_po046_driver/Y   (BUFX2)
+ sa1   --   g_po046_driver/A   (BUFX2)
+ sa1   --   g_and_not_pi129_797922662976120010_not_n873/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/196.diag

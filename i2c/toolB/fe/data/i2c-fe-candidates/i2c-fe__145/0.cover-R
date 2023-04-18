@@ -1,0 +1,47 @@
+==
+Candidate 0
+site . not_pi136_490
+polarity . 1
+neighbor . pi136 not_n1517
+failing-states . 
+11 . 3
+passing-states . 
+01 . 485
+11 . 45
+10 . 23
+00 . 47
+==
+Candidate 1
+site . not_pi136_490->and_not_pi136_490_not_n1517
+polarity . 1
+neighbor . pi136 not_n1517
+failing-states . 
+11 . 3
+passing-states . 
+01 . 485
+11 . 45
+10 . 23
+00 . 47
+==
+Candidate 2
+site . not_pi070_0
+polarity . 1
+neighbor . not_pi138_70 pi070
+failing-states . 
+11 . 3
+passing-states . 
+10 . 535
+00 . 64
+11 . 1
+==
+Candidate 3
+site . not_pi070_0->and_not_pi070_0_not_pi138_70
+polarity . 1
+neighbor . not_pi138_70 pi070
+failing-states . 
+11 . 3
+passing-states . 
+10 . 535
+00 . 64
+11 . 1
+==

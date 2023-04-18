@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . po067_driver->po067
+polarity . 1
+neighbor . and_not_pi129_445676403263631959001900459745680070_not_n1142
+failing-states . 
+1 . 48
+passing-states . 
+0 . 528
+1 . 27
+==
+Candidate 1
+site . po067_driver
+polarity . 1
+neighbor . and_not_pi129_445676403263631959001900459745680070_not_n1142
+failing-states . 
+1 . 48
+passing-states . 
+0 . 528
+1 . 27
+==
+Candidate 2
+site . and_not_pi129_445676403263631959001900459745680070_not_n1142->po067_driver
+polarity . 1
+neighbor . not_n1142 not_pi129_445676403263631959001900459745680070
+failing-states . 
+00 . 48
+passing-states . 
+01 . 521
+11 . 27
+10 . 7
+==
+Candidate 3
+site . and_not_pi129_445676403263631959001900459745680070_not_n1142
+polarity . 1
+neighbor . not_n1142 not_pi129_445676403263631959001900459745680070
+failing-states . 
+00 . 48
+passing-states . 
+01 . 521
+11 . 27
+10 . 7
+==

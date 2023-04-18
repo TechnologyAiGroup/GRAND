@@ -1,0 +1,121 @@
+run_diagnosis ./tmax_fail/177.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 447 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/177.fail
+ #failing_pat=447, #failures=447, #defects=1, #faults=18, CPU_time=0.16
+ Simulated : #failing_pat=447, #passing_pat=96, #failures=447
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=18, #failing_pat=447, #passing_pat=96, #failures=447
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=447, passing=96>
+ sa01   DS   g_and_not_pi129_1_not_n414/Y   (AND2X1)
+ sa01   --   g_po017_driver/Y   (BUFX2)
+ sa01   --   g_po017_driver/A   (BUFX2)
+ sa01   --   g_po017/Y   (BUFX2)
+ sa01   --   g_po017/A   (BUFX2)
+ sa01   --   po017   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=447, passing=96>
+ sa01   DS   g_not_pi129_1/Y   (INVX1)
+ sa01   --   g_not_pi129_1/A   (INVX1)
+ sa01   --   g_and_not_pi129_1_not_n414/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_n396/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_n396/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_not_pi065/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_not_pi065/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_and_not_n379_not_n395/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_and_not_n379_not_n395/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_not_n395/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_not_n395/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_not_n379/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_not_n379/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_n395/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_n395/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa1   DS   g_and_pi082_not_n394/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.66%, #explained patterns: <failing=441, passing=102>
+ sa0   DS   g_and_not_n379_not_n395/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.38%, #explained patterns: <failing=446, passing=85>
+ sa0   DS   po017   (_PO)
+ sa0   --   g_po017/Y   (BUFX2)
+ sa0   --   g_po017/A   (BUFX2)
+ sa0   --   g_po017_driver/Y   (BUFX2)
+ sa0   --   g_po017_driver/A   (BUFX2)
+ sa0   --   g_and_not_pi129_1_not_n414/Y   (AND2X1)
+ sa0   --   g_and_not_pi129_1_not_n414/A   (AND2X1)
+ sa0   --   g_and_not_pi129_1_not_n414/B   (AND2X1)
+ sa0   --   g_not_pi129_1/Y   (INVX1)
+ sa1   --   g_not_pi129_1/A   (INVX1)
+ sa0   --   g_not_n414/Y   (INVX1)
+ sa1   --   g_not_n414/A   (INVX1)
+ sa1   --   g_n414/Y   (BUFX2)
+ sa1   --   g_n414/A   (BUFX2)
+ sa1   --   g_and_not_n397_not_n413/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=96.29%, #explained patterns: <failing=441, passing=85>
+ sa1   DS   g_not_n397/Y   (INVX1)
+ sa0   --   g_not_n397/A   (INVX1)
+ sa0   --   g_n397/Y   (BUFX2)
+ sa0   --   g_n397/A   (BUFX2)
+ sa0   --   g_and_not_pi065_n396/Y   (AND2X1)
+ sa0   --   g_and_not_pi065_n396/A   (AND2X1)
+ sa0   --   g_and_not_pi065_n396/B   (AND2X1)
+ sa0   --   g_not_pi065/Y   (INVX1)
+ sa1   --   g_not_pi065/A   (INVX1)
+ sa0   --   g_n396/Y   (BUFX2)
+ sa0   --   g_n396/A   (BUFX2)
+ sa0   --   g_and_not_n379_not_n395/Y   (AND2X1)
+ sa0   --   g_and_not_n379_not_n395/A   (AND2X1)
+ sa0   --   g_and_not_n379_not_n395/B   (AND2X1)
+ sa0   --   g_not_n395/Y   (INVX1)
+ sa1   --   g_not_n395/A   (INVX1)
+ sa0   --   g_not_n379/Y   (INVX1)
+ sa1   --   g_not_n379/A   (INVX1)
+ sa1   --   g_n395/Y   (BUFX2)
+ sa1   --   g_n395/A   (BUFX2)
+ sa1   --   g_and_pi082_not_n394/Y   (AND2X1)
+ sa1   --   g_and_not_n397_not_n413/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/178.diag

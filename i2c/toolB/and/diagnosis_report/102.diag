@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/102.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 521 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/102.fail
+ #failing_pat=521, #failures=521, #defects=1, #faults=2, CPU_time=0.16
+ Simulated : #failing_pat=521, #passing_pat=82, #failures=521
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=521, #passing_pat=82, #failures=521
+ ------------------------------------------------------------------------------
+ match=97.57%, #explained patterns: <failing=521, passing=69>
+ sa0   DS   g_n1283/Y   (BUFX2)
+ sa0   --   g_n1283/A   (BUFX2)
+ sa0   --   g_and_not_n1280_not_n1282/Y   (AND2X1)
+ sa0   --   g_and_not_n1280_not_n1282/A   (AND2X1)
+ sa0   --   g_and_not_n1280_not_n1282/B   (AND2X1)
+ sa0   --   g_not_n1280/Y   (INVX1)
+ sa1   --   g_not_n1280/A   (INVX1)
+ sa0   --   g_not_n1282/Y   (INVX1)
+ sa1   --   g_not_n1282/A   (INVX1)
+ sa1   --   g_n1280/Y   (BUFX2)
+ sa1   --   g_n1280/A   (BUFX2)
+ sa1   --   g_n1282/Y   (BUFX2)
+ sa1   --   g_n1282/A   (BUFX2)
+ sa1   --   g_and_pi068_not_n1247_3/Y   (AND2X1)
+ sa1   --   g_and_n1251_n1281/Y   (AND2X1)
+ sa0   --   g_or_pi129_n1283/A   (OR2X1)
+ ------------------------------------------------------------------------------
+ match=88.46%, #explained patterns: <failing=521, passing=14>
+ sa0   DS   po083   (_PO)
+ sa0   --   g_po083/Y   (BUFX2)
+ sa0   --   g_po083/A   (BUFX2)
+ sa0   --   g_po083_driver/Y   (BUFX2)
+ sa0   --   g_po083_driver/A   (BUFX2)
+ sa0   --   g_or_pi129_n1283/Y   (OR2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/103.diag

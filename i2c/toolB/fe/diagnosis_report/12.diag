@@ -1,0 +1,23 @@
+run_diagnosis ./tmax_fail/12.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 34 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/12.fail
+ #failing_pat=34, #failures=34, #defects=1, #faults=3, CPU_time=0.04
+ Simulated : #failing_pat=34, #passing_pat=96, #failures=34
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=34, #passing_pat=96, #failures=34
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=34, passing=96>
+ sa01   DS   g_n1414/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=34, passing=96>
+ sa01   DS   g_n1414/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=34, passing=96>
+ sa01   DS   g_and_n1412_n1413/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/120.diag

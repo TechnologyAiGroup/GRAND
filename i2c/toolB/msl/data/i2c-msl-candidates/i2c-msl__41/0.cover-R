@@ -1,0 +1,173 @@
+==
+Candidate 0
+site . not_pi136_0
+polarity . 1
+neighbor . pi136 pi137
+failing-states . 
+00 . 27
+11 . 17
+passing-states . 
+00 . 462
+11 . 21
+10 . 33
+01 . 43
+==
+Candidate 1
+site . not_pi136_0->and_not_pi136_0_pi137
+polarity . 1
+neighbor . pi136 pi137
+failing-states . 
+00 . 27
+11 . 17
+passing-states . 
+00 . 462
+11 . 21
+10 . 33
+01 . 43
+==
+Candidate 2
+site . n549->and_n357_n549
+polarity . 1
+neighbor . n1614 and_not_pi028_0_n548 n357
+failing-states . 
+001 . 30
+101 . 13
+111 . 1
+passing-states . 
+001 . 465
+100 . 19
+101 . 46
+011 . 13
+000 . 11
+111 . 4
+110 . 1
+==
+Candidate 3
+site . n399->and_n399_n697
+polarity . 1
+neighbor . not_pi045_2 n697 n398 not_pi002_3 n568 and_not_pi047_0_not_pi048_0 n704
+failing-states . 
+1111111 . 34
+1111101 . 10
+passing-states . 
+1111111 . 502
+1010111 . 6
+1111101 . 11
+1101111 . 5
+1111010 . 18
+1111110 . 2
+1101010 . 1
+0000111 . 1
+0001111 . 4
+1000111 . 1
+1111000 . 3
+1010010 . 1
+0001101 . 1
+0001010 . 1
+1111100 . 1
+1010101 . 1
+==
+Candidate 4
+site . n698
+polarity . 1
+neighbor . and_n399_n697 n401 n385
+failing-states . 
+111 . 44
+passing-states . 
+111 . 521
+011 . 13
+100 . 17
+000 . 2
+110 . 5
+010 . 1
+==
+Candidate 5
+site . and_n399_n697->n698
+polarity . 1
+neighbor . n399 n697
+failing-states . 
+11 . 34
+01 . 10
+passing-states . 
+11 . 528
+10 . 14
+01 . 15
+00 . 2
+==
+Candidate 6
+site . and_n399_n697
+polarity . 1
+neighbor . n399 n697
+failing-states . 
+11 . 34
+01 . 10
+passing-states . 
+11 . 528
+10 . 14
+01 . 15
+00 . 2
+==
+Candidate 7
+site . n698->and_n385_n698
+polarity . 1
+neighbor . and_n399_n697 n401 n385
+failing-states . 
+111 . 44
+passing-states . 
+111 . 521
+011 . 13
+100 . 17
+000 . 2
+110 . 5
+010 . 1
+==
+Candidate 8
+site . n300->and_n300_n303
+polarity . 1
+neighbor . n342 n329 not_pi021_1 not_n371 n303 and_n298_n299 pi054
+failing-states . 
+1010110 . 28
+1010101 . 8
+1110101 . 1
+1010111 . 7
+passing-states . 
+1010110 . 430
+1010111 . 8
+0011111 . 5
+1010011 . 8
+1011010 . 6
+1011011 . 6
+0010011 . 3
+1010100 . 12
+1111111 . 9
+1011111 . 5
+1110110 . 6
+0010111 . 2
+0111011 . 1
+1110101 . 2
+0010010 . 3
+1010101 . 4
+0011110 . 3
+0110110 . 3
+0001111 . 1
+1111101 . 2
+1111110 . 6
+0100101 . 1
+1011110 . 3
+1010010 . 4
+0100111 . 2
+0100011 . 1
+0110111 . 2
+0010001 . 2
+0110101 . 2
+1111011 . 1
+0011101 . 1
+0111111 . 1
+1110111 . 3
+1011001 . 1
+0011011 . 4
+0100110 . 3
+0000111 . 1
+1010001 . 1
+1110011 . 1
+==

@@ -1,0 +1,143 @@
+==
+Candidate 0
+site . po118_driver->po118
+polarity . 1
+neighbor . or_n1484_n1494
+failing-states . 
+1 . 126
+passing-states . 
+1 . 473
+0 . 4
+==
+Candidate 1
+site . po118_driver
+polarity . 1
+neighbor . or_n1484_n1494
+failing-states . 
+1 . 126
+passing-states . 
+1 . 473
+0 . 4
+==
+Candidate 2
+site . or_n1484_n1494->po118_driver
+polarity . 1
+neighbor . n1494 n1484
+failing-states . 
+01 . 126
+passing-states . 
+11 . 420
+00 . 4
+01 . 2
+10 . 51
+==
+Candidate 3
+site . or_n1484_n1494
+polarity . 1
+neighbor . n1494 n1484
+failing-states . 
+01 . 126
+passing-states . 
+11 . 420
+00 . 4
+01 . 2
+10 . 51
+==
+Candidate 4
+site . n1494->or_n1484_n1494
+polarity . 1
+neighbor . n1484 and_not_pi138_9_not_n1493
+failing-states . 
+10 . 126
+passing-states . 
+11 . 420
+00 . 4
+10 . 2
+01 . 51
+==
+Candidate 5
+site . n1484->or_n1484_n1494
+polarity . 1
+neighbor . n1494 and_pi138_not_n1483
+failing-states . 
+00 . 126
+passing-states . 
+10 . 471
+00 . 4
+01 . 2
+==
+Candidate 6
+site . n1494
+polarity . 1
+neighbor . n1484 and_not_pi138_9_not_n1493
+failing-states . 
+10 . 126
+passing-states . 
+11 . 420
+00 . 4
+10 . 2
+01 . 51
+==
+Candidate 7
+site . and_not_pi138_9_not_n1493->n1494
+polarity . 1
+neighbor . not_n1493 not_pi138_9
+failing-states . 
+01 . 64
+10 . 41
+00 . 21
+passing-states . 
+11 . 471
+01 . 4
+10 . 1
+00 . 1
+==
+Candidate 8
+site . n1484
+polarity . 1
+neighbor . n1494 and_pi138_not_n1483
+failing-states . 
+00 . 126
+passing-states . 
+10 . 471
+00 . 4
+01 . 2
+==
+Candidate 9
+site . and_pi138_not_n1483->n1484
+polarity . 1
+neighbor . pi138 not_n1483
+failing-states . 
+00 . 63
+10 . 62
+01 . 1
+passing-states . 
+00 . 475
+11 . 2
+==
+Candidate 10
+site . and_not_pi138_9_not_n1493
+polarity . 1
+neighbor . not_n1493 not_pi138_9
+failing-states . 
+01 . 64
+10 . 41
+00 . 21
+passing-states . 
+11 . 471
+01 . 4
+10 . 1
+00 . 1
+==
+Candidate 11
+site . and_pi138_not_n1483
+polarity . 1
+neighbor . pi138 not_n1483
+failing-states . 
+00 . 63
+10 . 62
+01 . 1
+passing-states . 
+00 . 475
+11 . 2
+==

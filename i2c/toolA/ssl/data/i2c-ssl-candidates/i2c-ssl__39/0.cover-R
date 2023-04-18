@@ -1,0 +1,59 @@
+==
+Candidate 0
+site . n1087->and_n1086_n1087
+polarity . 1
+neighbor . n1086 n1120 and_n398_n401
+failing-states . 
+110 . 1
+passing-states . 
+111 . 524
+001 . 14
+110 . 20
+000 . 3
+101 . 34
+100 . 7
+==
+Candidate 1
+site . and_n1086_n1087
+polarity . 1
+neighbor . n1086 n1087
+failing-states . 
+10 . 1
+passing-states . 
+11 . 558
+01 . 14
+10 . 27
+00 . 3
+==
+Candidate 2
+site . and_not_pi024_0_not_pi045_0
+polarity . 1
+neighbor . not_pi024_0 not_pi045_0
+failing-states . 
+10 . 1
+passing-states . 
+11 . 589
+01 . 7
+10 . 6
+==
+Candidate 3
+site . pi045->not_pi045_0
+polarity . 0
+neighbor . n1041
+failing-states . 
+1 . 1
+passing-states . 
+1 . 586
+0 . 16
+==
+Candidate 4
+site . not_pi045_0
+polarity . 1
+neighbor . not_pi024_0 pi045
+failing-states . 
+11 . 1
+passing-states . 
+10 . 589
+00 . 7
+11 . 6
+==

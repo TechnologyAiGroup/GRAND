@@ -1,0 +1,42 @@
+run_diagnosis ./tmax_fail/40.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 24 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/40.fail
+ #failing_pat=24, #failures=24, #defects=1, #faults=2, CPU_time=0.11
+ Simulated : #failing_pat=24, #passing_pat=96, #failures=24
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=23, #passing_pat=97, #failures=23
+ ------------------------------------------------------------------------------
+ match=23.96%, #explained patterns: <failing=23, passing=24>
+ sa1   DS   g_not_n1492/Y   (INVX1)
+ sa0   --   g_not_n1492/A   (INVX1)
+ sa0   --   g_n1492/Y   (BUFX2)
+ sa0   --   g_n1492/A   (BUFX2)
+ sa0   --   g_and_not_pi137_6_not_n1491/Y   (AND2X1)
+ sa0   --   g_and_not_pi137_6_not_n1491/B   (AND2X1)
+ sa0   --   g_and_not_pi137_6_not_n1491/A   (AND2X1)
+ sa0   --   g_not_pi137_6/Y   (INVX1)
+ sa1   --   g_not_pi137_6/A   (INVX1)
+ sa0   --   g_not_n1491/Y   (INVX1)
+ sa1   --   g_not_n1491/A   (INVX1)
+ sa1   --   g_n1491/Y   (BUFX2)
+ sa1   --   g_n1491/A   (BUFX2)
+ sa1   --   g_and_not_n1489_not_n1490/Y   (AND2X1)
+ sa1   --   g_and_not_n1488_not_n1492/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=23.96%, #explained patterns: <failing=23, passing=24>
+ sa1   DS   g_not_n1490/Y   (INVX1)
+ sa0   --   g_not_n1490/A   (INVX1)
+ sa0   --   g_n1490/Y   (BUFX2)
+ sa0   --   g_n1490/A   (BUFX2)
+ sa0   --   g_and_not_pi074_not_pi136_9/Y   (AND2X1)
+ sa0   --   g_and_not_pi074_not_pi136_9/A   (AND2X1)
+ sa0   --   g_and_not_pi074_not_pi136_9/B   (AND2X1)
+ sa0   --   g_not_pi074/Y   (INVX1)
+ sa1   --   g_not_pi074/A   (INVX1)
+ sa0   --   g_not_pi136_9/Y   (INVX1)
+ sa1   --   g_not_pi136_9/A   (INVX1)
+ sa1   --   g_and_not_n1489_not_n1490/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/41.diag

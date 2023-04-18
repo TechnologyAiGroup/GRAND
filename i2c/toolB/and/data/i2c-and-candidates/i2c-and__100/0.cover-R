@@ -1,0 +1,117 @@
+==
+Candidate 0
+site . not_n377
+polarity . 0
+neighbor . pi003 n377
+failing-states . 
+00 . 90
+01 . 2
+passing-states . 
+01 . 459
+00 . 23
+11 . 28
+10 . 1
+==
+Candidate 1
+site . n377->not_n377
+polarity . 1
+neighbor . and_not_pi129_0_not_n376
+failing-states . 
+0 . 90
+1 . 2
+passing-states . 
+1 . 487
+0 . 24
+==
+Candidate 2
+site . n377
+polarity . 1
+neighbor . and_not_pi129_0_not_n376
+failing-states . 
+0 . 90
+1 . 2
+passing-states . 
+1 . 487
+0 . 24
+==
+Candidate 3
+site . and_not_pi129_0_not_n376->n377
+polarity . 1
+neighbor . not_n376 not_pi129_0
+failing-states . 
+10 . 53
+01 . 37
+11 . 2
+passing-states . 
+11 . 487
+01 . 22
+10 . 2
+==
+Candidate 4
+site . and_not_pi129_0_not_n376
+polarity . 1
+neighbor . not_n376 not_pi129_0
+failing-states . 
+10 . 53
+01 . 37
+11 . 2
+passing-states . 
+11 . 487
+01 . 22
+10 . 2
+==
+Candidate 5
+site . not_n377->or_pi003_not_n377
+polarity . 0
+neighbor . pi003 n377
+failing-states . 
+00 . 90
+01 . 2
+passing-states . 
+01 . 459
+00 . 23
+11 . 28
+10 . 1
+==
+Candidate 6
+site . po016_driver->po016
+polarity . 0
+neighbor . or_pi003_not_n377
+failing-states . 
+0 . 92
+passing-states . 
+0 . 459
+1 . 52
+==
+Candidate 7
+site . po016_driver
+polarity . 0
+neighbor . or_pi003_not_n377
+failing-states . 
+0 . 92
+passing-states . 
+0 . 459
+1 . 52
+==
+Candidate 8
+site . or_pi003_not_n377->po016_driver
+polarity . 0
+neighbor . pi003 not_n377
+failing-states . 
+00 . 92
+passing-states . 
+00 . 459
+01 . 23
+10 . 29
+==
+Candidate 9
+site . or_pi003_not_n377
+polarity . 0
+neighbor . pi003 not_n377
+failing-states . 
+00 . 92
+passing-states . 
+00 . 459
+01 . 23
+10 . 29
+==

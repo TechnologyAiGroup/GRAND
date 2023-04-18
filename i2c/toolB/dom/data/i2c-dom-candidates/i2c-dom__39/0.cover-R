@@ -1,0 +1,245 @@
+==
+Candidate 0
+site . not_n1401
+polarity . 1
+neighbor . not_pi129_5080218607396233653221881976522165017724345248360010 n1401
+failing-states . 
+10 . 522
+passing-states . 
+10 . 5
+00 . 55
+11 . 21
+==
+Candidate 1
+site . n1401->not_n1401
+polarity . 0
+neighbor . and_not_n1399_not_n1400
+failing-states . 
+0 . 522
+passing-states . 
+0 . 60
+1 . 21
+==
+Candidate 2
+site . n1401
+polarity . 0
+neighbor . and_not_n1399_not_n1400
+failing-states . 
+0 . 522
+passing-states . 
+0 . 60
+1 . 21
+==
+Candidate 3
+site . and_not_n1399_not_n1400->n1401
+polarity . 0
+neighbor . not_n1400 not_n1399
+failing-states . 
+01 . 522
+passing-states . 
+00 . 5
+01 . 55
+11 . 21
+==
+Candidate 4
+site . and_not_n1399_not_n1400
+polarity . 0
+neighbor . not_n1400 not_n1399
+failing-states . 
+01 . 522
+passing-states . 
+00 . 5
+01 . 55
+11 . 21
+==
+Candidate 5
+site . not_n1399->and_not_n1399_not_n1400
+polarity . 0
+neighbor . not_n1400 n1399
+failing-states . 
+00 . 522
+passing-states . 
+01 . 5
+00 . 55
+10 . 21
+==
+Candidate 6
+site . not_n1400->and_not_n1399_not_n1400
+polarity . 0
+neighbor . n1400 not_n1399
+failing-states . 
+01 . 522
+passing-states . 
+00 . 5
+01 . 75
+11 . 1
+==
+Candidate 7
+site . not_n1399
+polarity . 0
+neighbor . not_n1400 n1399
+failing-states . 
+00 . 522
+passing-states . 
+01 . 5
+00 . 55
+10 . 21
+==
+Candidate 8
+site . n1399->not_n1399
+polarity . 1
+neighbor . and_pi091_not_n1386_2
+failing-states . 
+0 . 522
+passing-states . 
+1 . 5
+0 . 76
+==
+Candidate 9
+site . not_n1400
+polarity . 0
+neighbor . n1400 not_n1399
+failing-states . 
+01 . 522
+passing-states . 
+00 . 5
+01 . 75
+11 . 1
+==
+Candidate 10
+site . n1400->not_n1400
+polarity . 1
+neighbor . and_pi143_n1386
+failing-states . 
+0 . 522
+passing-states . 
+0 . 80
+1 . 1
+==
+Candidate 11
+site . n1399
+polarity . 1
+neighbor . and_pi091_not_n1386_2
+failing-states . 
+0 . 522
+passing-states . 
+1 . 5
+0 . 76
+==
+Candidate 12
+site . and_pi091_not_n1386_2->n1399
+polarity . 1
+neighbor . not_n1386_2 pi091
+failing-states . 
+10 . 506
+00 . 15
+01 . 1
+passing-states . 
+11 . 5
+10 . 74
+00 . 2
+==
+Candidate 13
+site . n1400
+polarity . 1
+neighbor . and_pi143_n1386
+failing-states . 
+0 . 522
+passing-states . 
+0 . 80
+1 . 1
+==
+Candidate 14
+site . and_pi143_n1386->n1400
+polarity . 1
+neighbor . n1386 pi143
+failing-states . 
+00 . 499
+10 . 16
+01 . 7
+passing-states . 
+00 . 77
+01 . 2
+11 . 1
+10 . 1
+==
+Candidate 15
+site . and_pi091_not_n1386_2
+polarity . 1
+neighbor . not_n1386_2 pi091
+failing-states . 
+10 . 506
+00 . 15
+01 . 1
+passing-states . 
+11 . 5
+10 . 74
+00 . 2
+==
+Candidate 16
+site . and_pi143_n1386
+polarity . 1
+neighbor . n1386 pi143
+failing-states . 
+00 . 499
+10 . 16
+01 . 7
+passing-states . 
+00 . 77
+01 . 2
+11 . 1
+10 . 1
+==
+Candidate 17
+site . not_n1401->and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401
+polarity . 1
+neighbor . not_pi129_5080218607396233653221881976522165017724345248360010 n1401
+failing-states . 
+10 . 522
+passing-states . 
+10 . 5
+00 . 55
+11 . 21
+==
+Candidate 18
+site . po106_driver->po106
+polarity . 1
+neighbor . and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401
+failing-states . 
+1 . 522
+passing-states . 
+1 . 5
+0 . 76
+==
+Candidate 19
+site . po106_driver
+polarity . 1
+neighbor . and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401
+failing-states . 
+1 . 522
+passing-states . 
+1 . 5
+0 . 76
+==
+Candidate 20
+site . and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401->po106_driver
+polarity . 1
+neighbor . not_pi129_5080218607396233653221881976522165017724345248360010 not_n1401
+failing-states . 
+11 . 522
+passing-states . 
+11 . 5
+01 . 55
+10 . 21
+==
+Candidate 21
+site . and_not_pi129_5080218607396233653221881976522165017724345248360010_not_n1401
+polarity . 1
+neighbor . not_pi129_5080218607396233653221881976522165017724345248360010 not_n1401
+failing-states . 
+11 . 522
+passing-states . 
+11 . 5
+01 . 55
+10 . 21
+==

@@ -1,0 +1,45 @@
+run_diagnosis ./tmax_fail/82.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 3 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/82.fail
+ #failing_pat=3, #failures=3, #defects=2, #faults=4, CPU_time=0.06
+ Simulated : #failing_pat=3, #passing_pat=96, #failures=3
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=2, #passing_pat=97, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=97>
+ sa1   DS   g_n1106/Y   (BUFX2)
+ sa1   --   g_n1106/A   (BUFX2)
+ sa1   --   g_and_n990_n1105/Y   (AND2X1)
+ sa1   --   g_and_n705_n1106/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=97>
+ sa1   DS   g_not_n1108/Y   (INVX1)
+ sa0   --   g_not_n1108/A   (INVX1)
+ sa0   --   g_n1108/Y   (BUFX2)
+ sa0   --   g_n1108/A   (BUFX2)
+ sa0   --   g_and_pi049_not_n1107/Y   (AND2X1)
+ sa0   --   g_and_pi049_not_n1107/B   (AND2X1)
+ sa0   --   g_and_pi049_not_n1107/A   (AND2X1)
+ sa0   --   g_not_n1107/Y   (INVX1)
+ sa1   --   g_not_n1107/A   (INVX1)
+ sa1   --   g_n1107/Y   (BUFX2)
+ sa1   --   g_n1107/A   (BUFX2)
+ sa1   --   g_and_n705_n1106/Y   (AND2X1)
+ sa1   --   g_and_not_n1108_not_n1112/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=97>
+ sa1   DS   g_n1105/Y   (BUFX2)
+ sa1   --   g_n1105/A   (BUFX2)
+ sa1   --   g_and_not_pi024_4_not_pi042_2/Y   (AND2X1)
+ sa1   --   g_and_n990_n1105/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=1, #passing_pat=98, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=98>
+ sa1   DS   g_not_pi129_10/Y   (INVX1)
+ sa0   --   g_not_pi129_10/A   (INVX1)
+ sa1   --   g_and_not_pi129_10_not_n531/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/83.diag

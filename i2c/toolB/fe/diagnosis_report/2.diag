@@ -1,0 +1,101 @@
+run_diagnosis ./tmax_fail/2.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 516 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/2.fail
+ #failing_pat=516, #failures=516, #defects=1, #faults=16, CPU_time=0.11
+ Simulated : #failing_pat=516, #passing_pat=87, #failures=516
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=16, #failing_pat=516, #passing_pat=87, #failures=516
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_pi003_2_n484/Y   (AND2X1)
+ sa01   --   g_po022_driver/Y   (BUFX2)
+ sa01   --   g_po022_driver/A   (BUFX2)
+ sa01   --   g_po022/Y   (BUFX2)
+ sa01   --   g_po022/A   (BUFX2)
+ sa01   --   po022   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_n478_n481/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_pi129_6_not_n483/Y   (AND2X1)
+ sa01   --   g_n484/Y   (BUFX2)
+ sa01   --   g_n484/A   (BUFX2)
+ sa01   --   g_and_not_pi003_2_n484/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_n472_not_n482/Y   (AND2X1)
+ sa01   --   g_n483/Y   (BUFX2)
+ sa01   --   g_n483/A   (BUFX2)
+ sa01   --   g_not_n483/Y   (INVX1)
+ sa01   --   g_not_n483/A   (INVX1)
+ sa01   --   g_and_not_pi129_6_not_n483/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_n472_not_n482/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_n482/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_n482/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_not_n482/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_not_n482/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.42%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_n472_not_n482/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_and_not_pi129_6_not_n483/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_not_n483/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_not_n483/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_n483/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=516, passing=87>
+ sa01   DS   g_n483/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=99.23%, #explained patterns: <failing=515, passing=84>
+ sa1   DS   g_not_n483/Y   (INVX1)
+ sa0   --   g_not_n483/A   (INVX1)
+ sa0   --   g_n483/Y   (BUFX2)
+ sa0   --   g_n483/A   (BUFX2)
+ sa0   --   g_and_not_n472_not_n482/Y   (AND2X1)
+ sa0   --   g_and_not_n472_not_n482/A   (AND2X1)
+ sa0   --   g_and_not_n472_not_n482/B   (AND2X1)
+ sa0   --   g_not_n472/Y   (INVX1)
+ sa1   --   g_not_n472/A   (INVX1)
+ sa0   --   g_not_n482/Y   (INVX1)
+ sa1   --   g_not_n482/A   (INVX1)
+ sa1   --   g_n472/Y   (BUFX2)
+ sa1   --   g_n472/A   (BUFX2)
+ sa1   --   g_n482/Y   (BUFX2)
+ sa1   --   g_n482/A   (BUFX2)
+ sa1   --   g_and_pi007_not_pi054_2/Y   (AND2X1)
+ sa1   --   g_and_n478_n481/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_6_not_n483/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/200.diag

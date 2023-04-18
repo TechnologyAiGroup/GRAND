@@ -1,0 +1,75 @@
+run_diagnosis ./tmax_fail/141.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 87 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/141.fail
+ #failing_pat=74, #failures=87, #defects=4, #faults=7, CPU_time=1.72
+ Simulated : #failing_pat=74, #passing_pat=96, #failures=87
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=24, #passing_pat=146, #failures=33
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=24, passing=146>
+ sa0   DS   g_n736/Y   (BUFX2)
+ sa0   --   g_n736/A   (BUFX2)
+ sa0   --   g_and_not_pi039_0_not_pi052_0/Y   (AND2X1)
+ sa0   --   g_and_not_pi039_0_not_pi052_0/A   (AND2X1)
+ sa0   --   g_and_not_pi039_0_not_pi052_0/B   (AND2X1)
+ sa0   --   g_not_pi052_0/Y   (INVX1)
+ sa1   --   g_not_pi052_0/A   (INVX1)
+ sa0   --   g_not_pi039_0/Y   (INVX1)
+ sa1   --   g_not_pi039_0/A   (INVX1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=3, #passing_pat=167, #failures=3
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=167>
+ sa1   DS   g_n756/Y   (BUFX2)
+ sa1   --   g_n756/A   (BUFX2)
+ sa1   --   g_and_n754_n755/Y   (AND2X1)
+ sa1   --   g_and_n748_n756/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=3, #failing_pat=44, #passing_pat=126, #failures=44
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=44, passing=126>
+ sa1   DS   g_not_n301/Y   (INVX1)
+ sa0   --   g_not_n301/A   (INVX1)
+ sa1   --   g_and_not_pi056_0_not_n301/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=44, passing=126>
+ sa1   DS   g_not_n302/Y   (INVX1)
+ sa0   --   g_not_n302/A   (INVX1)
+ sa1   --   g_and_n301_not_n302/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=44, passing=126>
+ sa0   DS   g_n301/Y   (BUFX2)
+ sa0   --   g_n301/A   (BUFX2)
+ sa0   --   g_and_not_pi005_not_pi022/Y   (AND2X1)
+ sa0   --   g_and_not_pi005_not_pi022/A   (AND2X1)
+ sa0   --   g_and_not_pi005_not_pi022/B   (AND2X1)
+ sa0   --   g_not_pi005/Y   (INVX1)
+ sa1   --   g_not_pi005/A   (INVX1)
+ sa0   --   g_not_pi022/Y   (INVX1)
+ sa1   --   g_not_pi022/A   (INVX1)
+ ------------------------------------------------------------------------------
+ Defect 4: stuck fault model, #faults=2, #failing_pat=7, #passing_pat=163, #failures=7
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=163>
+ sa0   DS   g_n473/Y   (BUFX2)
+ sa0   --   g_n473/A   (BUFX2)
+ sa0   --   g_and_not_pi018_1_not_pi021_2/Y   (AND2X1)
+ sa0   --   g_and_not_pi018_1_not_pi021_2/A   (AND2X1)
+ sa0   --   g_and_not_pi018_1_not_pi021_2/B   (AND2X1)
+ sa0   --   g_not_pi021_2/Y   (INVX1)
+ sa1   --   g_not_pi021_2/A   (INVX1)
+ sa0   --   g_not_pi018_1/Y   (INVX1)
+ sa1   --   g_not_pi018_1/A   (INVX1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=7, passing=163>
+ sa0   DS   g_n479/Y   (BUFX2)
+ sa0   --   g_n479/A   (BUFX2)
+ sa0   --   g_and_not_pi006_3_n341/Y   (AND2X1)
+ sa0   --   g_and_not_pi006_3_n341/A   (AND2X1)
+ sa0   --   g_and_not_pi006_3_n341/B   (AND2X1)
+ sa0   --   g_not_pi006_3/Y   (INVX1)
+ sa1   --   g_not_pi006_3/A   (INVX1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/142.diag

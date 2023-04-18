@@ -1,0 +1,49 @@
+==
+Candidate 0
+site . n855
+polarity . 1
+neighbor . pi026 and_n754_n787
+failing-states . 
+11 . 2
+passing-states . 
+01 . 564
+11 . 29
+00 . 8
+==
+Candidate 1
+site . and_n754_n787->n855
+polarity . 1
+neighbor . n754 n787
+failing-states . 
+10 . 1
+01 . 1
+passing-states . 
+01 . 33
+11 . 527
+10 . 33
+00 . 8
+==
+Candidate 2
+site . and_n754_n787
+polarity . 1
+neighbor . n754 n787
+failing-states . 
+10 . 1
+01 . 1
+passing-states . 
+01 . 33
+11 . 527
+10 . 33
+00 . 8
+==
+Candidate 3
+site . n855->and_pi026_n855
+polarity . 1
+neighbor . pi026 and_n754_n787
+failing-states . 
+11 . 2
+passing-states . 
+01 . 564
+11 . 29
+00 . 8
+==

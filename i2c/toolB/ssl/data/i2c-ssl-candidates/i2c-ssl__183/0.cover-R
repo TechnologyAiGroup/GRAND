@@ -1,0 +1,89 @@
+==
+Candidate 0
+site . n521
+polarity . 1
+neighbor . and_not_pi129_9_not_n520 not_pi003_5
+failing-states . 
+01 . 572
+passing-states . 
+00 . 28
+11 . 2
+10 . 1
+==
+Candidate 1
+site . and_not_pi129_9_not_n520->n521
+polarity . 1
+neighbor . not_pi129_9 not_n520
+failing-states . 
+10 . 518
+00 . 53
+01 . 1
+passing-states . 
+10 . 27
+11 . 3
+00 . 1
+==
+Candidate 2
+site . and_not_pi129_9_not_n520
+polarity . 1
+neighbor . not_pi129_9 not_n520
+failing-states . 
+10 . 518
+00 . 53
+01 . 1
+passing-states . 
+10 . 27
+11 . 3
+00 . 1
+==
+Candidate 3
+site . n521->and_not_pi003_5_n521
+polarity . 1
+neighbor . and_not_pi129_9_not_n520 not_pi003_5
+failing-states . 
+01 . 572
+passing-states . 
+00 . 28
+11 . 2
+10 . 1
+==
+Candidate 4
+site . po025_driver->po025
+polarity . 1
+neighbor . and_not_pi003_5_n521
+failing-states . 
+1 . 572
+passing-states . 
+0 . 29
+1 . 2
+==
+Candidate 5
+site . po025_driver
+polarity . 1
+neighbor . and_not_pi003_5_n521
+failing-states . 
+1 . 572
+passing-states . 
+0 . 29
+1 . 2
+==
+Candidate 6
+site . and_not_pi003_5_n521->po025_driver
+polarity . 1
+neighbor . n521 not_pi003_5
+failing-states . 
+11 . 572
+passing-states . 
+10 . 29
+11 . 2
+==
+Candidate 7
+site . and_not_pi003_5_n521
+polarity . 1
+neighbor . n521 not_pi003_5
+failing-states . 
+11 . 572
+passing-states . 
+10 . 29
+11 . 2
+==

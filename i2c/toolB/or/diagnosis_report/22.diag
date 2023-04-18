@@ -1,0 +1,37 @@
+run_diagnosis ./tmax_fail/22.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 15 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/22.fail
+ #failing_pat=15, #failures=15, #defects=2, #faults=3, CPU_time=0.05
+ Simulated : #failing_pat=15, #passing_pat=96, #failures=15
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=1, #passing_pat=110, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=110>
+ sa1   DS   g_n1419/Y   (BUFX2)
+ sa1   --   g_n1419/A   (BUFX2)
+ sa1   --   g_and_not_pi003_2326305139872070_not_n1246/Y   (AND2X1)
+ sa1   --   g_and_not_pi110_6_n1419/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=110>
+ sa1   DS   g_not_pi003_2326305139872070/Y   (INVX1)
+ sa0   --   g_not_pi003_2326305139872070/A   (INVX1)
+ sa1   --   g_and_not_pi003_2326305139872070_not_n1246/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=14, #passing_pat=97, #failures=14
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=14, passing=97>
+ sa1   DS   po083   (_PO)
+ sa1   --   g_po083/Y   (BUFX2)
+ sa1   --   g_po083/A   (BUFX2)
+ sa1   --   g_po083_driver/Y   (BUFX2)
+ sa1   --   g_po083_driver/A   (BUFX2)
+ sa1   --   g_or_pi129_n1283/Y   (OR2X1)
+ sa1   --   g_or_pi129_n1283/B   (OR2X1)
+ sa1   --   g_or_pi129_n1283/A   (OR2X1)
+ sa1   --   g_n1283/Y   (BUFX2)
+ sa1   --   g_n1283/A   (BUFX2)
+ sa1   --   g_and_not_n1280_not_n1282/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/23.diag

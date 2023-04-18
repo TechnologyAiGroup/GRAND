@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . po035_driver->po035
+polarity . 1
+neighbor . and_not_pi129_403536070_not_n660
+failing-states . 
+1 . 55
+passing-states . 
+1 . 468
+0 . 80
+==
+Candidate 1
+site . po035_driver
+polarity . 1
+neighbor . and_not_pi129_403536070_not_n660
+failing-states . 
+1 . 55
+passing-states . 
+1 . 468
+0 . 80
+==
+Candidate 2
+site . and_not_pi129_403536070_not_n660->po035_driver
+polarity . 1
+neighbor . not_n660 not_pi129_403536070
+failing-states . 
+10 . 54
+00 . 1
+passing-states . 
+11 . 468
+01 . 80
+==
+Candidate 3
+site . and_not_pi129_403536070_not_n660
+polarity . 1
+neighbor . not_n660 not_pi129_403536070
+failing-states . 
+10 . 54
+00 . 1
+passing-states . 
+11 . 468
+01 . 80
+==

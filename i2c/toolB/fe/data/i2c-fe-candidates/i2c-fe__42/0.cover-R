@@ -1,0 +1,43 @@
+==
+Candidate 0
+site . po068_driver->po068
+polarity . 1
+neighbor . and_not_pi026_10_n1155
+failing-states . 
+1 . 559
+passing-states . 
+1 . 16
+0 . 28
+==
+Candidate 1
+site . po068_driver
+polarity . 1
+neighbor . and_not_pi026_10_n1155
+failing-states . 
+1 . 559
+passing-states . 
+1 . 16
+0 . 28
+==
+Candidate 2
+site . and_not_pi026_10_n1155->po068_driver
+polarity . 1
+neighbor . n1155 not_pi026_10
+failing-states . 
+01 . 556
+10 . 3
+passing-states . 
+11 . 16
+00 . 28
+==
+Candidate 3
+site . and_not_pi026_10_n1155
+polarity . 1
+neighbor . n1155 not_pi026_10
+failing-states . 
+01 . 556
+10 . 3
+passing-states . 
+11 . 16
+00 . 28
+==

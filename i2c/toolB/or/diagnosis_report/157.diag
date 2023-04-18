@@ -1,0 +1,43 @@
+run_diagnosis ./tmax_fail/157.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 510 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/157.fail
+ #failing_pat=510, #failures=510, #defects=1, #faults=2, CPU_time=0.15
+ Simulated : #failing_pat=510, #passing_pat=93, #failures=510
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=510, #passing_pat=93, #failures=510
+ ------------------------------------------------------------------------------
+ match=97.89%, #explained patterns: <failing=510, passing=82>
+ sa1   DS   g_not_n1142/Y   (INVX1)
+ sa0   --   g_not_n1142/A   (INVX1)
+ sa0   --   g_n1142/Y   (BUFX2)
+ sa0   --   g_n1142/A   (BUFX2)
+ sa0   --   g_and_not_n1140_n1141/Y   (AND2X1)
+ sa0   --   g_and_not_n1140_n1141/A   (AND2X1)
+ sa0   --   g_and_not_n1140_n1141/B   (AND2X1)
+ sa0   --   g_n1141/Y   (BUFX2)
+ sa0   --   g_n1141/A   (BUFX2)
+ sa0   --   g_not_n1140/Y   (INVX1)
+ sa1   --   g_not_n1140/A   (INVX1)
+ sa0   --   g_and_not_pi106_9_not_n943_0/Y   (AND2X1)
+ sa0   --   g_and_not_pi106_9_not_n943_0/A   (AND2X1)
+ sa0   --   g_and_not_pi106_9_not_n943_0/B   (AND2X1)
+ sa1   --   g_n1140/Y   (BUFX2)
+ sa1   --   g_n1140/A   (BUFX2)
+ sa0   --   g_not_pi106_9/Y   (INVX1)
+ sa1   --   g_not_pi106_9/A   (INVX1)
+ sa0   --   g_not_n943_0/Y   (INVX1)
+ sa1   --   g_not_n943_0/A   (INVX1)
+ sa1   --   g_and_pi052_not_n940_0/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_445676403263631959001900459745680070_not_n1142/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=88.54%, #explained patterns: <failing=510, passing=27>
+ sa1   DS   po067   (_PO)
+ sa1   --   g_po067/Y   (BUFX2)
+ sa1   --   g_po067/A   (BUFX2)
+ sa1   --   g_po067_driver/Y   (BUFX2)
+ sa1   --   g_po067_driver/A   (BUFX2)
+ sa1   --   g_and_not_pi129_445676403263631959001900459745680070_not_n1142/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/158.diag

@@ -1,0 +1,36 @@
+run_diagnosis ./tmax_fail/90.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 43 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/90.fail
+ #failing_pat=24, #failures=43, #defects=3, #faults=4, CPU_time=0.03
+ Simulated : #failing_pat=24, #passing_pat=96, #failures=43
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=10, #passing_pat=110, #failures=18
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=10, passing=110>
+ sa1   DS   g_not_pi043_1/Y   (INVX1)
+ sa0   --   g_not_pi043_1/A   (INVX1)
+ sa1   --   g_and_not_pi041_1_not_pi043_1/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=9, #passing_pat=111, #failures=15
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=9, passing=111>
+ sa1   DS   g_n926/Y   (BUFX2)
+ sa1   --   g_n926/A   (BUFX2)
+ sa1   --   g_and_n398_n925/Y   (AND2X1)
+ sa1   --   g_and_n401_n926/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=2, #failing_pat=3, #passing_pat=117, #failures=8
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=3, passing=117>
+ sa1   DS   g_not_pi040/Y   (INVX1)
+ sa0   --   g_not_pi040/A   (INVX1)
+ sa1   --   g_and_not_pi040_n390/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=57.14%, #explained patterns: <failing=3, passing=115>
+ sa1   DS   g_n391/Y   (BUFX2)
+ sa1   --   g_n391/A   (BUFX2)
+ sa1   --   g_and_not_pi040_n390/Y   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/91.diag

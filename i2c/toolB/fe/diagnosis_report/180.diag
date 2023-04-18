@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/180.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 485 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/180.fail
+ #failing_pat=485, #failures=485, #defects=1, #faults=2, CPU_time=0.18
+ Simulated : #failing_pat=485, #passing_pat=96, #failures=485
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=485, #passing_pat=96, #failures=485
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=485, passing=96>
+ sa1   DS   g_not_n1180/Y   (INVX1)
+ sa0   --   g_not_n1180/A   (INVX1)
+ sa0   --   g_n1180/Y   (BUFX2)
+ sa0   --   g_n1180/A   (BUFX2)
+ sa0   --   g_and_not_n1178_not_n1179/Y   (AND2X1)
+ sa0   --   g_and_not_n1178_not_n1179/A   (AND2X1)
+ sa0   --   g_and_not_n1178_not_n1179/B   (AND2X1)
+ sa0   --   g_not_n1179/Y   (INVX1)
+ sa1   --   g_not_n1179/A   (INVX1)
+ sa0   --   g_not_n1178/Y   (INVX1)
+ sa1   --   g_not_n1178/A   (INVX1)
+ sa1   --   g_n1179/Y   (BUFX2)
+ sa1   --   g_n1179/A   (BUFX2)
+ sa1   --   g_n1178/Y   (BUFX2)
+ sa1   --   g_n1178/A   (BUFX2)
+ sa1   --   g_and_n787_n1175/Y   (AND2X1)
+ sa1   --   g_and_not_pi085_7_not_n1177/Y   (AND2X1)
+ sa1   --   g_and_not_pi027_10_not_n1180/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=96.81%, #explained patterns: <failing=485, passing=80>
+ sa1   DS   g_not_n1184/Y   (INVX1)
+ sa0   --   g_not_n1184/A   (INVX1)
+ sa0   --   g_n1184/Y   (BUFX2)
+ sa0   --   g_n1184/A   (BUFX2)
+ sa0   --   g_and_not_n1181_not_n1183/Y   (AND2X1)
+ sa0   --   g_and_not_n1181_not_n1183/A   (AND2X1)
+ sa0   --   g_and_not_n1181_not_n1183/B   (AND2X1)
+ sa0   --   g_not_n1183/Y   (INVX1)
+ sa1   --   g_not_n1183/A   (INVX1)
+ sa0   --   g_not_n1181/Y   (INVX1)
+ sa1   --   g_not_n1181/A   (INVX1)
+ sa1   --   g_n1183/Y   (BUFX2)
+ sa1   --   g_n1183/A   (BUFX2)
+ sa1   --   g_n1181/Y   (BUFX2)
+ sa1   --   g_n1181/A   (BUFX2)
+ sa1   --   g_and_n1175_n1182/Y   (AND2X1)
+ sa1   --   g_and_not_pi027_10_not_n1180/Y   (AND2X1)
+ sa1   --   g_and_not_pi129_21838143759917965991093122527538323430_not_n1184/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/181.diag

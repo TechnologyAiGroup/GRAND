@@ -1,0 +1,108 @@
+==
+Candidate 0
+site . and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597
+polarity . 1
+neighbor . not_pi129_24118650322570587750381309043265707027354805885055086420058579430 not_n1597
+failing-states . 
+11 . 439
+10 . 81
+00 . 1
+passing-states . 
+01 . 54
+11 . 27
+10 . 1
+==
+Candidate 1
+site . n1598
+polarity . 1
+neighbor . not_pi003_5585458640832840070 and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597
+failing-states . 
+10 . 439
+11 . 82
+passing-states . 
+10 . 53
+00 . 28
+01 . 1
+==
+Candidate 2
+site . and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597->n1598
+polarity . 1
+neighbor . not_pi129_24118650322570587750381309043265707027354805885055086420058579430 not_n1597
+failing-states . 
+11 . 439
+10 . 81
+00 . 1
+passing-states . 
+01 . 54
+11 . 27
+10 . 1
+==
+Candidate 3
+site . n1598->and_not_pi003_5585458640832840070_n1598
+polarity . 1
+neighbor . not_pi003_5585458640832840070 and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597
+failing-states . 
+10 . 439
+11 . 82
+passing-states . 
+10 . 53
+00 . 28
+01 . 1
+==
+Candidate 4
+site . and_not_pi129_24118650322570587750381309043265707027354805885055086420058579430_not_n1597
+polarity . 1
+neighbor . not_pi129_24118650322570587750381309043265707027354805885055086420058579430 not_n1597
+failing-states . 
+11 . 439
+10 . 81
+00 . 1
+passing-states . 
+01 . 54
+11 . 27
+10 . 1
+==
+Candidate 5
+site . and_not_pi003_5585458640832840070_n1598
+polarity . 1
+neighbor . not_pi003_5585458640832840070 n1598
+failing-states . 
+10 . 439
+11 . 82
+passing-states . 
+10 . 53
+00 . 28
+01 . 1
+==
+Candidate 6
+site . po128_driver
+polarity . 1
+neighbor . and_not_pi003_5585458640832840070_n1598
+failing-states . 
+0 . 439
+1 . 82
+passing-states . 
+0 . 82
+==
+Candidate 7
+site . and_not_pi003_5585458640832840070_n1598->po128_driver
+polarity . 1
+neighbor . not_pi003_5585458640832840070 n1598
+failing-states . 
+10 . 439
+11 . 82
+passing-states . 
+10 . 53
+00 . 28
+01 . 1
+==
+Candidate 8
+site . po128_driver->po128
+polarity . 1
+neighbor . and_not_pi003_5585458640832840070_n1598
+failing-states . 
+0 . 439
+1 . 82
+passing-states . 
+0 . 82
+==

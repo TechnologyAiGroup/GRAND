@@ -1,0 +1,143 @@
+==
+Candidate 0
+site . n778
+polarity . 1
+neighbor . and_n762_not_n777 n776
+failing-states . 
+01 . 2
+10 . 1
+passing-states . 
+00 . 25
+10 . 570
+11 . 5
+==
+Candidate 1
+site . and_n762_not_n777->n778
+polarity . 1
+neighbor . not_n777 n762
+failing-states . 
+10 . 1
+01 . 1
+11 . 1
+passing-states . 
+10 . 20
+11 . 575
+01 . 5
+==
+Candidate 2
+site . and_n762_not_n777
+polarity . 1
+neighbor . not_n777 n762
+failing-states . 
+10 . 1
+01 . 1
+11 . 1
+passing-states . 
+10 . 20
+11 . 575
+01 . 5
+==
+Candidate 3
+site . n778->and_n776_n778
+polarity . 1
+neighbor . and_n762_not_n777 n776
+failing-states . 
+01 . 2
+10 . 1
+passing-states . 
+00 . 25
+10 . 570
+11 . 5
+==
+Candidate 4
+site . not_n1396
+polarity . 1
+neighbor . n1396 not_n1395
+failing-states . 
+01 . 2
+11 . 1
+passing-states . 
+01 . 596
+00 . 4
+==
+Candidate 5
+site . n1396->not_n1396
+polarity . 0
+neighbor . and_pi142_n1386
+failing-states . 
+0 . 2
+1 . 1
+passing-states . 
+0 . 600
+==
+Candidate 6
+site . n1396
+polarity . 0
+neighbor . and_pi142_n1386
+failing-states . 
+0 . 2
+1 . 1
+passing-states . 
+0 . 600
+==
+Candidate 7
+site . and_pi142_n1386->n1396
+polarity . 0
+neighbor . pi142 n1386
+failing-states . 
+00 . 2
+11 . 1
+passing-states . 
+00 . 577
+01 . 17
+10 . 6
+==
+Candidate 8
+site . and_pi142_n1386
+polarity . 0
+neighbor . pi142 n1386
+failing-states . 
+00 . 2
+11 . 1
+passing-states . 
+00 . 577
+01 . 17
+10 . 6
+==
+Candidate 9
+site . n1386->and_pi142_n1386
+polarity . 0
+neighbor . pi143 and_n1251_n1385 pi139 pi141 pi146 pi140 pi144 pi142 pi145
+failing-states . 
+000000000 . 2
+010000010 . 1
+passing-states . 
+000000000 . 527
+000100000 . 9
+010000000 . 9
+000001000 . 7
+010001000 . 1
+001000000 . 10
+000000001 . 5
+000000010 . 6
+010000001 . 1
+000000100 . 5
+100000000 . 9
+000010000 . 5
+010100000 . 1
+010000100 . 1
+110000000 . 1
+010010000 . 2
+011000000 . 1
+==
+Candidate 10
+site . not_n1396->and_not_n1395_not_n1396
+polarity . 1
+neighbor . n1396 not_n1395
+failing-states . 
+01 . 2
+11 . 1
+passing-states . 
+01 . 596
+00 . 4
+==

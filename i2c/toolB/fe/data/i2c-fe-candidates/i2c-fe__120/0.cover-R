@@ -1,0 +1,41 @@
+==
+Candidate 0
+site . po034_driver->po034
+polarity . 1
+neighbor . and_not_pi003_3430_n636
+failing-states . 
+1 . 601
+passing-states . 
+1 . 2
+==
+Candidate 1
+site . po034_driver
+polarity . 1
+neighbor . and_not_pi003_3430_n636
+failing-states . 
+1 . 601
+passing-states . 
+1 . 2
+==
+Candidate 2
+site . and_not_pi003_3430_n636->po034_driver
+polarity . 1
+neighbor . not_pi003_3430 n636
+failing-states . 
+10 . 572
+00 . 28
+01 . 1
+passing-states . 
+11 . 2
+==
+Candidate 3
+site . and_not_pi003_3430_n636
+polarity . 1
+neighbor . not_pi003_3430 n636
+failing-states . 
+10 . 572
+00 . 28
+01 . 1
+passing-states . 
+11 . 2
+==

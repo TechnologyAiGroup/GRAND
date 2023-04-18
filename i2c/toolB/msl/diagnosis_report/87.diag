@@ -1,0 +1,54 @@
+run_diagnosis ./tmax_fail/87.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 96 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/87.fail
+ #failing_pat=90, #failures=96, #defects=5, #faults=5, CPU_time=0.48
+ Simulated : #failing_pat=90, #passing_pat=96, #failures=96
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=68, #passing_pat=118, #failures=72
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=68, passing=118>
+ sa1   DS   g_n548/Y   (BUFX2)
+ sa1   --   g_n548/A   (BUFX2)
+ sa1   --   g_and_not_pi025_0_pi029/Y   (AND2X1)
+ sa1   --   g_and_not_pi028_0_n548/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 2: stuck fault model, #faults=1, #failing_pat=2, #passing_pat=184, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=184>
+ sa1   DS   g_n451/Y   (BUFX2)
+ sa1   --   g_n451/A   (BUFX2)
+ sa1   --   g_and_not_pi005_2_n450/Y   (AND2X1)
+ sa1   --   g_and_n448_n451/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 3: stuck fault model, #faults=1, #failing_pat=2, #passing_pat=184, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=184>
+ sa1   DS   g_and_n459_n479/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 4: stuck fault model, #faults=1, #failing_pat=18, #passing_pat=168, #failures=18
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=18, passing=168>
+ sa1   DS   g_not_n1455/Y   (INVX1)
+ sa0   --   g_not_n1455/A   (INVX1)
+ sa0   --   g_n1455/Y   (BUFX2)
+ sa0   --   g_n1455/A   (BUFX2)
+ sa0   --   g_and_pi136_not_n1454/Y   (AND2X1)
+ sa0   --   g_and_pi136_not_n1454/B   (AND2X1)
+ sa0   --   g_and_pi136_not_n1454/A   (AND2X1)
+ sa0   --   g_not_n1454/Y   (INVX1)
+ sa1   --   g_not_n1454/A   (INVX1)
+ sa1   --   g_n1454/Y   (BUFX2)
+ sa1   --   g_n1454/A   (BUFX2)
+ sa1   --   g_and_not_n1452_not_n1453/Y   (AND2X1)
+ sa1   --   g_and_not_n1451_not_n1455/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ Defect 5: stuck fault model, #faults=1, #failing_pat=2, #passing_pat=184, #failures=2
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=2, passing=184>
+ sa1   DS   g_not_pi053_8/Y   (INVX1)
+ sa0   --   g_not_pi053_8/A   (INVX1)
+ sa1   --   g_and_not_pi053_8_n1211/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/88.diag

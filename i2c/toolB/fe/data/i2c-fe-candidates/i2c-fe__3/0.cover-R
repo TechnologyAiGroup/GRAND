@@ -1,0 +1,41 @@
+==
+Candidate 0
+site . po057_driver->po057
+polarity . 1
+neighbor . and_not_n989_n998
+failing-states . 
+1 . 86
+passing-states . 
+1 . 517
+==
+Candidate 1
+site . po057_driver
+polarity . 1
+neighbor . and_not_n989_n998
+failing-states . 
+1 . 86
+passing-states . 
+1 . 517
+==
+Candidate 2
+site . and_not_n989_n998->po057_driver
+polarity . 1
+neighbor . not_n989 n998
+failing-states . 
+01 . 23
+10 . 62
+00 . 1
+passing-states . 
+11 . 517
+==
+Candidate 3
+site . and_not_n989_n998
+polarity . 1
+neighbor . not_n989 n998
+failing-states . 
+01 . 23
+10 . 62
+00 . 1
+passing-states . 
+11 . 517
+==

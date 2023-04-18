@@ -1,0 +1,27 @@
+run_diagnosis ./tmax_fail/103.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 28 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/103.fail
+ #failing_pat=11, #failures=28, #defects=1, #faults=1, CPU_time=0.03
+ Simulated : #failing_pat=11, #passing_pat=96, #failures=28
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=1, #failing_pat=11, #passing_pat=96, #failures=28
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=11, passing=96>
+ sa0   DS   g_n1412/Y   (BUFX2)
+ sa0   --   g_n1412/A   (BUFX2)
+ sa0   --   g_and_not_pi136_3_n1411/Y   (AND2X1)
+ sa0   --   g_and_not_pi136_3_n1411/A   (AND2X1)
+ sa0   --   g_and_not_pi136_3_n1411/B   (AND2X1)
+ sa0   --   g_not_pi136_3/Y   (INVX1)
+ sa1   --   g_not_pi136_3/A   (INVX1)
+ sa0   --   g_n1411/Y   (BUFX2)
+ sa0   --   g_n1411/A   (BUFX2)
+ sa0   --   g_and_pi082_not_pi137_3/Y   (AND2X1)
+ sa0   --   g_and_pi082_not_pi137_3/A   (AND2X1)
+ sa0   --   g_and_pi082_not_pi137_3/B   (AND2X1)
+ sa0   --   g_not_pi137_3/Y   (INVX1)
+ sa1   --   g_not_pi137_3/A   (INVX1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/104.diag

@@ -1,0 +1,129 @@
+==
+Candidate 0
+site . not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070
+polarity . 1
+neighbor . n1623 pi129
+failing-states . 
+11 . 1
+00 . 1
+passing-states . 
+00 . 546
+01 . 54
+10 . 1
+==
+Candidate 1
+site . not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070->and_not_pi129_2837535091800107078244610627631167166061265557570845862233471811360070_n1623
+polarity . 1
+neighbor . n1623 pi129
+failing-states . 
+11 . 1
+00 . 1
+passing-states . 
+00 . 546
+01 . 54
+10 . 1
+==
+Candidate 2
+site . n450->and_not_pi005_2_n450
+polarity . 1
+neighbor . not_pi005_2 and_not_pi018_0_n449 n610 n621 not_pi006_2 not_pi013_5
+failing-states . 
+110011 . 1
+101011 . 1
+passing-states . 
+110011 . 492
+111011 . 41
+100011 . 12
+101011 . 15
+011011 . 7
+111010 . 10
+010011 . 3
+011001 . 1
+111001 . 7
+011010 . 1
+110110 . 1
+101010 . 1
+110001 . 3
+110111 . 2
+100111 . 1
+001011 . 1
+110010 . 3
+==
+Candidate 3
+site . n451
+polarity . 1
+neighbor . n448 and_not_pi005_2_n450
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 504
+11 . 81
+10 . 10
+00 . 6
+==
+Candidate 4
+site . and_not_pi005_2_n450->n451
+polarity . 1
+neighbor . n450 not_pi005_2
+failing-states . 
+11 . 1
+01 . 1
+passing-states . 
+11 . 559
+01 . 29
+10 . 12
+00 . 1
+==
+Candidate 5
+site . and_not_pi005_2_n450
+polarity . 1
+neighbor . n450 not_pi005_2
+failing-states . 
+11 . 1
+01 . 1
+passing-states . 
+11 . 559
+01 . 29
+10 . 12
+00 . 1
+==
+Candidate 6
+site . n451->and_n448_n451
+polarity . 1
+neighbor . n448 and_not_pi005_2_n450
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 504
+11 . 81
+10 . 10
+00 . 6
+==
+Candidate 7
+site . not_pi018_0
+polarity . 1
+neighbor . pi018 n449
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 571
+11 . 11
+00 . 18
+10 . 1
+==
+Candidate 8
+site . not_pi018_0->and_not_pi018_0_n449
+polarity . 1
+neighbor . pi018 n449
+failing-states . 
+01 . 1
+11 . 1
+passing-states . 
+01 . 571
+11 . 11
+00 . 18
+10 . 1
+==

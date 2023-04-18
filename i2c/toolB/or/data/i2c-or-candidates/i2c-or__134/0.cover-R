@@ -1,0 +1,93 @@
+==
+Candidate 0
+site . n496
+polarity . 1
+neighbor . not_pi003_3 and_not_pi129_7_not_n495
+failing-states . 
+10 . 546
+passing-states . 
+10 . 26
+00 . 28
+11 . 2
+01 . 1
+==
+Candidate 1
+site . and_not_pi129_7_not_n495->n496
+polarity . 1
+neighbor . not_n495 not_pi129_7
+failing-states . 
+01 . 492
+00 . 53
+10 . 1
+passing-states . 
+01 . 53
+11 . 3
+00 . 1
+==
+Candidate 2
+site . and_not_pi129_7_not_n495
+polarity . 1
+neighbor . not_n495 not_pi129_7
+failing-states . 
+01 . 492
+00 . 53
+10 . 1
+passing-states . 
+01 . 53
+11 . 3
+00 . 1
+==
+Candidate 3
+site . n496->and_not_pi003_3_n496
+polarity . 1
+neighbor . not_pi003_3 and_not_pi129_7_not_n495
+failing-states . 
+10 . 546
+passing-states . 
+10 . 26
+00 . 28
+11 . 2
+01 . 1
+==
+Candidate 4
+site . po023_driver->po023
+polarity . 1
+neighbor . and_not_pi003_3_n496
+failing-states . 
+1 . 546
+passing-states . 
+0 . 55
+1 . 2
+==
+Candidate 5
+site . po023_driver
+polarity . 1
+neighbor . and_not_pi003_3_n496
+failing-states . 
+1 . 546
+passing-states . 
+0 . 55
+1 . 2
+==
+Candidate 6
+site . and_not_pi003_3_n496->po023_driver
+polarity . 1
+neighbor . n496 not_pi003_3
+failing-states . 
+11 . 546
+passing-states . 
+01 . 26
+10 . 29
+11 . 2
+==
+Candidate 7
+site . and_not_pi003_3_n496
+polarity . 1
+neighbor . n496 not_pi003_3
+failing-states . 
+11 . 546
+passing-states . 
+01 . 26
+10 . 29
+11 . 2
+==

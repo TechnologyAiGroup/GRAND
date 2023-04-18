@@ -1,0 +1,99 @@
+run_diagnosis ./tmax_fail/43.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/43.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=22, CPU_time=0.25
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=22, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_pi028_not_n798/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n799/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n799/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n799/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_pi028_not_n798/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_pi028_not_n798/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n798/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_pi027_4/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_pi027_4_n737/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_pi027_4_n737/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_pi027_4_n737/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n791/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n793/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n793/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n793/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_n726_0_not_n792/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_n726_0_not_n792/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_and_not_n726_0_not_n792/B   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n726_0/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_n791/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n792/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=50.00%, #explained patterns: <failing=1, passing=94>
+ sa0   DS   g_not_n791/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/44.diag

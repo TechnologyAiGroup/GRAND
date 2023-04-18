@@ -1,0 +1,161 @@
+==
+Candidate 0
+site . not_n993
+polarity . 1
+neighbor . n993 not_n379_6
+failing-states . 
+01 . 1
+passing-states . 
+01 . 536
+11 . 41
+00 . 22
+10 . 3
+==
+Candidate 1
+site . n993->not_n993
+polarity . 0
+neighbor . and_pi082_not_n992
+failing-states . 
+0 . 1
+passing-states . 
+0 . 558
+1 . 44
+==
+Candidate 2
+site . n993
+polarity . 0
+neighbor . and_pi082_not_n992
+failing-states . 
+0 . 1
+passing-states . 
+0 . 558
+1 . 44
+==
+Candidate 3
+site . and_pi082_not_n992->n993
+polarity . 0
+neighbor . not_n992 pi082
+failing-states . 
+01 . 1
+passing-states . 
+10 . 495
+11 . 44
+01 . 63
+==
+Candidate 4
+site . and_pi082_not_n992
+polarity . 0
+neighbor . not_n992 pi082
+failing-states . 
+01 . 1
+passing-states . 
+10 . 495
+11 . 44
+01 . 63
+==
+Candidate 5
+site . not_n992->and_pi082_not_n992
+polarity . 0
+neighbor . pi082 n992
+failing-states . 
+11 . 1
+passing-states . 
+00 . 495
+10 . 44
+11 . 63
+==
+Candidate 6
+site . not_n992
+polarity . 0
+neighbor . pi082 n992
+failing-states . 
+11 . 1
+passing-states . 
+00 . 495
+10 . 44
+11 . 63
+==
+Candidate 7
+site . n992->not_n992
+polarity . 1
+neighbor . and_n927_n991
+failing-states . 
+1 . 1
+passing-states . 
+0 . 539
+1 . 63
+==
+Candidate 8
+site . n992
+polarity . 1
+neighbor . and_n927_n991
+failing-states . 
+1 . 1
+passing-states . 
+0 . 539
+1 . 63
+==
+Candidate 9
+site . and_n927_n991->n992
+polarity . 1
+neighbor . n991 n927
+failing-states . 
+10 . 1
+passing-states . 
+11 . 506
+01 . 41
+10 . 39
+00 . 16
+==
+Candidate 10
+site . and_n927_n991
+polarity . 1
+neighbor . n991 n927
+failing-states . 
+10 . 1
+passing-states . 
+11 . 506
+01 . 41
+10 . 39
+00 . 16
+==
+Candidate 11
+site . not_n993->and_not_n379_6_not_n993
+polarity . 1
+neighbor . n993 not_n379_6
+failing-states . 
+01 . 1
+passing-states . 
+01 . 536
+11 . 41
+00 . 22
+10 . 3
+==
+Candidate 12
+site . n927->and_n927_n991
+polarity . 1
+neighbor . n984 n1126 n1017 n929 n955 n1006 n408 and_n401_n926 n991 n688 n971
+failing-states . 
+11111110111 . 1
+passing-states . 
+11111111111 . 505
+01000001010 . 7
+11111110111 . 38
+00000001000 . 9
+00000000001 . 2
+00000100000 . 6
+10000001110 . 1
+00001001010 . 3
+00010000010 . 2
+00000001010 . 6
+00000011000 . 3
+00000101000 . 8
+10100000010 . 3
+00000001001 . 1
+00001000010 . 1
+10000000110 . 1
+01000000010 . 1
+00000010000 . 1
+00010001010 . 1
+10100001010 . 3
+==

@@ -1,0 +1,49 @@
+run_diagnosis ./tmax_fail/128.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 520 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/128.fail
+ #failing_pat=520, #failures=520, #defects=1, #faults=8, CPU_time=0.34
+ Simulated : #failing_pat=520, #passing_pat=83, #failures=520
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=8, #failing_pat=520, #passing_pat=83, #failures=520
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_and_not_n604_not_n616/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_not_n617/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_and_not_pi129_1176490_not_n617/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_and_not_pi003_70_n618/Y   (AND2X1)
+ sa01   --   g_po032_driver/Y   (BUFX2)
+ sa01   --   g_po032_driver/A   (BUFX2)
+ sa01   --   g_po032/Y   (BUFX2)
+ sa01   --   g_po032/A   (BUFX2)
+ sa01   --   po032   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_n617/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_n617/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_and_not_pi129_1176490_not_n617/Y   (AND2X1)
+ sa01   --   g_n618/Y   (BUFX2)
+ sa01   --   g_n618/A   (BUFX2)
+ sa01   --   g_and_not_pi003_70_n618/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=520, passing=83>
+ sa01   DS   g_not_n617/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/129.diag

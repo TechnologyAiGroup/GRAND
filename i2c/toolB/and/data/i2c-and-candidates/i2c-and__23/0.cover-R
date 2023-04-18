@@ -1,0 +1,155 @@
+==
+Candidate 0
+site . n487
+polarity . 0
+neighbor . n623 n633 n667 and_n369_n417 n493
+failing-states . 
+00100 . 1
+00001 . 1
+10000 . 1
+01000 . 1
+passing-states . 
+00000 . 559
+00010 . 33
+01000 . 1
+00100 . 4
+00001 . 1
+10000 . 1
+==
+Candidate 1
+site . and_n369_n417->n487
+polarity . 0
+neighbor . n369 n417
+failing-states . 
+11 . 4
+passing-states . 
+11 . 513
+01 . 47
+10 . 31
+00 . 8
+==
+Candidate 2
+site . and_n369_n417
+polarity . 0
+neighbor . n369 n417
+failing-states . 
+11 . 4
+passing-states . 
+11 . 513
+01 . 47
+10 . 31
+00 . 8
+==
+Candidate 3
+site . n369->and_n369_n417
+polarity . 0
+neighbor . n528 pi009 and_n345_n357 n417 n431
+failing-states . 
+00110 . 4
+passing-states . 
+00110 . 513
+00010 . 47
+00100 . 10
+01100 . 8
+10100 . 8
+10000 . 1
+00001 . 3
+00101 . 5
+00000 . 2
+01000 . 2
+==
+Candidate 4
+site . n417->and_n369_n417
+polarity . 0
+neighbor . not_pi013_4 n347 and_n344_n416 n598 n369 not_pi007_7
+failing-states . 
+111011 . 4
+passing-states . 
+111011 . 513
+111001 . 8
+110011 . 31
+101000 . 10
+100001 . 3
+000001 . 3
+101001 . 9
+001001 . 12
+101101 . 7
+001000 . 1
+100101 . 1
+100000 . 1
+==
+Candidate 5
+site . n369
+polarity . 0
+neighbor . n528 pi009 and_n345_n357 n417 n431
+failing-states . 
+00110 . 4
+passing-states . 
+00110 . 513
+00010 . 47
+00100 . 10
+01100 . 8
+10100 . 8
+10000 . 1
+00001 . 3
+00101 . 5
+00000 . 2
+01000 . 2
+==
+Candidate 6
+site . and_n345_n357->n369
+polarity . 0
+neighbor . n357 n345
+failing-states . 
+11 . 4
+passing-states . 
+11 . 544
+01 . 28
+10 . 24
+00 . 3
+==
+Candidate 7
+site . and_n345_n357
+polarity . 0
+neighbor . n357 n345
+failing-states . 
+11 . 4
+passing-states . 
+11 . 544
+01 . 28
+10 . 24
+00 . 3
+==
+Candidate 8
+site . n345->and_n345_n357
+polarity . 0
+neighbor . and_not_pi007_2_not_pi013_2 n346 n357 n597
+failing-states . 
+1110 . 4
+passing-states . 
+1110 . 544
+1100 . 8
+0110 . 24
+1000 . 12
+1001 . 8
+0000 . 2
+0001 . 1
+==
+Candidate 9
+site . n357->and_n345_n357
+polarity . 0
+neighbor . and_not_pi005_1_n332 n549 n345 pi007 n312
+failing-states . 
+10100 . 4
+passing-states . 
+10100 . 528
+00100 . 27
+10010 . 9
+11100 . 16
+10001 . 13
+11001 . 1
+00001 . 1
+01100 . 1
+00010 . 2
+11010 . 1
+==

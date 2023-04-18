@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/188.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 42 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/188.fail
+ #failing_pat=42, #failures=42, #defects=1, #faults=10, CPU_time=0.04
+ Simulated : #failing_pat=42, #passing_pat=96, #failures=42
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=10, #failing_pat=42, #passing_pat=96, #failures=42
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_and_n838_n856/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_and_not_pi026_9_not_n853/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa0   DS   g_not_n857/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_not_n857/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa0   DS   g_not_n854/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_not_n854/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_n857/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_n857/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_n854/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=97.62%, #explained patterns: <failing=41, passing=97>
+ sa1   DS   g_n854/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/189.diag

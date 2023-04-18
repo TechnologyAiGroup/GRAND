@@ -1,0 +1,143 @@
+==
+Candidate 0
+site . po030_driver->po030
+polarity . 0
+neighbor . and_not_pi129_24010_not_n593
+failing-states . 
+0 . 10
+passing-states . 
+1 . 460
+0 . 133
+==
+Candidate 1
+site . po030_driver
+polarity . 0
+neighbor . and_not_pi129_24010_not_n593
+failing-states . 
+0 . 10
+passing-states . 
+1 . 460
+0 . 133
+==
+Candidate 2
+site . and_not_pi129_24010_not_n593->po030_driver
+polarity . 0
+neighbor . not_pi129_24010 not_n593
+failing-states . 
+10 . 10
+passing-states . 
+11 . 460
+10 . 78
+01 . 54
+00 . 1
+==
+Candidate 3
+site . and_not_pi129_24010_not_n593
+polarity . 0
+neighbor . not_pi129_24010 not_n593
+failing-states . 
+10 . 10
+passing-states . 
+11 . 460
+10 . 78
+01 . 54
+00 . 1
+==
+Candidate 4
+site . not_pi129_24010->and_not_pi129_24010_not_n593
+polarity . 0
+neighbor . not_n593 pi129
+failing-states . 
+00 . 10
+passing-states . 
+10 . 460
+00 . 78
+11 . 54
+01 . 1
+==
+Candidate 5
+site . not_n593->and_not_pi129_24010_not_n593
+polarity . 0
+neighbor . n593 not_pi129_24010
+failing-states . 
+01 . 7
+11 . 3
+passing-states . 
+01 . 460
+11 . 78
+00 . 54
+10 . 1
+==
+Candidate 6
+site . not_pi129_24010
+polarity . 0
+neighbor . not_n593 pi129
+failing-states . 
+00 . 10
+passing-states . 
+10 . 460
+00 . 78
+11 . 54
+01 . 1
+==
+Candidate 7
+site . not_n593
+polarity . 0
+neighbor . n593 not_pi129_24010
+failing-states . 
+01 . 7
+11 . 3
+passing-states . 
+01 . 460
+11 . 78
+00 . 54
+10 . 1
+==
+Candidate 8
+site . n593->not_n593
+polarity . 1
+neighbor . and_not_n578_n592
+failing-states . 
+0 . 7
+1 . 3
+passing-states . 
+0 . 514
+1 . 79
+==
+Candidate 9
+site . n593
+polarity . 1
+neighbor . and_not_n578_n592
+failing-states . 
+0 . 7
+1 . 3
+passing-states . 
+0 . 514
+1 . 79
+==
+Candidate 10
+site . and_not_n578_n592->n593
+polarity . 1
+neighbor . not_n578 n592
+failing-states . 
+10 . 5
+00 . 2
+11 . 3
+passing-states . 
+01 . 513
+11 . 79
+10 . 1
+==
+Candidate 11
+site . and_not_n578_n592
+polarity . 1
+neighbor . not_n578 n592
+failing-states . 
+10 . 5
+00 . 2
+11 . 3
+passing-states . 
+01 . 513
+11 . 79
+10 . 1
+==

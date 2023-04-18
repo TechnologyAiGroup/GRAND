@@ -1,0 +1,47 @@
+==
+Candidate 0
+site . n386
+polarity . 1
+neighbor . n393 and_n382_n385
+failing-states . 
+11 . 5
+passing-states . 
+11 . 505
+01 . 30
+10 . 43
+00 . 20
+==
+Candidate 1
+site . and_n382_n385->n386
+polarity . 1
+neighbor . n382 n385
+failing-states . 
+00 . 5
+passing-states . 
+11 . 535
+10 . 20
+01 . 43
+==
+Candidate 2
+site . and_n382_n385
+polarity . 1
+neighbor . n382 n385
+failing-states . 
+00 . 5
+passing-states . 
+11 . 535
+10 . 20
+01 . 43
+==
+Candidate 3
+site . n386->and_n386_n393
+polarity . 1
+neighbor . n393 and_n382_n385
+failing-states . 
+11 . 5
+passing-states . 
+11 . 505
+01 . 30
+10 . 43
+00 . 20
+==

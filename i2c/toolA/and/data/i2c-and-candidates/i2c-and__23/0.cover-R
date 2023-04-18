@@ -1,0 +1,148 @@
+==
+Candidate 0
+site . and_not_n1150_not_n1151
+polarity . 1
+neighbor . not_n1151 not_n1150
+failing-states . 
+11 . 9
+passing-states . 
+11 . 578
+01 . 16
+==
+Candidate 1
+site . not_n1150
+polarity . 1
+neighbor . not_n1151 n1150
+failing-states . 
+10 . 9
+passing-states . 
+10 . 578
+00 . 16
+==
+Candidate 2
+site . n1150
+polarity . 0
+neighbor . and_pi097_n1149
+failing-states . 
+0 . 9
+passing-states . 
+0 . 594
+==
+Candidate 3
+site . pi097->and_pi097_n1149
+polarity . 0
+neighbor . not_pi110_3 pi138 not_n1423_1 n1149 pi116
+failing-states . 
+10100 . 3
+10101 . 2
+11100 . 3
+11000 . 1
+passing-states . 
+10100 . 451
+10110 . 21
+11100 . 45
+10101 . 27
+10000 . 25
+11000 . 15
+00000 . 5
+00001 . 1
+10001 . 2
+10010 . 2
+==
+Candidate 4
+site . and_pi097_n1149
+polarity . 0
+neighbor . n1149 pi097
+failing-states . 
+01 . 9
+passing-states . 
+00 . 563
+10 . 23
+01 . 8
+==
+Candidate 5
+site . n1149
+polarity . 0
+neighbor . pi097 and_not_pi053_5_not_n1148
+failing-states . 
+11 . 9
+passing-states . 
+00 . 56
+01 . 530
+11 . 2
+10 . 6
+==
+Candidate 6
+site . and_not_pi053_5_not_n1148
+polarity . 0
+neighbor . not_n1148 not_pi053_5
+failing-states . 
+11 . 9
+passing-states . 
+01 . 40
+11 . 532
+10 . 19
+00 . 3
+==
+Candidate 7
+site . not_n1148
+polarity . 0
+neighbor . n1148 not_pi053_5
+failing-states . 
+01 . 9
+passing-states . 
+11 . 40
+01 . 532
+00 . 19
+10 . 3
+==
+Candidate 8
+site . pi053->not_pi053_5
+polarity . 1
+neighbor . pi026 not_pi085_2 not_pi058_4
+failing-states . 
+011 . 8
+010 . 1
+passing-states . 
+001 . 18
+011 . 527
+111 . 25
+000 . 1
+010 . 17
+110 . 4
+101 . 2
+==
+Candidate 9
+site . not_pi053_5
+polarity . 0
+neighbor . pi053 not_n1148
+failing-states . 
+01 . 9
+passing-states . 
+00 . 40
+01 . 532
+11 . 19
+10 . 3
+==
+Candidate 10
+site . n1148
+polarity . 1
+neighbor . and_not_n1144_not_n1147
+failing-states . 
+0 . 9
+passing-states . 
+1 . 43
+0 . 551
+==
+Candidate 11
+site . and_not_n1144_not_n1147
+polarity . 1
+neighbor . not_n1147 not_n1144
+failing-states . 
+01 . 8
+10 . 1
+passing-states . 
+11 . 43
+01 . 543
+10 . 8
+==

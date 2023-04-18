@@ -1,0 +1,651 @@
+==
+Candidate 0
+site . not_n1490
+polarity . 1
+neighbor . n1490 not_n1489
+failing-states . 
+11 . 452
+passing-states . 
+00 . 67
+01 . 12
+11 . 72
+==
+Candidate 1
+site . n1490->not_n1490
+polarity . 0
+neighbor . and_not_pi074_not_pi136_9
+failing-states . 
+1 . 452
+passing-states . 
+0 . 79
+1 . 72
+==
+Candidate 2
+site . n1490
+polarity . 0
+neighbor . and_not_pi074_not_pi136_9
+failing-states . 
+1 . 452
+passing-states . 
+0 . 79
+1 . 72
+==
+Candidate 3
+site . and_not_pi074_not_pi136_9->n1490
+polarity . 0
+neighbor . not_pi074 not_pi136_9
+failing-states . 
+11 . 452
+passing-states . 
+10 . 71
+01 . 8
+11 . 72
+==
+Candidate 4
+site . and_not_pi074_not_pi136_9
+polarity . 0
+neighbor . not_pi074 not_pi136_9
+failing-states . 
+11 . 452
+passing-states . 
+10 . 71
+01 . 8
+11 . 72
+==
+Candidate 5
+site . not_pi074->and_not_pi074_not_pi136_9
+polarity . 0
+neighbor . not_pi136_9 pi074
+failing-states . 
+10 . 452
+passing-states . 
+00 . 71
+11 . 8
+10 . 72
+==
+Candidate 6
+site . not_pi136_9->and_not_pi074_not_pi136_9
+polarity . 0
+neighbor . not_pi074 pi136
+failing-states . 
+10 . 452
+passing-states . 
+11 . 71
+00 . 8
+10 . 72
+==
+Candidate 7
+site . not_pi074
+polarity . 0
+neighbor . not_pi136_9 pi074
+failing-states . 
+10 . 452
+passing-states . 
+00 . 71
+11 . 8
+10 . 72
+==
+Candidate 8
+site . not_pi136_9
+polarity . 0
+neighbor . not_pi074 pi136
+failing-states . 
+10 . 452
+passing-states . 
+11 . 71
+00 . 8
+10 . 72
+==
+Candidate 9
+site . not_n1490->and_not_n1489_not_n1490
+polarity . 1
+neighbor . n1490 not_n1489
+failing-states . 
+11 . 452
+passing-states . 
+00 . 67
+01 . 12
+11 . 72
+==
+Candidate 10
+site . not_n1492
+polarity . 1
+neighbor . n1492 not_n1488
+failing-states . 
+01 . 452
+passing-states . 
+01 . 119
+11 . 30
+00 . 2
+==
+Candidate 11
+site . n1492->not_n1492
+polarity . 0
+neighbor . and_not_pi137_6_not_n1491
+failing-states . 
+0 . 452
+passing-states . 
+0 . 121
+1 . 30
+==
+Candidate 12
+site . n1492
+polarity . 0
+neighbor . and_not_pi137_6_not_n1491
+failing-states . 
+0 . 452
+passing-states . 
+0 . 121
+1 . 30
+==
+Candidate 13
+site . and_not_pi137_6_not_n1491->n1492
+polarity . 0
+neighbor . not_n1491 not_pi137_6
+failing-states . 
+01 . 452
+passing-states . 
+10 . 37
+01 . 40
+11 . 30
+00 . 44
+==
+Candidate 14
+site . and_not_pi137_6_not_n1491
+polarity . 0
+neighbor . not_n1491 not_pi137_6
+failing-states . 
+01 . 452
+passing-states . 
+10 . 37
+01 . 40
+11 . 30
+00 . 44
+==
+Candidate 15
+site . not_pi137_6->and_not_pi137_6_not_n1491
+polarity . 0
+neighbor . not_n1491 pi137
+failing-states . 
+00 . 452
+passing-states . 
+11 . 37
+00 . 40
+10 . 30
+01 . 44
+==
+Candidate 16
+site . not_n1491->and_not_pi137_6_not_n1491
+polarity . 0
+neighbor . n1491 not_pi137_6
+failing-states . 
+11 . 452
+passing-states . 
+00 . 37
+11 . 40
+01 . 30
+10 . 44
+==
+Candidate 17
+site . not_pi137_6
+polarity . 0
+neighbor . not_n1491 pi137
+failing-states . 
+00 . 452
+passing-states . 
+11 . 37
+00 . 40
+10 . 30
+01 . 44
+==
+Candidate 18
+site . not_n1491
+polarity . 0
+neighbor . n1491 not_pi137_6
+failing-states . 
+11 . 452
+passing-states . 
+00 . 37
+11 . 40
+01 . 30
+10 . 44
+==
+Candidate 19
+site . n1491->not_n1491
+polarity . 1
+neighbor . and_not_n1489_not_n1490
+failing-states . 
+1 . 452
+passing-states . 
+0 . 67
+1 . 84
+==
+Candidate 20
+site . n1491
+polarity . 1
+neighbor . and_not_n1489_not_n1490
+failing-states . 
+1 . 452
+passing-states . 
+0 . 67
+1 . 84
+==
+Candidate 21
+site . and_not_n1489_not_n1490->n1491
+polarity . 1
+neighbor . not_n1489 not_n1490
+failing-states . 
+11 . 452
+passing-states . 
+01 . 67
+11 . 84
+==
+Candidate 22
+site . and_not_n1489_not_n1490
+polarity . 1
+neighbor . not_n1489 not_n1490
+failing-states . 
+11 . 452
+passing-states . 
+01 . 67
+11 . 84
+==
+Candidate 23
+site . not_n1492->and_not_n1488_not_n1492
+polarity . 1
+neighbor . n1492 not_n1488
+failing-states . 
+01 . 452
+passing-states . 
+01 . 119
+11 . 30
+00 . 2
+==
+Candidate 24
+site . n1494
+polarity . 0
+neighbor . n1484 and_not_pi138_9_not_n1493
+failing-states . 
+00 . 452
+passing-states . 
+00 . 130
+10 . 2
+01 . 19
+==
+Candidate 25
+site . and_not_pi138_9_not_n1493->n1494
+polarity . 0
+neighbor . not_n1493 not_pi138_9
+failing-states . 
+01 . 452
+passing-states . 
+01 . 68
+10 . 13
+00 . 51
+11 . 19
+==
+Candidate 26
+site . and_not_pi138_9_not_n1493
+polarity . 0
+neighbor . not_n1493 not_pi138_9
+failing-states . 
+01 . 452
+passing-states . 
+01 . 68
+10 . 13
+00 . 51
+11 . 19
+==
+Candidate 27
+site . not_pi138_9->and_not_pi138_9_not_n1493
+polarity . 0
+neighbor . not_n1493 pi138
+failing-states . 
+00 . 452
+passing-states . 
+00 . 68
+11 . 13
+01 . 51
+10 . 19
+==
+Candidate 28
+site . not_n1493->and_not_pi138_9_not_n1493
+polarity . 0
+neighbor . not_pi138_9 n1493
+failing-states . 
+11 . 452
+passing-states . 
+11 . 68
+00 . 13
+01 . 51
+10 . 19
+==
+Candidate 29
+site . not_pi138_9
+polarity . 0
+neighbor . not_n1493 pi138
+failing-states . 
+00 . 452
+passing-states . 
+00 . 68
+11 . 13
+01 . 51
+10 . 19
+==
+Candidate 30
+site . not_n1493
+polarity . 0
+neighbor . not_pi138_9 n1493
+failing-states . 
+11 . 452
+passing-states . 
+11 . 68
+00 . 13
+01 . 51
+10 . 19
+==
+Candidate 31
+site . n1493->not_n1493
+polarity . 1
+neighbor . and_not_n1488_not_n1492
+failing-states . 
+1 . 452
+passing-states . 
+1 . 119
+0 . 32
+==
+Candidate 32
+site . n1493
+polarity . 1
+neighbor . and_not_n1488_not_n1492
+failing-states . 
+1 . 452
+passing-states . 
+1 . 119
+0 . 32
+==
+Candidate 33
+site . and_not_n1488_not_n1492->n1493
+polarity . 1
+neighbor . not_n1492 not_n1488
+failing-states . 
+11 . 452
+passing-states . 
+11 . 119
+01 . 30
+10 . 2
+==
+Candidate 34
+site . and_not_n1488_not_n1492
+polarity . 1
+neighbor . not_n1492 not_n1488
+failing-states . 
+11 . 452
+passing-states . 
+11 . 119
+01 . 30
+10 . 2
+==
+Candidate 35
+site . n1494->or_n1484_n1494
+polarity . 0
+neighbor . n1484 and_not_pi138_9_not_n1493
+failing-states . 
+00 . 452
+passing-states . 
+00 . 130
+10 . 2
+01 . 19
+==
+Candidate 36
+site . po118_driver->po118
+polarity . 0
+neighbor . or_n1484_n1494
+failing-states . 
+0 . 452
+passing-states . 
+0 . 130
+1 . 21
+==
+Candidate 37
+site . po118_driver
+polarity . 0
+neighbor . or_n1484_n1494
+failing-states . 
+0 . 452
+passing-states . 
+0 . 130
+1 . 21
+==
+Candidate 38
+site . or_n1484_n1494->po118_driver
+polarity . 0
+neighbor . n1484 n1494
+failing-states . 
+00 . 452
+passing-states . 
+00 . 130
+10 . 2
+01 . 19
+==
+Candidate 39
+site . or_n1484_n1494
+polarity . 0
+neighbor . n1484 n1494
+failing-states . 
+00 . 452
+passing-states . 
+00 . 130
+10 . 2
+01 . 19
+==
+Candidate 40
+site . not_pi085_0
+polarity . 1
+neighbor . pi085 not_n732
+failing-states . 
+10 . 20
+00 . 424
+01 . 7
+11 . 1
+passing-states . 
+00 . 151
+==
+Candidate 41
+site . not_pi085_0->and_not_pi085_0_not_n732
+polarity . 1
+neighbor . pi085 not_n732
+failing-states . 
+10 . 20
+00 . 424
+01 . 7
+11 . 1
+passing-states . 
+00 . 151
+==
+Candidate 42
+site . n843->and_n838_n843
+polarity . 1
+neighbor . n838 and_pi053_not_pi058_4 not_pi116_6
+failing-states . 
+001 . 386
+000 . 29
+011 . 14
+101 . 18
+010 . 3
+111 . 2
+passing-states . 
+001 . 151
+==
+Candidate 43
+site . not_pi097_0
+polarity . 1
+neighbor . pi029 pi097
+failing-states . 
+00 . 420
+01 . 11
+10 . 20
+11 . 1
+passing-states . 
+00 . 146
+01 . 5
+==
+Candidate 44
+site . not_pi097_0->and_pi029_not_pi097_0
+polarity . 1
+neighbor . pi029 pi097
+failing-states . 
+00 . 420
+01 . 11
+10 . 20
+11 . 1
+passing-states . 
+00 . 146
+01 . 5
+==
+Candidate 45
+site . not_pi096_2
+polarity . 1
+neighbor . pi096 n830
+failing-states . 
+00 . 436
+01 . 9
+11 . 2
+10 . 5
+passing-states . 
+00 . 143
+01 . 5
+10 . 3
+==
+Candidate 46
+site . not_pi096_2->and_not_pi096_2_n830
+polarity . 1
+neighbor . pi096 n830
+failing-states . 
+00 . 436
+01 . 9
+11 . 2
+10 . 5
+passing-states . 
+00 . 143
+01 . 5
+10 . 3
+==
+Candidate 47
+site . n515
+polarity . 0
+neighbor . and_n459_n479 n562 n517
+failing-states . 
+100 . 381
+000 . 48
+110 . 11
+010 . 3
+101 . 8
+001 . 1
+passing-states . 
+100 . 151
+==
+Candidate 48
+site . and_n459_n479->n515
+polarity . 0
+neighbor . n479 n459
+failing-states . 
+11 . 400
+01 . 28
+10 . 21
+00 . 3
+passing-states . 
+11 . 151
+==
+Candidate 49
+site . and_n459_n479
+polarity . 0
+neighbor . n479 n459
+failing-states . 
+11 . 400
+01 . 28
+10 . 21
+00 . 3
+passing-states . 
+11 . 151
+==
+Candidate 50
+site . n459->and_n459_n479
+polarity . 0
+neighbor . pi011 n479 and_not_pi005_3_not_pi007_5 n462
+failing-states . 
+0110 . 383
+0010 . 15
+1010 . 12
+0100 . 20
+0000 . 2
+0111 . 17
+1000 . 1
+0011 . 1
+0101 . 1
+passing-states . 
+0110 . 151
+==
+Candidate 51
+site . n479->and_n459_n479
+polarity . 0
+neighbor . and_not_pi006_3_n341 n459 not_pi005_4 n678
+failing-states . 
+1110 . 400
+0110 . 28
+1010 . 10
+1001 . 10
+0001 . 2
+0010 . 1
+1000 . 1
+passing-states . 
+1110 . 151
+==
+Candidate 52
+site . n292
+polarity . 1
+neighbor . n291 and_not_pi006_not_pi007
+failing-states . 
+11 . 405
+01 . 25
+10 . 20
+00 . 2
+passing-states . 
+11 . 151
+==
+Candidate 53
+site . and_not_pi006_not_pi007->n292
+polarity . 1
+neighbor . not_pi006 not_pi007
+failing-states . 
+11 . 430
+10 . 11
+01 . 10
+00 . 1
+passing-states . 
+11 . 151
+==
+Candidate 54
+site . and_not_pi006_not_pi007
+polarity . 1
+neighbor . not_pi006 not_pi007
+failing-states . 
+11 . 430
+10 . 11
+01 . 10
+00 . 1
+passing-states . 
+11 . 151
+==
+Candidate 55
+site . n292->and_n291_n292
+polarity . 1
+neighbor . n291 and_not_pi006_not_pi007
+failing-states . 
+11 . 405
+01 . 25
+10 . 20
+00 . 2
+passing-states . 
+11 . 151
+==

@@ -1,0 +1,295 @@
+==
+Candidate 0
+site . and_not_pi003_9_n566
+polarity . 1
+neighbor . n566 not_pi003_9
+failing-states . 
+01 . 4
+11 . 5
+passing-states . 
+01 . 564
+00 . 27
+10 . 2
+11 . 1
+==
+Candidate 1
+site . po029_driver
+polarity . 1
+neighbor . and_not_pi003_9_n566
+failing-states . 
+0 . 4
+1 . 5
+passing-states . 
+0 . 593
+1 . 1
+==
+Candidate 2
+site . and_not_pi003_9_n566->po029_driver
+polarity . 1
+neighbor . n566 not_pi003_9
+failing-states . 
+01 . 4
+11 . 5
+passing-states . 
+01 . 564
+00 . 27
+10 . 2
+11 . 1
+==
+Candidate 3
+site . po029_driver->po029
+polarity . 1
+neighbor . and_not_pi003_9_n566
+failing-states . 
+0 . 4
+1 . 5
+passing-states . 
+0 . 593
+1 . 1
+==
+Candidate 4
+site . and_n503_n559->n560
+polarity . 1
+neighbor . n503 n559
+failing-states . 
+11 . 4
+10 . 4
+01 . 1
+passing-states . 
+10 . 507
+11 . 48
+01 . 18
+00 . 21
+==
+Candidate 5
+site . n560
+polarity . 1
+neighbor . n563 and_n503_n559
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+00 . 544
+01 . 48
+10 . 2
+==
+Candidate 6
+site . n560->and_n560_n563
+polarity . 1
+neighbor . n563 and_n503_n559
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+00 . 544
+01 . 48
+10 . 2
+==
+Candidate 7
+site . and_n560_n563
+polarity . 1
+neighbor . n563 n560
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+00 . 544
+01 . 48
+10 . 2
+==
+Candidate 8
+site . n564
+polarity . 1
+neighbor . and_n560_n563
+failing-states . 
+0 . 4
+1 . 5
+passing-states . 
+0 . 592
+1 . 2
+==
+Candidate 9
+site . and_n560_n563->n564
+polarity . 1
+neighbor . n563 n560
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+00 . 544
+01 . 48
+10 . 2
+==
+Candidate 10
+site . not_n564
+polarity . 1
+neighbor . not_n557 n564
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 589
+00 . 3
+11 . 2
+==
+Candidate 11
+site . n564->not_n564
+polarity . 1
+neighbor . and_n560_n563
+failing-states . 
+0 . 4
+1 . 5
+passing-states . 
+0 . 592
+1 . 2
+==
+Candidate 12
+site . not_n564->and_not_n557_not_n564
+polarity . 1
+neighbor . not_n557 n564
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 589
+00 . 3
+11 . 2
+==
+Candidate 13
+site . and_not_n557_not_n564
+polarity . 1
+neighbor . not_n557 not_n564
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+11 . 589
+01 . 3
+10 . 2
+==
+Candidate 14
+site . n565
+polarity . 1
+neighbor . and_not_n557_not_n564
+failing-states . 
+1 . 4
+0 . 5
+passing-states . 
+1 . 589
+0 . 5
+==
+Candidate 15
+site . and_not_n557_not_n564->n565
+polarity . 1
+neighbor . not_n557 not_n564
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+11 . 589
+01 . 3
+10 . 2
+==
+Candidate 16
+site . not_n565
+polarity . 1
+neighbor . not_pi129_3430 n565
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+11 . 536
+01 . 53
+10 . 3
+00 . 2
+==
+Candidate 17
+site . n565->not_n565
+polarity . 1
+neighbor . and_not_n557_not_n564
+failing-states . 
+1 . 4
+0 . 5
+passing-states . 
+1 . 589
+0 . 5
+==
+Candidate 18
+site . not_n565->and_not_pi129_3430_not_n565
+polarity . 1
+neighbor . not_pi129_3430 n565
+failing-states . 
+11 . 4
+10 . 5
+passing-states . 
+11 . 536
+01 . 53
+10 . 3
+00 . 2
+==
+Candidate 19
+site . and_n503_n559
+polarity . 1
+neighbor . n503 n559
+failing-states . 
+11 . 4
+10 . 4
+01 . 1
+passing-states . 
+10 . 507
+11 . 48
+01 . 18
+00 . 21
+==
+Candidate 20
+site . and_not_pi129_3430_not_n565
+polarity . 1
+neighbor . not_pi129_3430 not_n565
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 536
+00 . 53
+11 . 3
+01 . 2
+==
+Candidate 21
+site . n566
+polarity . 1
+neighbor . not_pi003_9 and_not_pi129_3430_not_n565
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 564
+00 . 27
+01 . 2
+11 . 1
+==
+Candidate 22
+site . and_not_pi129_3430_not_n565->n566
+polarity . 1
+neighbor . not_pi129_3430 not_n565
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 536
+00 . 53
+11 . 3
+01 . 2
+==
+Candidate 23
+site . n566->and_not_pi003_9_n566
+polarity . 1
+neighbor . not_pi003_9 and_not_pi129_3430_not_n565
+failing-states . 
+10 . 4
+11 . 5
+passing-states . 
+10 . 564
+00 . 27
+01 . 2
+11 . 1
+==

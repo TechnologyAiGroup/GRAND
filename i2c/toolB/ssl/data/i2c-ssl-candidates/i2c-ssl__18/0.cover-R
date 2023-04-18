@@ -1,0 +1,91 @@
+==
+Candidate 0
+site . n1291
+polarity . 1
+neighbor . n1251 and_not_pi144_n1249
+failing-states . 
+11 . 44
+passing-states . 
+01 . 538
+11 . 15
+00 . 1
+10 . 5
+==
+Candidate 1
+site . and_not_pi144_n1249->n1291
+polarity . 1
+neighbor . not_pi144 n1249
+failing-states . 
+10 . 44
+passing-states . 
+10 . 521
+11 . 32
+00 . 5
+01 . 1
+==
+Candidate 2
+site . and_not_pi144_n1249
+polarity . 1
+neighbor . not_pi144 n1249
+failing-states . 
+10 . 44
+passing-states . 
+10 . 521
+11 . 32
+00 . 5
+01 . 1
+==
+Candidate 3
+site . n1291->and_n1251_n1291
+polarity . 1
+neighbor . n1251 and_not_pi144_n1249
+failing-states . 
+11 . 44
+passing-states . 
+01 . 538
+11 . 15
+00 . 1
+10 . 5
+==
+Candidate 4
+site . n1249->and_not_pi144_n1249
+polarity . 1
+neighbor . pi099 not_pi144 pi091 not_pi140 not_pi143_0 pi090 and_pi136_not_pi137_0 not_pi145 not_pi146 not_pi141 not_pi142 not_pi139
+failing-states . 
+010110011011 . 4
+010110011111 . 16
+010010011111 . 4
+010110011110 . 4
+010110001111 . 3
+010110010111 . 3
+010100011111 . 4
+010111011111 . 1
+010110011101 . 3
+011110011111 . 1
+110110011111 . 1
+passing-states . 
+010110011111 . 489
+011110111111 . 2
+010111111111 . 1
+011110011111 . 3
+110110011111 . 3
+010010011111 . 2
+010110001111 . 2
+010110111111 . 17
+010110011101 . 3
+010010111111 . 2
+010110111101 . 1
+010110111110 . 2
+010111011111 . 3
+000110011111 . 5
+010110011011 . 4
+010100011111 . 4
+010110010111 . 3
+010110110111 . 1
+010110011110 . 5
+110110111111 . 1
+010110111011 . 2
+010110101111 . 1
+010100111111 . 2
+000110111111 . 1
+==

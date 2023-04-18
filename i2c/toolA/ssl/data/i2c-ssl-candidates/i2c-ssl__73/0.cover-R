@@ -1,0 +1,122 @@
+==
+Candidate 0
+site . and_not_n1500_not_n1501
+polarity . 1
+neighbor . not_n1500 not_n1501
+failing-states . 
+11 . 452
+passing-states . 
+11 . 82
+01 . 69
+==
+Candidate 1
+site . not_n1501
+polarity . 1
+neighbor . not_n1500 n1501
+failing-states . 
+11 . 452
+passing-states . 
+10 . 10
+00 . 69
+11 . 72
+==
+Candidate 2
+site . n1501
+polarity . 0
+neighbor . and_not_pi073_not_pi136_10
+failing-states . 
+1 . 452
+passing-states . 
+0 . 79
+1 . 72
+==
+Candidate 3
+site . and_not_pi073_not_pi136_10
+polarity . 0
+neighbor . not_pi073 not_pi136_10
+failing-states . 
+11 . 452
+passing-states . 
+01 . 8
+10 . 71
+11 . 72
+==
+Candidate 4
+site . pi073->not_pi073
+polarity . 1
+neighbor . n958 not_n1271_2
+failing-states . 
+11 . 356
+01 . 82
+10 . 14
+passing-states . 
+10 . 1
+11 . 145
+01 . 5
+==
+Candidate 5
+site . not_pi073
+polarity . 0
+neighbor . not_pi136_10 pi073
+failing-states . 
+10 . 452
+passing-states . 
+11 . 8
+00 . 71
+10 . 72
+==
+Candidate 6
+site . pi136->not_pi136_10
+polarity . 1
+neighbor . n1243 not_n1554 pi033 pi032 not_pi068 not_n1513 not_pi069_0 not_n1536 pi034 not_n1454 not_pi063 not_pi137_0 not_n1348 not_pi138_4 pi137
+failing-states . 
+110011110111110 . 419
+110011110101110 . 7
+110111110111110 . 2
+100011110111110 . 5
+110001110111110 . 6
+111011110111110 . 2
+110011110111010 . 7
+110011110011110 . 1
+110010110111110 . 1
+110011111111110 . 2
+passing-states . 
+110011110111110 . 9
+010011110110111 . 53
+000010000011000 . 1
+000010100011000 . 36
+011011110110111 . 2
+000010100010001 . 20
+000010100001000 . 1
+110011110111010 . 2
+010011111110111 . 2
+110011110101110 . 1
+100011110111110 . 2
+010111110110111 . 2
+000010110010001 . 1
+010011110100111 . 1
+110011100111110 . 2
+000010100011100 . 1
+000010110011000 . 1
+111011110101110 . 1
+110011010111110 . 2
+110011110011110 . 2
+110001110111110 . 1
+000010100111000 . 1
+110011011111110 . 1
+110101110111110 . 1
+110010110111110 . 3
+010010100011000 . 1
+000011100011000 . 1
+==
+Candidate 7
+site . not_pi136_10
+polarity . 0
+neighbor . not_pi073 pi136
+failing-states . 
+10 . 452
+passing-states . 
+00 . 8
+11 . 71
+10 . 72
+==

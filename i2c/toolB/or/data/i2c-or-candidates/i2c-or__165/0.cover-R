@@ -1,0 +1,145 @@
+==
+Candidate 0
+site . n641
+polarity . 1
+neighbor . pi038 not_pi038_2 n388 pi047 pi043 and_not_pi040_1_not_pi042_0
+failing-states . 
+011100 . 1
+011010 . 1
+011001 . 17
+011000 . 1
+010000 . 1
+100000 . 1
+passing-states . 
+011001 . 538
+010001 . 10
+011011 . 16
+011000 . 7
+100001 . 4
+011101 . 5
+011111 . 1
+==
+Candidate 1
+site . and_not_pi040_1_not_pi042_0->n641
+polarity . 1
+neighbor . not_pi040_1 not_pi042_0
+failing-states . 
+10 . 3
+11 . 17
+01 . 2
+passing-states . 
+11 . 574
+10 . 2
+01 . 5
+==
+Candidate 2
+site . and_not_pi040_1_not_pi042_0
+polarity . 1
+neighbor . not_pi040_1 not_pi042_0
+failing-states . 
+10 . 3
+11 . 17
+01 . 2
+passing-states . 
+11 . 574
+10 . 2
+01 . 5
+==
+Candidate 3
+site . not_n1500
+polarity . 1
+neighbor . n1500 not_n1501
+failing-states . 
+00 . 5
+11 . 17
+passing-states . 
+00 . 519
+01 . 10
+11 . 52
+==
+Candidate 4
+site . n1500->not_n1500
+polarity . 0
+neighbor . and_not_pi068_pi136
+failing-states . 
+0 . 5
+1 . 17
+passing-states . 
+0 . 529
+1 . 52
+==
+Candidate 5
+site . n1500
+polarity . 0
+neighbor . and_not_pi068_pi136
+failing-states . 
+0 . 5
+1 . 17
+passing-states . 
+0 . 529
+1 . 52
+==
+Candidate 6
+site . and_not_pi068_pi136->n1500
+polarity . 0
+neighbor . pi136 not_pi068
+failing-states . 
+01 . 5
+11 . 17
+passing-states . 
+01 . 521
+11 . 52
+00 . 6
+10 . 2
+==
+Candidate 7
+site . and_not_pi068_pi136
+polarity . 0
+neighbor . pi136 not_pi068
+failing-states . 
+01 . 5
+11 . 17
+passing-states . 
+01 . 521
+11 . 52
+00 . 6
+10 . 2
+==
+Candidate 8
+site . not_pi068->and_not_pi068_pi136
+polarity . 0
+neighbor . pi136 pi068
+failing-states . 
+00 . 5
+10 . 17
+passing-states . 
+00 . 521
+10 . 52
+01 . 6
+11 . 2
+==
+Candidate 9
+site . not_pi068
+polarity . 0
+neighbor . pi136 pi068
+failing-states . 
+00 . 5
+10 . 17
+passing-states . 
+00 . 521
+10 . 52
+01 . 6
+11 . 2
+==
+Candidate 10
+site . not_n1500->and_not_n1500_not_n1501
+polarity . 1
+neighbor . n1500 not_n1501
+failing-states . 
+00 . 5
+11 . 17
+passing-states . 
+00 . 519
+01 . 10
+11 . 52
+==

@@ -1,0 +1,87 @@
+==
+Candidate 0
+site . not_n876->and_not_n876_not_n877
+polarity . 0
+neighbor . n876 not_n877
+failing-states . 
+01 . 6
+passing-states . 
+01 . 592
+00 . 3
+11 . 2
+==
+Candidate 1
+site . not_n877->and_not_n876_not_n877
+polarity . 0
+neighbor . n877 not_n876
+failing-states . 
+00 . 6
+passing-states . 
+01 . 590
+00 . 4
+11 . 3
+==
+Candidate 2
+site . and_not_n876_not_n877
+polarity . 0
+neighbor . not_n876 not_n877
+failing-states . 
+01 . 6
+passing-states . 
+11 . 590
+01 . 4
+10 . 3
+==
+Candidate 3
+site . and_not_n876_not_n877->n878
+polarity . 0
+neighbor . not_n876 not_n877
+failing-states . 
+01 . 6
+passing-states . 
+11 . 590
+01 . 4
+10 . 3
+==
+Candidate 4
+site . n878
+polarity . 0
+neighbor . and_not_n876_not_n877
+failing-states . 
+0 . 6
+passing-states . 
+1 . 590
+0 . 7
+==
+Candidate 5
+site . n878->not_n878
+polarity . 0
+neighbor . and_not_n876_not_n877
+failing-states . 
+0 . 6
+passing-states . 
+1 . 590
+0 . 7
+==
+Candidate 6
+site . not_n877
+polarity . 0
+neighbor . n877 not_n876
+failing-states . 
+00 . 6
+passing-states . 
+01 . 590
+00 . 4
+11 . 3
+==
+Candidate 7
+site . not_n876
+polarity . 0
+neighbor . n876 not_n877
+failing-states . 
+01 . 6
+passing-states . 
+01 . 592
+00 . 3
+11 . 2
+==

@@ -1,0 +1,161 @@
+==
+Candidate 0
+site . n488
+polarity . 1
+neighbor . n355 n489 and_not_pi017_4_not_pi018_2
+failing-states . 
+100 . 2
+110 . 1
+001 . 1
+passing-states . 
+101 . 552
+001 . 20
+100 . 17
+111 . 6
+000 . 3
+011 . 1
+==
+Candidate 1
+site . and_not_pi017_4_not_pi018_2->n488
+polarity . 1
+neighbor . not_pi017_4 not_pi018_2
+failing-states . 
+01 . 2
+10 . 1
+11 . 1
+passing-states . 
+11 . 579
+01 . 8
+10 . 11
+00 . 1
+==
+Candidate 2
+site . and_not_pi017_4_not_pi018_2
+polarity . 1
+neighbor . not_pi017_4 not_pi018_2
+failing-states . 
+01 . 2
+10 . 1
+11 . 1
+passing-states . 
+11 . 579
+01 . 8
+10 . 11
+00 . 1
+==
+Candidate 3
+site . n480
+polarity . 1
+neighbor . and_not_pi005_4_n479 n445
+failing-states . 
+11 . 4
+passing-states . 
+11 . 536
+10 . 48
+00 . 4
+01 . 11
+==
+Candidate 4
+site . and_not_pi005_4_n479->n480
+polarity . 1
+neighbor . n479 not_pi005_4
+failing-states . 
+11 . 3
+01 . 1
+passing-states . 
+11 . 558
+01 . 28
+10 . 11
+00 . 2
+==
+Candidate 5
+site . and_not_pi005_4_n479
+polarity . 1
+neighbor . n479 not_pi005_4
+failing-states . 
+11 . 3
+01 . 1
+passing-states . 
+11 . 558
+01 . 28
+10 . 11
+00 . 2
+==
+Candidate 6
+site . n480->and_n445_n480
+polarity . 1
+neighbor . and_not_pi005_4_n479 n445
+failing-states . 
+11 . 4
+passing-states . 
+11 . 536
+10 . 48
+00 . 4
+01 . 11
+==
+Candidate 7
+site . n479->and_not_pi005_4_n479
+polarity . 1
+neighbor . n459 not_pi005_4 n678 and_not_pi006_3_n341
+failing-states . 
+1101 . 3
+1100 . 1
+passing-states . 
+1101 . 548
+1100 . 27
+0101 . 10
+0011 . 10
+0010 . 2
+0100 . 1
+0001 . 1
+==
+Candidate 8
+site . n481
+polarity . 1
+neighbor . n478 and_n445_n480
+failing-states . 
+01 . 3
+11 . 1
+passing-states . 
+01 . 535
+00 . 61
+11 . 1
+10 . 2
+==
+Candidate 9
+site . and_n445_n480->n481
+polarity . 1
+neighbor . n480 n445
+failing-states . 
+11 . 4
+passing-states . 
+11 . 536
+10 . 48
+00 . 4
+01 . 11
+==
+Candidate 10
+site . and_n445_n480
+polarity . 1
+neighbor . n480 n445
+failing-states . 
+11 . 4
+passing-states . 
+11 . 536
+10 . 48
+00 . 4
+01 . 11
+==
+Candidate 11
+site . n481->and_n478_n481
+polarity . 1
+neighbor . n478 and_n445_n480
+failing-states . 
+01 . 3
+11 . 1
+passing-states . 
+01 . 535
+00 . 61
+11 . 1
+10 . 2
+==

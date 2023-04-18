@@ -1,0 +1,30 @@
+run_diagnosis ./tmax_fail/108.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 78 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/108.fail
+ #failing_pat=78, #failures=78, #defects=1, #faults=3, CPU_time=0.11
+ Simulated : #failing_pat=78, #passing_pat=96, #failures=78
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=78, #passing_pat=96, #failures=78
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa01   DS   g_and_not_pi137_4_not_n1456/Y   (AND2X1)
+ sa01   --   g_n1457/Y   (BUFX2)
+ sa01   --   g_n1457/A   (BUFX2)
+ sa01   --   g_or_n1457_n1464/B   (OR2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa01   DS   g_or_n1457_n1464/Y   (OR2X1)
+ sa01   --   g_po116_driver/Y   (BUFX2)
+ sa01   --   g_po116_driver/A   (BUFX2)
+ sa01   --   g_po116/Y   (BUFX2)
+ sa01   --   g_po116/A   (BUFX2)
+ sa01   --   po116   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=78, passing=96>
+ sa01   DS   g_not_pi137_4/Y   (INVX1)
+ sa01   --   g_not_pi137_4/A   (INVX1)
+ sa01   --   g_and_not_pi137_4_not_n1456/B   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/109.diag

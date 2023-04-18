@@ -1,0 +1,51 @@
+run_diagnosis ./tmax_fail/40.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 1 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/40.fail
+ #failing_pat=1, #failures=1, #defects=1, #faults=3, CPU_time=0.05
+ Simulated : #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=1, #passing_pat=96, #failures=1
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa0   DS   g_n1550/Y   (BUFX2)
+ sa0   --   g_n1550/A   (BUFX2)
+ sa0   --   g_and_pi137_not_n1549/Y   (AND2X1)
+ sa0   --   g_and_pi137_not_n1549/A   (AND2X1)
+ sa0   --   g_and_pi137_not_n1549/B   (AND2X1)
+ sa0   --   g_not_n1549/Y   (INVX1)
+ sa1   --   g_not_n1549/A   (INVX1)
+ sa1   --   g_n1549/Y   (BUFX2)
+ sa1   --   g_n1549/A   (BUFX2)
+ sa1   --   g_and_not_n1544_not_n1548/Y   (AND2X1)
+ sa0   --   g_or_n1543_n1550/A   (OR2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_not_n1546/Y   (INVX1)
+ sa0   --   g_not_n1546/A   (INVX1)
+ sa0   --   g_n1546/Y   (BUFX2)
+ sa0   --   g_n1546/A   (BUFX2)
+ sa0   --   g_and_pi097_pi138/Y   (AND2X1)
+ sa0   --   g_and_pi097_pi138/A   (AND2X1)
+ sa0   --   g_and_pi097_pi138/B   (AND2X1)
+ sa1   --   g_and_not_n1545_not_n1546/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=1, passing=96>
+ sa1   DS   g_not_n1548/Y   (INVX1)
+ sa0   --   g_not_n1548/A   (INVX1)
+ sa0   --   g_n1548/Y   (BUFX2)
+ sa0   --   g_n1548/A   (BUFX2)
+ sa0   --   g_and_not_pi136_168070_not_n1547/Y   (AND2X1)
+ sa0   --   g_and_not_pi136_168070_not_n1547/A   (AND2X1)
+ sa0   --   g_and_not_pi136_168070_not_n1547/B   (AND2X1)
+ sa0   --   g_not_pi136_168070/Y   (INVX1)
+ sa1   --   g_not_pi136_168070/A   (INVX1)
+ sa0   --   g_not_n1547/Y   (INVX1)
+ sa1   --   g_not_n1547/A   (INVX1)
+ sa1   --   g_n1547/Y   (BUFX2)
+ sa1   --   g_n1547/A   (BUFX2)
+ sa1   --   g_and_not_n1545_not_n1546/Y   (AND2X1)
+ sa1   --   g_and_not_n1544_not_n1548/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/41.diag

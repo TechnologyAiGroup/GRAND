@@ -1,0 +1,31 @@
+run_diagnosis ./tmax_fail/37.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 442 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/37.fail
+ #failing_pat=439, #failures=442, #defects=1, #faults=3, CPU_time=0.12
+ Simulated : #failing_pat=439, #passing_pat=96, #failures=442
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=3, #failing_pat=439, #passing_pat=96, #failures=442
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=439, passing=96>
+ sa01   DS   g_and_n344_n416/Y   (AND2X1)
+ sa01   --   g_n417/Y   (BUFX2)
+ sa01   --   g_n417/A   (BUFX2)
+ ------------------------------------------------------------------------------
+ match=98.88%, #explained patterns: <failing=439, passing=96>
+ sa01   DS   g_and_n344_n416/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=98.87%, #explained patterns: <failing=435, passing=95>
+ sa0   DS   g_n416/Y   (BUFX2)
+ sa0   --   g_n416/A   (BUFX2)
+ sa0   --   g_and_not_pi009_1_not_pi014_3/Y   (AND2X1)
+ sa0   --   g_and_not_pi009_1_not_pi014_3/A   (AND2X1)
+ sa0   --   g_and_not_pi009_1_not_pi014_3/B   (AND2X1)
+ sa0   --   g_not_pi009_1/Y   (INVX1)
+ sa1   --   g_not_pi009_1/A   (INVX1)
+ sa0   --   g_not_pi014_3/Y   (INVX1)
+ sa1   --   g_not_pi014_3/A   (INVX1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/38.diag

@@ -1,0 +1,121 @@
+run_diagnosis ./tmax_fail/157.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 6 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/157.fail
+ #failing_pat=6, #failures=6, #defects=1, #faults=18, CPU_time=0.15
+ Simulated : #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=18, #failing_pat=6, #passing_pat=96, #failures=6
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n307_not_n337/Y   (AND2X1)
+ sa01   --   g_n338/Y   (BUFX2)
+ sa01   --   g_n338/A   (BUFX2)
+ sa01   --   g_not_n338/Y   (INVX1)
+ sa01   --   g_not_n338/A   (INVX1)
+ sa01   --   g_and_not_pi129_not_n338/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_not_n327/A   (INVX1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n325_not_n327/A   (AND2X1)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_not_n327/Y   (INVX1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n310_not_n333/Y   (AND2X1)
+ sa01   --   g_n334/Y   (BUFX2)
+ sa01   --   g_n334/A   (BUFX2)
+ sa01   --   g_not_n334/Y   (INVX1)
+ sa01   --   g_not_n334/A   (INVX1)
+ sa01   --   g_and_n302_not_n334/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n325_not_n327/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_n327/A   (BUFX2)
+ Internal_cell_type (receiver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n314_n326/Y   (AND2X1)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_n309_not_n335/Y   (AND2X1)
+ sa01   --   g_n336/Y   (BUFX2)
+ sa01   --   g_n336/A   (BUFX2)
+ sa01   --   g_not_n336/Y   (INVX1)
+ sa01   --   g_not_n336/A   (INVX1)
+ sa01   --   g_and_pi054_not_n336/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_pi054_not_n336/Y   (AND2X1)
+ sa01   --   g_n337/Y   (BUFX2)
+ sa01   --   g_n337/A   (BUFX2)
+ sa01   --   g_not_n337/Y   (INVX1)
+ sa01   --   g_not_n337/A   (INVX1)
+ sa01   --   g_and_not_n307_not_n337/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_n327/Y   (BUFX2)
+ Internal_cell_type (driver)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n300_n329/Y   (AND2X1)
+ sa01   --   g_n330/Y   (BUFX2)
+ sa01   --   g_n330/A   (BUFX2)
+ sa01   --   g_and_not_pi017_0_n330/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n301_not_n328/Y   (AND2X1)
+ sa01   --   g_n329/Y   (BUFX2)
+ sa01   --   g_n329/A   (BUFX2)
+ sa01   --   g_and_n300_n329/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_or_pi003_not_n339/Y   (OR2X1)
+ sa01   --   g_po015_driver/Y   (BUFX2)
+ sa01   --   g_po015_driver/A   (BUFX2)
+ sa01   --   g_po015/Y   (BUFX2)
+ sa01   --   g_po015/A   (BUFX2)
+ sa01   --   po015   (_PO)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n302_not_n334/Y   (AND2X1)
+ sa01   --   g_n335/Y   (BUFX2)
+ sa01   --   g_n335/A   (BUFX2)
+ sa01   --   g_not_n335/Y   (INVX1)
+ sa01   --   g_not_n335/A   (INVX1)
+ sa01   --   g_and_not_n309_not_n335/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi129_not_n338/Y   (AND2X1)
+ sa01   --   g_n339/Y   (BUFX2)
+ sa01   --   g_n339/A   (BUFX2)
+ sa01   --   g_not_n339/Y   (INVX1)
+ sa01   --   g_not_n339/A   (INVX1)
+ sa01   --   g_or_pi003_not_n339/A   (OR2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_not_pi017_0_n330/Y   (AND2X1)
+ sa01   --   g_n331/Y   (BUFX2)
+ sa01   --   g_n331/A   (BUFX2)
+ sa01   --   g_and_n331_n332/B   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=100.00%, #explained patterns: <failing=6, passing=96>
+ sa01   DS   g_and_n331_n332/Y   (AND2X1)
+ sa01   --   g_n333/Y   (BUFX2)
+ sa01   --   g_n333/A   (BUFX2)
+ sa01   --   g_not_n333/Y   (INVX1)
+ sa01   --   g_not_n333/A   (INVX1)
+ sa01   --   g_and_not_n310_not_n333/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/158.diag

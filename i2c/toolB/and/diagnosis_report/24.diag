@@ -1,0 +1,17 @@
+run_diagnosis ./tmax_fail/24.fail
+ Diagnosis simulation will be performed on 4 threads using words of size 64.
+ Warning: Check expected data completed: 0 out of 26 failures were checked
+ Warning: The fault_type option default will change from "shared" to "all" in 2017.09 or later.
+ Diagnosis summary for failure file ./tmax_fail/24.fail
+ #failing_pat=26, #failures=26, #defects=1, #faults=2, CPU_time=0.21
+ Simulated : #failing_pat=26, #passing_pat=96, #failures=26
+ ------------------------------------------------------------------------------
+ Defect 1: stuck fault model, #faults=2, #failing_pat=26, #passing_pat=96, #failures=26
+ ------------------------------------------------------------------------------
+ match=26.80%, #explained patterns: <failing=26, passing=25>
+ sa1   DS   g_and_n379_not_n1002/A   (AND2X1)
+ ------------------------------------------------------------------------------
+ match=26.80%, #explained patterns: <failing=26, passing=25>
+ sa1   DS   g_and_pi077_n1009/A   (AND2X1)
+ ------------------------------------------------------------------------------
+set_messages -log ./diagnosis_report/25.diag
