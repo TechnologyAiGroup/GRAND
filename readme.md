@@ -73,3 +73,46 @@ The directory trees corresponding to the subfolders under toolB are (take `and` 
 * **i2c.faults**: Fault file under the current fault type
 * **i2c_modified.bench**: The `i2c` circuit file after inserting the neighborhood under the current fault type
 * **tmax_fail**: Fail data files in toolB format after fault simulation 
+
+------
+# **Exerpiments**  
+## Activate python environment  
+> `cd ./sourceCode`  
+> `conda create -n env_grand python=3.9.7`  
+> `conda activate env_grand`  
+> `bash req.sh`
+---
+## GRAND for imporving diagnosis resolution
+1. Enter the experiment directory from the root directory  
+`cd ./sourceCode/GRAND/`
+2. Building a dataset by fault type  
+    > `python handle-sf.py --dataset i2c-ssl --tool A`  
+    > where `ssl` can be replaced by `fe` or `dom`, reflecting the fault type; `A` can be replaced by `B`, reflecting using the data from tool A or tool B.  
+    > `python handle-mf.py --dataset i2c-msl --tool A`  
+    > where `msl` can be replaced by `and` or `or`.
+
+3. Merge datasets
+    > `python merge.py --dataset i2c --tool A`  
+    > where `A` can be replaced by `B`, reflecting the same tool used in *STEP 2*.  
+4. GRAND
+    > `python train.py --dataset i2c --tool A`  
+    > where `A` can be replaced by `B`, reflecting the same tool used in *STEP 2*.
+
+---  
+## Rectify with GRAND  
+1. Enter the experiment directory from the root directory  
+    > `cd ./sourceCode/Correction`
+2. Statistic  
+    > `python statistics.py i2c ssl`  
+    > where `ssl` can be replaced by `fe`,`dom`,`msl`,`and`,`or`.
+3. Build a dataset by fault type  
+    > `python handle_sf.py --dataset i2c-ssl`  
+    > `python handle_sf.py --dataset i2c-fe`  
+    > `python handle_sf.py --dataset i2c-dom`  
+    > `python handle_mf.py --dataset i2c-msl`  
+    > `python handle_mf.py --dataset i2c-and`  
+    > `python handle_sf.py --dataset i2c-or`  
+4. Merge datasets  
+    > `python merge.py --dataset i2c`  
+5. Rectify  
+    > `python train.py --dataset i2c`  
