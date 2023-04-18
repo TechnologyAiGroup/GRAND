@@ -82,9 +82,10 @@ The directory trees corresponding to the subfolders under toolB are (take `and` 
 > `conda activate env_grand`  
 > `bash req.sh`
 ---
-## GRAND for imporving diagnosis resolution
+## GRAND for imporving diagnosis resolution  
+<u>You can start *STEP 4* directly because we have already generated the required dataset.</u>  
 1. Enter the experiment directory from the root directory  
-`cd ./sourceCode/GRAND/`
+    > `cd ./sourceCode/GRAND/`
 2. Building a dataset by fault type  
     > `python handle-sf.py --dataset i2c-ssl --tool A`  
     > where `ssl` can be replaced by `fe` or `dom`, reflecting the fault type; `A` can be replaced by `B`, reflecting using the data from tool A or tool B.  
@@ -100,6 +101,7 @@ The directory trees corresponding to the subfolders under toolB are (take `and` 
 
 ---  
 ## Rectify with GRAND  
+<u>You can start *STEP 5* directly because we have already generated the required dataset.</u>  
 1. Enter the experiment directory from the root directory  
     > `cd ./sourceCode/Correction`
 2. Statistic  
